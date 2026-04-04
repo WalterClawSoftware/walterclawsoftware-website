@@ -101,11 +101,11 @@ window.WCSStorefront = {
 
 ## Site files touched for storefront launch
 
-- `clipscript.html 
-- `index.html 
+- `clipscript.html`
+- `index.html`
 - `support.html`
 - `contact.html`
-- `privacy.html 
+- `privacy.html`
 - `styles.css`
 - `storefront-config.js`
 - `storefront.js`
