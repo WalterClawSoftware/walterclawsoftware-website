@@ -142,7 +142,9 @@ img { display: block; max-width: 100%; }
 .page-card,
 .feature-card,
 .callout,
-.contact-card {
+.contact-card,
+.storefront-card,
+.step-card {
     background: var(--surface);
     border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: var(--radius);
@@ -187,7 +189,9 @@ img { display: block; max-width: 100%; }
 .feature-card,
 .section-card,
 .page-card,
-.contact-card { padding: 24px; }
+.contact-card,
+.storefront-card,
+.step-card { padding: 24px; }
 
 .feature-card h3,
 .section-card h3,
@@ -228,6 +232,102 @@ img { display: block; max-width: 100%; }
 .callout h3 { margin: 0; font-size: 1.25rem; }
 .callout p { margin: 0; color: var(--text-soft); line-height: 1.7; }
 
+.storefront-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.storefront-card {
+    display: grid;
+    gap: 18px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.88)),
+        var(--surface);
+}
+
+.storefront-card-pending {
+    background:
+        linear-gradient(180deg, rgba(255, 245, 240, 0.96), rgba(255, 255, 255, 0.9)),
+        var(--surface);
+}
+
+.storefront-head {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.storefront-head h3 {
+    margin: 8px 0 0;
+    font-size: 1.45rem;
+}
+
+.availability-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.availability-chip-ready {
+    background: rgba(34, 155, 94, 0.12);
+    color: #15603a;
+}
+
+.availability-chip-soon {
+    background: rgba(255, 67, 55, 0.08);
+    color: var(--signal-deep);
+}
+
+.storefront-copy,
+.storefront-note {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.72;
+}
+
+.storefront-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.storefront-steps,
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.step-card strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.04rem;
+}
+
+.step-card p {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.72;
+}
+
+.button-disabled {
+    opacity: 0.58;
+    box-shadow: none;
+    pointer-events: none;
+}
+
 .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 
 .metric {
@@ -243,13 +343,34 @@ img { display: block; max-width: 100%; }
 .policy-list,
 .muted-list { margin: 0; padding-left: 18px; display: grid; gap: 12px; }
 
-.table-like { display: grid; gap: 14px; }
-.table-row { display: grid; grid-template-columns: 180px 1fr; gap: 18px; padding: 16px 0; border-top: 1px solid var(--line); }
-.table-row:first-child { border-top: 0; padding-top: 0; }
+.table-like { display: grid;
+    gap: 14px;
+}
+.table-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 18px;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+}
+.table-row:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
 .table-row strong { font-size: 0.95rem; }
 
-.site-footer { margin-top: 48px; padding: 26px 0 42px; border-top: 1px solid rgba(22, 18, 17, 0.08); }
-.footer-grid { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; }
+.site-footer {
+    margin-top: 48px;
+    padding: 26px 0 42px;
+    border-top: 1px solid rgba(22, 18, 17, 0.08);
+}
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .footer-copy { color: var(--text-soft); font-size: 0.92rem; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
 .footer-links a { color: var(--text-soft); }
@@ -259,9 +380,15 @@ img { display: block; max-width: 100%; }
     .hero-grid,
     .grid-three,
     .grid-two,
-    .metrics { grid-template-columns: 1fr; }
+    .metrics,
+    .storefront-grid,
+    .storefront-steps,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
     .section-heading,
     .footer-grid { align-items: start; }
+    .storefront-head { flex-direction: column; }
 }
 
 @media (max-width: 720px) {

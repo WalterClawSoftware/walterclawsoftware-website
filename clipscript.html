@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ClipScript | Walter Claw Software LLC</title>
-    <meta name="description" content="ClipScript is a Windows transcript workspace for creator-owned YouTube videos, with search, export, favorites, and local archiving.">
+    <title>ClipScript Storefront | Walter Claw Software LLC</title>
+    <meta name="description" content="Buy ClipScript directly from Walter Claw Software LLC. ClipScript is a desktop transcript workspace for creator-owned YouTube videos, with search, export, favorites, and local archiving.">
     <link rel="stylesheet" href="styles.css">
+    <script src="storefront-config.js" defer></script>
+    <script src="storefront.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -32,14 +34,93 @@
     <main>
         <section class="page-intro">
             <div class="shell">
-                <div class="eyebrow">Product page</div>
-                <h1>ClipScript turns your own YouTube transcripts into a usable desktop library.</h1>
-                <p>ClipScript is a Windows app built for creators who want a better workspace for the transcripts behind the videos they own. Instead of hopping between individual YouTube Studio pages, you get a focused desktop environment for searching, reading, exporting, and reopening transcript sessions.</p>
+                <div class="eyebrow">Direct storefront</div>
+                <h1>Buy ClipScript directly from Walter Claw Software while the app store releases are still in progress.</h1>
+                <p>ClipScript is a desktop app for creators who want a better workspace for the transcripts behind the videos they own. Instead of hopping between individual YouTube Studio pages, you get a focused environment for searching, reading, exporting, and reopening transcript sessions.</p>
                 <div class="highlight-bar">
                     <span class="pill">Official Google sign-in</span>
                     <span class="pill">Creator-owned video workflow</span>
                     <span class="pill">Local transcript archive</span>
-                    <span class="pill">Windows desktop app</span>
+                    <span class="pill">Direct download launch</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="shell">
+                <div class="section-heading" id="storefront">
+                    <div>
+                        <div class="eyebrow">Storefront</div>
+                        <h2>Direct checkout now, app store listings later.</h2>
+                    </div>
+                    <p>ClipScript is being prepared for direct sales on walterclawsoftware.com first. The Apple App Store and Windows Store release paths can keep moving in parallel without blocking customers who are ready to buy the app directly.</p>
+                </div>
+                <div class="storefront-grid">
+                    <article class="storefront-card storefront-card-live" data-storefront-card="clipscript-macos">
+                        <div class="storefront-head">
+                            <div>
+                                <div class="eyebrow">macOS release</div>
+                                <h3>ClipScript for macOS</h3>
+                            </div>
+                            <span class="availability-chip availability-chip-ready">Release build ready</span>
+                        </div>
+                        <p class="storefront-copy">The Mac app is packaged and ready for secure hosted checkout plus file delivery. This is the fastest path to selling ClipScript while App Store submission is still being prepared.</p>
+                        <ul class="muted-list">
+                            <li>Focused desktop transcript workspace for creator-owned YouTube videos.</li>
+                            <li>Direct file delivery after purchase through a hosted checkout link.</li>
+                            <li>Support stays with Walter Claw Software LLC instead of a marketplace queue.</li>
+                        </ul>
+                        <div class="storefront-actions">
+                            <a class="button button-primary button-disabled" data-storefront-cta href="#" aria-disabled="true">macOS checkout coming next</a>
+                            <a class="button button-secondary" href="support.html">Support</a>
+                        </div>
+                        <p class="storefront-note" data-storefront-helper>The Mac storefront layout is ready. Add the hosted checkout URL to switch this button live.</p>
+                    </article>
+                    <article class="storefront-card storefront-card-pending" data-storefront-card="clipscript-windows">
+                        <div class="storefront-head">
+                            <div>
+                                <div class="eyebrow">Windows release</div>
+                                <h3>ClipScript for Windows</h3>
+                            </div>
+                            <span class="availability-chip availability-chip-soon">Coming next</span>
+                        </div>
+                        <p class="storefront-copy">The Windows direct-download storefront is being staged honestly instead of pretending the build is already ready. That lets the website, support language, and purchase flow be clean when the Windows installer is finished.</p>
+                        <ul class="muted-list">
+                            <li>Storefront slot is reserved for the Windows build.</li>
+                            <li>Support and product messaging stay aligned across both platforms.</li>
+                            <li>App store work can continue separately without blocking the site.</li>
+                        </ul>
+                        <div class="storefront-actions">
+                            <a class="button button-secondary button-disabled" data-storefront-cta href="#" aria-disabled="true">Windows coming soon</a>
+                            <a class="button button-secondary" href="contact.html">Ask about Windows release</a>
+                        </div>
+                        <p class="storefront-note" data-storefront-helper>The Windows checkout button will be enabled after the Windows release file is ready for delivery.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="shell">
+                <div class="section-heading">
+                    <div class="eyebrow">How it works</div>
+                    <h2>Simple direct download flow.</h2>
+                    </div>
+                    <p>The site can stay static and lightweight while the actual paywall and download delivery are handled by a hosted checkout service.</p>
+                </div>
+                <div class="storefront-steps">
+                    <article class="step-card">
+                        <strong>1. Secure checkout</strong>
+                        <p>Customers use a hosted checkout link from the ClipScript product page instead of sending payments manually or waiting for an app store review queue.</p>
+                    </article>
+                    <article class="step-card">
+                        <strong>2. Direct file delivery</strong>
+                        <p>After purchase, the buyer receives the current app file and receipt information through that same checkout provider’s delivery flow.</p>
+                    </article>
+                    <article class="step-card">
+                        <strong>3. Support stays direct</strong>
+                        <p>Support, privacy, and product communication stay on walterclawsoftware.com instead of being split between multiple storefronts.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -92,7 +173,7 @@
                     </article>
                     <article class="feature-card">
                         <h3>Focused desktop reading</h3>
-                        <p>Read long transcripts in a dedicated Windows interface with timestamp controls and in-transcript find tools.</p>
+                        <p>Read long transcripts in a dedicated desktop interface with timestamp controls and in-transcript find tools.</p>
                     </article>
                     <article class="feature-card">
                         <h3>Video context when you need it</h3>
@@ -106,23 +187,51 @@
             <div class="shell callout">
                 <div class="eyebrow">Current direction</div>
                 <h3>Built around official access, not brittle scraping.</h3>
-                <p>ClipScript is being shaped as a compliant creator tool that works with the Google account and YouTube channel you own or manage. That gives the product a safer long-term footing and a more professional story for real publishing.</p>
+                <p>ClipScript is being shaped as a compliant creator tool that works with the Google account and YouTube channel you own or manage. That gives the product a safer long-term footing and a more professional story whether it is sold directly or later listed in app stores.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="shell">
-                <div class="grid grid-two">
-                    <article class="contact-card">
-                        <h3>Support</h3>
-                        <p>Need help with the app, account connection, or transcript workflow? Email <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a>.</p>
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">FAQ</div>
+                        <h2>What direct download means right now.</h2>
+                    </div>
+                    <p>The current plan is straightforward: sell direct first, keep the site honest about platform readiness, and use marketplace listings later where they make sense.</p>
+                </div>
+                <div class="faq-grid">
+                    <article class="page-card">
+                        <h3>Why sell direct before the app stores?</h3>
+                        <p>Direct sales let Walter Claw Software LLC start serving customers without waiting for every marketplace process to be finished. That is especially useful while store-specific submission work is still underway.</p>
                     </article>
-                    <article class="contact-card">
-                        <h3>Privacy</h3>
-                        <p>ClipScript’s privacy policy explains how local transcript storage and Google sign-in are handled in the current version of the product.</p>
-                        <p><a class="button button-secondary" href="privacy.html">Read the policy</a></p>
+                    <article class="page-card">
+                        <h3>What happens after purchase?</h3>
+                        <p>The buyer is taken through secure hosted checkout and then receives the current app file plus receipt information through that same checkout provider.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Which platform is first?</h3>
+                        <p>The macOS build is the current direct-download release path. The Windows storefront will be enabled once the Windows release file is ready for delivery.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Will app stores still matter later?</h3>
+                        <p>Yes. Direct download is the current storefront path. Apple App Store and Windows Store publishing can still happen later without forcing customers to wait today.</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid grid-two">
+                <article class="contact-card">
+                    <h3>Support</h3>
+                    <p>Need help with the app, checkout, account connection, or transcript workflow? Email <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a>.</p>
+                </article>
+                <article class="contact-card">
+                    <h3>Privacy</h3>
+                    <p>ClipScript’s privacy policy explains how local transcript storage and Google sign-in are handled in the current version of the product.</p>
+                    <p><a class="button button-secondary" href="privacy.html">Read the policy</a></p>
+                </article>
             </div>
         </section>
     </main>
@@ -131,7 +240,7 @@
         <div class="shell footer-grid">
             <div class="footer-copy">
                 <strong>Walter Claw Software LLC</strong><br>
-                ClipScript is a Windows desktop application in active development.<br>
+                ClipScript is a direct-download desktop application while app store releases are in progress.<br>
                 <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a>
             </div>
             <div class="footer-links">
