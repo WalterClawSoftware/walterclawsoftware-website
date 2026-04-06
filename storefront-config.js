@@ -2,8 +2,8 @@ window.WCSStorefront = {
     "clipscript-macos": {
         checkoutUrl: "",
         liveLabel: "Buy for macOS",
-        pendingLabel: "macOS checkout coming next",
-        helperText: "The secure macOS checkout link will appear here after the hosted storefront is connected."
+        pendingLabel: "macOS approval in progress",
+        helperText: "Hosted checkout is configured in test mode. The public macOS buy button will switch on after Lemon Squeezy approves the store for live sales."
     },
     "clipscript-windows": {
         checkoutUrl: "",
