@@ -103,7 +103,24 @@ img { display: block; max-width: 100%; }
 .button-primary:hover { background: var(--signal-deep); }
 .button-secondary { background: rgba(255, 255, 255, 0.72); color: var(--text); border-color: var(--line); }
 
-.hero { padding: 72px 0 40px; }
+.hero { padding: 56px 0 40px; }
+
+.hero-banner {
+    margin-bottom: 28px;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: var(--shadow);
+    background:
+        radial-gradient(circle at top center, rgba(107, 217, 255, 0.24), transparent 42%),
+        #0f1622;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+}
+
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr); gap: 30px; align-items: stretch; }
 
 .eyebrow {
@@ -207,6 +224,48 @@ img { display: block; max-width: 100%; }
 
 .page-intro { padding: 56px 0 22px; }
 .highlight-bar { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 0; }
+
+.screenshot-section {
+    padding-top: 8px;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.screenshot-card {
+    margin: 0;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 238, 232, 0.92)),
+        var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(22, 18, 17, 0.08);
+}
+
+.screenshot-card figcaption {
+    display: grid;
+    gap: 8px;
+    padding: 18px 20px 20px;
+}
+
+.screenshot-card strong {
+    font-size: 1.02rem;
+}
+
+.screenshot-card span {
+    color: var(--text-soft);
+    line-height: 1.65;
+}
 
 .pill {
     display: inline-flex;
@@ -381,6 +440,7 @@ img { display: block; max-width: 100%; }
     .grid-three,
     .grid-two,
     .metrics,
+    .screenshot-grid,
     .storefront-grid,
     .storefront-steps,
     .faq-grid {
@@ -395,4 +455,5 @@ img { display: block; max-width: 100%; }
     .nav { flex-direction: column; align-items: start; padding: 18px 0; }
     .table-row { grid-template-columns: 1fr; gap: 8px; }
     .hero { padding-top: 40px; }
+    .hero-banner { margin-bottom: 22px; border-radius: 22px; }
 }
