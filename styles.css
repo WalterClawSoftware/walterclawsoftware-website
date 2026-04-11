@@ -310,14 +310,15 @@ img { display: block; max-width: 100%; }
 
 .lightbox-panel {
     position: relative;
-    width: min(1100px, 92vw);
-    max-height: 85vh;
+    width: fit-content;
+    max-width: 96vw;
+    max-height: 94vh;
     background: rgba(18, 18, 18, 0.96);
     border-radius: 20px;
     box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
-    padding: 28px 28px 20px;
+    padding: 16px 16px 12px;
     display: grid;
-    gap: 16px;
+    gap: 10px;
     z-index: 1;
 }
 
@@ -326,17 +327,19 @@ img { display: block; max-width: 100%; }
     place-items: center;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 14px;
-    padding: 14px;
-    max-height: 65vh;
+    padding: 6px;
     overflow: hidden;
 }
 
 .lightbox-image,
 .lightbox-video {
-    width: 100%;
+    display: block;
+    width: auto;
     height: auto;
-    max-height: 60vh;
+    max-width: min(92vw, 1500px);
+    max-height: calc(94vh - 110px);
     border-radius: 12px;
+    object-fit: contain;
 }
 
 .lightbox-caption {
