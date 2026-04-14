@@ -3,13 +3,13 @@ window.WCSStorefront = {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370",
         liveLabel: "Buy ClipScript for macOS",
         pendingLabel: "Available now",
-        helperText: "Buy one desktop version for $24.99. Choose macOS or Windows in the secure ClipScript Lemon Squeezy storefront, then follow the included installation instructions."
+        helperText: "Buy ClipScript for macOS for $24.99 through secure Lemon Squeezy checkout, then follow the included installation instructions."
     },
     "clipscript-windows": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370",
+        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/bc0748ae-bec9-4de4-8efb-ed8a1f243929",
         liveLabel: "Buy ClipScript for Windows",
         pendingLabel: "Available now",
-        helperText: "Buy one desktop version for $24.99. Choose macOS or Windows in the secure ClipScript Lemon Squeezy storefront, then follow the included installation instructions."
+        helperText: "Buy ClipScript for Windows for $24.99 through secure Lemon Squeezy checkout, then follow the included installation instructions."
     },
     "transcript-rescue-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/e7fb41bd-3a1b-48b9-b99f-1043a09ca6d5",
