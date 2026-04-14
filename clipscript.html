@@ -301,13 +301,13 @@
                 </div>
                 <div class="demo-layout">
                     <div class="demo-frame">
-                        <video class="demo-video" controls preload="metadata" playsinline poster="assets/screenshots/ClipScript-Demo-Poster.png">
-                            <source src="assets/videos/ClipScript-Demo.mp4" type="video/mp4">
-                            Your browser does not support embedded video. You can still <a href="assets/videos/ClipScript-Demo.mp4">download the current ClipScript demo video here</a>.
-                        </video>
+                        <button class="screenshot-link demo-launch" type="button" data-media="video" data-src="assets/videos/ClipScript-Demo.mp4" data-poster="assets/screenshots/ClipScript-Demo-Poster.png" data-title="ClipScript narrated walkthrough demo">
+                            <span class="demo-play-button" aria-hidden="true">Play Demo</span>
+                            <img class="demo-poster" src="assets/screenshots/ClipScript-Demo-Poster.png" alt="ClipScript demo poster showing the transcript workspace. Click to open the narrated walkthrough video.">
+                        </button>
                         <div class="demo-placeholder-copy">
                             <strong>Current demo: narrated full walkthrough</strong>
-                            <span>This version shows the real app in use, including channel sync, transcript browsing, search, export tools, and Transcript Rescue.</span>
+                            <span>Click to open the full demo in the popup viewer. This version shows the real app in use, including channel sync, transcript browsing, search, export tools, and Transcript Rescue.</span>
                         </div>
                     </div>
                     <article class="page-card demo-copy">
@@ -318,7 +318,7 @@
                             <li>Export options including TXT, SRT, VTT, and JSON.</li>
                             <li>Transcript Rescue handling pasted transcript text, meeting exports, and rough notes.</li>
                         </ul>
-                        <p>This is a longer proof-of-product walkthrough rather than a short teaser, so first-time visitors can see the real desktop workflow before they buy.</p>
+                        <p>This is a longer proof-of-product walkthrough rather than a short teaser, so first-time visitors can watch the real desktop workflow in the same large popup viewer used for screenshots.</p>
                     </article>
                 </div>
             </div>
@@ -594,10 +594,12 @@
                     videoEl.pause();
                     videoEl.removeAttribute("src");
                     videoEl.removeAttribute("poster");
+                    videoEl.load();
                 } else {
                     videoEl.src = src;
                     videoEl.poster = item.dataset.poster || "";
                     imageEl.removeAttribute("src");
+                    videoEl.load();
                 }
                 captionEl.textContent = title;
             };
@@ -606,6 +608,10 @@
                 showMedia(index);
                 lightbox.classList.add("is-open");
                 lightbox.setAttribute("aria-hidden", "false");
+                const item = mediaItems[currentIndex];
+                if ((item.dataset.media || "image") === "video") {
+                    videoEl.play().catch(() => {});
+                }
             };
 
             const closeLightbox = () => {
