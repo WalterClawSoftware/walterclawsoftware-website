@@ -1,6 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     const config = window.WCSStorefront || {};
 
+    document.querySelectorAll("[data-storefront-link]").forEach((link) => {
+        const productKey = link.getAttribute("data-storefront-link");
+        const product = config[productKey];
+        if (!product) {
+            return;
+        }
+
+        if (product.checkoutUrl) {
+            link.setAttribute("href", product.checkoutUrl);
+            link.removeAttribute("aria-disabled");
+            link.classList.remove("button-disabled");
+        } else {
+            link.setAttribute("href", "#storefront");
+            link.setAttribute("aria-disabled", "true");
+            link.classList.add("button-disabled");
+        }
+    });
+
     document.querySelectorAll("[data-storefront-card]").forEach((card) => {
         const productKey = card.getAttribute("data-storefront-card");
         const product = config[productKey];
