@@ -1058,3 +1058,54 @@ img { display: block; max-width: 100%; }
     line-height: 1.65;
     white-space: pre-wrap;
 }
+
+
+.product-preview-grid {
+    align-items: stretch;
+}
+
+.product-preview-card {
+    display: grid;
+    gap: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.product-preview-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--line);
+}
+
+.product-preview-copy {
+    display: grid;
+    gap: 14px;
+    padding: 24px;
+}
+
+.updates-timeline {
+    display: grid;
+    gap: 20px;
+}
+
+.update-entry {
+    display: grid;
+    gap: 16px;
+}
+
+.update-meta {
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+
+.update-meta strong {
+    font-size: 1.08rem;
+    color: #f7fbff;
+    letter-spacing: -0.02em;
+}
+
+.update-list {
+    margin-top: 2px;
+}
