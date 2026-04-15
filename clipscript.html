@@ -301,7 +301,7 @@
                 </div>
                 <div class="demo-layout">
                     <div class="demo-frame">
-                        <button class="screenshot-link demo-launch" type="button" data-media="video" data-src="assets/videos/ClipScript-Demo.mp4" data-poster="assets/screenshots/ClipScript-Demo-Poster.png" data-title="ClipScript narrated walkthrough demo">
+                        <button class="screenshot-link demo-launch" type="button" data-media="video" data-src="assets/videos/ClipScript-Demo.mp4" data-poster="assets/screenshots/ClipScript-Demo-Poster.png" data-width="1600" data-height="1200" data-title="ClipScript narrated walkthrough demo">
                             <span class="demo-play-button" aria-hidden="true">Play Demo</span>
                             <img class="demo-poster" src="assets/screenshots/ClipScript-Demo-Poster.png" alt="ClipScript demo poster showing the transcript workspace. Click to open the narrated walkthrough video.">
                         </button>
@@ -571,6 +571,7 @@
         (() => {
             const lightbox = document.querySelector(".lightbox");
             const mediaItems = Array.from(document.querySelectorAll(".screenshot-link"));
+            const mediaFrame = lightbox.querySelector(".lightbox-media");
             const imageEl = lightbox.querySelector(".lightbox-image");
             const videoEl = lightbox.querySelector(".lightbox-video");
             const captionEl = lightbox.querySelector(".lightbox-caption");
@@ -579,12 +580,46 @@
             const nextButton = lightbox.querySelector("[data-lightbox-next]");
             let currentIndex = 0;
 
+            const getMediaAspectRatio = (item) => {
+                const explicitWidth = Number(item.dataset.width);
+                const explicitHeight = Number(item.dataset.height);
+                if (explicitWidth > 0 && explicitHeight > 0) {
+                    return explicitWidth / explicitHeight;
+                }
+                const thumb = item.querySelector("img");
+                if (thumb && thumb.naturalWidth > 0 && thumb.naturalHeight > 0) {
+                    return thumb.naturalWidth / thumb.naturalHeight;
+                }
+                if ((item.dataset.media || "image") === "video") {
+                    return 4 / 3;
+                }
+                return 16 / 9;
+            };
+
+            const sizeLightboxFrame = (item) => {
+                const aspectRatio = getMediaAspectRatio(item);
+                const maxWidth = Math.min(window.innerWidth * 0.92, 1500);
+                const maxHeight = Math.max(window.innerHeight * 0.94 - 110, 320);
+                let frameWidth = maxWidth;
+                let frameHeight = frameWidth / aspectRatio;
+
+                if (frameHeight > maxHeight) {
+                    frameHeight = maxHeight;
+                    frameWidth = frameHeight * aspectRatio;
+                }
+
+                mediaFrame.style.width = `${frameWidth}px`;
+                mediaFrame.style.height = `${frameHeight}px`;
+            };
+
             const showMedia = (index) => {
                 currentIndex = (index + mediaItems.length) % mediaItems.length;
                 const item = mediaItems[currentIndex];
                 const type = item.dataset.media || "image";
                 const src = item.dataset.src;
                 const title = item.dataset.title || "";
+
+                sizeLightboxFrame(item);
 
                 imageEl.style.display = type === "image" ? "block" : "none";
                 videoEl.style.display = type === "video" ? "block" : "none";
@@ -639,6 +674,13 @@
                 } else if (event.key === "ArrowRight") {
                     showMedia(currentIndex + 1);
                 }
+            });
+
+            window.addEventListener("resize", () => {
+                if (!lightbox.classList.contains("is-open")) {
+                    return;
+                }
+                sizeLightboxFrame(mediaItems[currentIndex]);
             });
         })();
     </script>
