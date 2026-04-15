@@ -982,6 +982,7 @@ img { display: block; max-width: 100%; }
     .section-heading,
     .footer-grid { align-items: start; }
     .storefront-head { flex-direction: column; }
+    .purchase-flow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 720px) {
@@ -1013,4 +1014,47 @@ img { display: block; max-width: 100%; }
     .table-row { grid-template-columns: 1fr; gap: 8px; }
     .hero { padding-top: 40px; }
     .hero-banner { margin-bottom: 22px; border-radius: 22px; }
+}
+
+
+.chooser-card {
+    display: grid;
+    gap: 14px;
+    align-content: start;
+}
+
+.chooser-head {
+    display: grid;
+    gap: 6px;
+}
+
+.purchase-flow-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.proof-visuals-single-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.proof-sample-card {
+    display: grid;
+    gap: 12px;
+    align-content: start;
+}
+
+.proof-sample-card h3 {
+    margin: 0;
+}
+
+.proof-sample-text {
+    margin: 0;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(8, 19, 31, 0.74);
+    border: 1px solid var(--line);
+    color: #dce9f5;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.94rem;
+    line-height: 1.65;
+    white-space: pre-wrap;
 }

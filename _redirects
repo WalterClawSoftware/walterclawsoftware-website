@@ -11,3 +11,5 @@
 /privacy /privacy.html 200
 /support /support.html 200
 /contact /contact.html 200
+/updates.html /updates 301
+/updates /updates.html 200
