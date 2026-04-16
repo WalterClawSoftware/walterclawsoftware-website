@@ -1119,6 +1119,34 @@ img { display: block; max-width: 100%; }
     min-height: 100%;
 }
 
+.comparison-table {
+    display: grid;
+    gap: 0;
+    overflow: hidden;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: minmax(160px, 0.85fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+}
+
+.comparison-row:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.comparison-head {
+    color: #f7fbff;
+}
+
+.comparison-row strong {
+    font-size: 0.95rem;
+}
+
 .verification-grid {
     align-items: stretch;
 }
