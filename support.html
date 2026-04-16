@@ -45,6 +45,73 @@
             ]
         }
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://walterclawsoftware.com/#organization",
+                    "name": "Walter Claw Software LLC",
+                    "url": "https://walterclawsoftware.com/",
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "contactType": "customer support",
+                            "email": "support@walterclawsoftware.com",
+                            "url": "https://walterclawsoftware.com/support",
+                            "availableLanguage": "English"
+                        },
+                        {
+                            "@type": "ContactPoint",
+                            "contactType": "legal and business contact",
+                            "email": "legal@walterclawsoftware.com",
+                            "url": "https://walterclawsoftware.com/contact",
+                            "availableLanguage": "English"
+                        }
+                    ]
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://walterclawsoftware.com/support#faq",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Where should I send ClipScript or Transcript Rescue questions?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Send product, purchase, download, installation, workflow, and bug questions to support@walterclawsoftware.com."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What should I include in a support request?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Include your platform, product name, app version if known, purchase email if relevant, the action you took, what you expected, what actually happened, and any visible error message or screenshot."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can I send pre-purchase questions to support?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes. Pre-purchase questions about product fit, downloads, compatibility, and workflow are appropriate for the support inbox."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "When should I use the legal inbox instead?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Use legal@walterclawsoftware.com for legal notices, policy questions, licensing discussions, or formal business correspondence."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -138,6 +205,36 @@
                         <li>Any visible error message, screenshot, export issue, or sign-in problem that helps reproduce it.</li>
                     </ul>
                 </article>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">FAQ</div>
+                        <h2>Common support questions.</h2>
+                    </div>
+                    <p>These are the practical support questions buyers and users tend to ask first before emailing.</p>
+                </div>
+                <div class="faq-grid">
+                    <article class="page-card">
+                        <h3>Where should I send ClipScript or Transcript Rescue questions?</h3>
+                        <p>Send product, purchase, download, installation, workflow, and bug questions to <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a>.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>What should I include in a support request?</h3>
+                        <p>Include your platform, product name, app version if known, purchase email if relevant, the action you took, what you expected, what actually happened, and any visible error message or screenshot.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Can I send pre-purchase questions to support?</h3>
+                        <p>Yes. Pre-purchase questions about product fit, downloads, compatibility, and workflow are appropriate for the support inbox.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>When should I use the legal inbox instead?</h3>
+                        <p>Use <a href="mailto:legal@walterclawsoftware.com">legal@walterclawsoftware.com</a> for legal notices, policy questions, licensing discussions, or formal business correspondence.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
