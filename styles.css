@@ -1118,3 +1118,61 @@ img { display: block; max-width: 100%; }
 .reassurance-card {
     min-height: 100%;
 }
+
+.verification-grid {
+    align-items: stretch;
+}
+
+.verification-card {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.verification-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    opacity: 0.95;
+}
+
+.verification-card-clipscript::before,
+.theme-clipscript .sales-buy-card::before,
+.theme-clipscript .proof-layout .page-card::before,
+.theme-clipscript .reassurance-card::before {
+    background: linear-gradient(90deg, rgba(106, 217, 255, 0.92), rgba(72, 128, 255, 0.85));
+}
+
+.verification-card-rescue::before,
+.theme-rescue .sales-buy-card::before,
+.theme-rescue .proof-layout .page-card::before,
+.theme-rescue .reassurance-card::before {
+    background: linear-gradient(90deg, rgba(255, 185, 119, 0.95), rgba(255, 118, 88, 0.88));
+}
+
+.theme-clipscript .sales-buy-card,
+.theme-clipscript .verification-card,
+.theme-clipscript .reassurance-card,
+.theme-clipscript .proof-layout .page-card {
+    border-color: rgba(106, 217, 255, 0.22);
+    box-shadow: 0 24px 56px rgba(13, 42, 64, 0.3);
+}
+
+.theme-rescue .sales-buy-card,
+.theme-rescue .verification-card,
+.theme-rescue .reassurance-card,
+.theme-rescue .proof-layout .page-card {
+    border-color: rgba(255, 185, 119, 0.22);
+    box-shadow: 0 24px 56px rgba(56, 27, 16, 0.28);
+}
+
+.theme-clipscript .highlight-bar .pill {
+    border-color: rgba(106, 217, 255, 0.22);
+    background: rgba(15, 56, 87, 0.42);
+}
+
+.theme-rescue .highlight-bar .pill {
+    border-color: rgba(255, 185, 119, 0.22);
+    background: rgba(74, 40, 22, 0.42);
+}
