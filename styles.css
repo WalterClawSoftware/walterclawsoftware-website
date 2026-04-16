@@ -1109,3 +1109,12 @@ img { display: block; max-width: 100%; }
 .update-list {
     margin-top: 2px;
 }
+
+
+.reassurance-grid {
+    align-items: stretch;
+}
+
+.reassurance-card {
+    min-height: 100%;
+}
