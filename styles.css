@@ -627,7 +627,7 @@ img { display: block; max-width: 100%; }
         linear-gradient(180deg, rgba(14, 31, 49, 0.96), rgba(8, 19, 31, 0.94)),
         var(--surface);
     border: 1px solid var(--line);
-    border-radius: var(--radius);
+    border-radius: 0;
     box-shadow: var(--shadow);
 }
 
@@ -1069,6 +1069,10 @@ img { display: block; max-width: 100%; }
     gap: 0;
     overflow: hidden;
     padding: 0;
+}
+
+.screenshot-preview-card {
+    border-radius: 0;
 }
 
 .product-preview-image {
