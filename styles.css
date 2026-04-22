@@ -92,6 +92,14 @@ img { display: block; max-width: 100%; }
 .brand-text { display: grid; gap: 2px; }
 .brand-text strong { font-size: 1.05rem; color: var(--text); }
 .brand-text span { font-size: 0.8rem; color: var(--text-soft); }
+.brand-motto {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(106, 217, 255, 0.72);
+    font-style: italic;
+    margin-top: 2px;
+}
 
 .nav-links {
     display: flex;
@@ -956,6 +964,12 @@ img { display: block; max-width: 100%; }
     flex-wrap: wrap;
 }
 .footer-copy { color: var(--text-soft); font-size: 0.92rem; }
+.footer-motto {
+    display: inline-block;
+    margin-top: 6px;
+    color: rgba(227, 233, 240, 0.74);
+    font-style: italic;
+}
 .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
 .footer-links a { color: var(--text-soft); }
 .footer-links a:hover {
