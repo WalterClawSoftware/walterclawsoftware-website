@@ -6,7 +6,7 @@ This site is now live for ClipScript's macOS direct-download storefront.
 
 - Lemon Squeezy application: approved
 - Storefront product: `ClipScript`
-- Current price: `USD 24.99` one-time purchase
+- Current price: `USD 9.99` one-time purchase
 - Current direct-download platform: `macOS`
 - Current fulfillment file: `/Users/jeffreywaters/Documents/Walter Claw Software LLC/clipscript/release/ClipScript-macOS-1.1.0.dmg`
 - Support email used in fulfillment copy: `support@walterclawsoftware.com`
@@ -19,7 +19,7 @@ This site is now live for ClipScript's macOS direct-download storefront.
   - `https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370`
 - The custom-domain buy path also works, but it currently redirects into Lemon Squeezy's canonical cart flow on `walterclawsoftware.lemonsqueezy.com`.
 - The branded store domain is working correctly for the storefront, while the actual cart and checkout still finish on Lemon Squeezy's hosted checkout domain.
-- The hosted checkout page resolves to the live `ClipScript` product and shows the current one-time price of `$24.99`.
+- The hosted checkout page resolves to the live `ClipScript` product and shows the current one-time price of `$9.99`.
 
 ## Checks that still need a real buyer flow or dashboard review
 
