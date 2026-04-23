@@ -341,8 +341,52 @@ img { display: block; max-width: 100%; }
     align-content: center;
 }
 
+.sales-hero-side {
+    display: grid;
+    gap: 20px;
+    align-content: start;
+}
+
 .sales-buy-card {
     gap: 20px;
+}
+
+.owner-video-card {
+    display: grid;
+    gap: 18px;
+    padding: 20px;
+    background:
+        radial-gradient(circle at top right, rgba(106, 217, 255, 0.12), transparent 30%),
+        linear-gradient(180deg, rgba(9, 24, 40, 0.96), rgba(4, 14, 26, 0.96));
+}
+
+.owner-video-head {
+    display: grid;
+    gap: 8px;
+}
+
+.owner-video-head h3 {
+    margin: 0;
+    font-size: 1.22rem;
+    letter-spacing: -0.02em;
+}
+
+.owner-video-head p {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+.owner-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    border: 1px solid rgba(106, 217, 255, 0.18);
+    background: #05080d;
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.26);
 }
 
 .price-stack,
