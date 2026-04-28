@@ -654,6 +654,22 @@ img { display: block; max-width: 100%; }
     align-content: start;
 }
 
+.demo-video-shell {
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(106, 217, 255, 0.18);
+    background: #111;
+    box-shadow: 0 20px 40px rgba(17, 17, 17, 0.14);
+}
+
+.demo-video-embed {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    background: #111;
+}
+
 .demo-poster {
     display: block;
     width: 100%;
@@ -678,6 +694,14 @@ img { display: block; max-width: 100%; }
 .demo-placeholder-copy span {
     color: var(--text-soft);
     line-height: 1.65;
+}
+
+.demo-placeholder-copy a {
+    color: #f4fbff;
+}
+
+.demo-placeholder-copy a:hover {
+    color: var(--glow);
 }
 
 .demo-copy {
