@@ -173,7 +173,7 @@
                         <p>Transcript Rescue is the fast path for rough transcript exports, timestamps, filler-heavy text, meeting transcripts, captions, and pasted raw transcript blobs. Open the text, clean it up, and get readable working copy without turning a basic cleanup job into a bigger workflow than it needs to be.</p>
                         <div class="hero-actions">
                             <a class="button button-primary" href="#storefront">Choose Mac or Windows</a>
-                            <a class="button button-secondary" href="#proof">See before/after proof</a>
+                            <a class="button button-secondary" href="#demo">Watch the demo</a>
                         </div>
                         <p class="storefront-clarifier">Best fit when cleanup is the whole job. Available now for macOS and Windows at $9.99 per desktop version. No subscription.</p>
                         <div class="highlight-bar">
@@ -251,6 +251,79 @@
                             <li>Anyone who needs readable text fast without a full transcript platform.</li>
                         </ul>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="demo">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Demo</div>
+                        <h2>See Transcript Rescue handle a real cleanup workflow.</h2>
+                    </div>
+                    <p>This walkthrough shows the current Transcript Rescue app in action on the kind of messy transcript input the product is built to fix.</p>
+                </div>
+                <div class="demo-layout">
+                    <div class="demo-frame">
+                        <div class="demo-video-shell">
+                            <iframe
+                                class="demo-video-embed"
+                                src="https://www.youtube-nocookie.com/embed/-Myoi5oJP3w?rel=0"
+                                title="Transcript Rescue demo walkthrough"
+                                loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="demo-placeholder-copy">
+                            <strong>Current narrated walkthrough</strong>
+                            <span>Watch the current Transcript Rescue demo on the page here, or <a href="https://www.youtube.com/watch?v=-Myoi5oJP3w" target="_blank" rel="noopener noreferrer">open it on YouTube</a>.</span>
+                        </div>
+                    </div>
+                    <article class="page-card demo-copy">
+                        <h3>What the demo shows</h3>
+                        <ul class="muted-list">
+                            <li>Opening rough transcript text or a common transcript file.</li>
+                            <li>Choosing between Clean mode and Polish mode.</li>
+                            <li>Using optional timestamps, digest summaries, and cleanup reports.</li>
+                            <li>Reviewing the cleaned result and saving readable working copy.</li>
+                        </ul>
+                        <p>The demo is meant to make the buying decision easier: you can see the real workflow before you pay for the app.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section screenshot-section" id="screenshots">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Screenshots</div>
+                        <h2>See the current Transcript Rescue interface.</h2>
+                    </div>
+                    <p>These screenshots show the current app in light and dark mode. Click either one to open it full size.</p>
+                </div>
+                <div class="screenshot-grid">
+                    <figure class="screenshot-card">
+                        <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Transcript-Rescue-Light-Mode.png" data-title="Transcript Rescue in light mode" data-width="3640" data-height="2240">
+                            <img src="assets/screenshots/Transcript-Rescue-Light-Mode.png" alt="Transcript Rescue in light mode showing transcript input, cleaned output, cleanup report, and transcript history.">
+                        </button>
+                        <figcaption>
+                            <strong>Light mode workspace</strong>
+                            <span>Transcript Rescue in light mode with input, output markdown, cleanup report, and transcript history visible.</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Transcript-Rescue-Dark-Mode.png" data-title="Transcript Rescue in dark mode" data-width="3640" data-height="2240">
+                            <img src="assets/screenshots/Transcript-Rescue-Dark-Mode.png" alt="Transcript Rescue in dark mode showing transcript input, cleaned output, cleanup report, and transcript history.">
+                        </button>
+                        <figcaption>
+                            <strong>Dark mode workspace</strong>
+                            <span>The same cleanup workflow in a lower-glare dark mode workspace for longer sessions.</span>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -539,6 +612,20 @@ The goal is to turn that into something readable fast.</div>
         </section>
     </main>
 
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Transcript Rescue media preview">
+            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" alt="">
+                <video class="lightbox-video" controls playsinline></video>
+            </div>
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
+
     <footer class="site-footer">
         <div class="shell footer-grid">
             <div class="footer-copy">
@@ -560,5 +647,128 @@ The goal is to turn that into something readable fast.</div>
             </div>
         </div>
     </footer>
+
+    <script>
+        (() => {
+            const lightbox = document.querySelector(".lightbox");
+            const mediaItems = Array.from(document.querySelectorAll(".screenshot-link"));
+
+            if (!lightbox || mediaItems.length === 0) {
+                return;
+            }
+
+            const mediaFrame = lightbox.querySelector(".lightbox-media");
+            const imageEl = lightbox.querySelector(".lightbox-image");
+            const videoEl = lightbox.querySelector(".lightbox-video");
+            const captionEl = lightbox.querySelector(".lightbox-caption");
+            const closeButtons = lightbox.querySelectorAll("[data-lightbox-close]");
+            const prevButton = lightbox.querySelector("[data-lightbox-prev]");
+            const nextButton = lightbox.querySelector("[data-lightbox-next]");
+            let currentIndex = 0;
+
+            const getMediaAspectRatio = (item) => {
+                const explicitWidth = Number(item.dataset.width);
+                const explicitHeight = Number(item.dataset.height);
+                if (explicitWidth > 0 && explicitHeight > 0) {
+                    return explicitWidth / explicitHeight;
+                }
+                const thumb = item.querySelector("img");
+                if (thumb && thumb.naturalWidth > 0 && thumb.naturalHeight > 0) {
+                    return thumb.naturalWidth / thumb.naturalHeight;
+                }
+                if ((item.dataset.media || "image") === "video") {
+                    return 4 / 3;
+                }
+                return 16 / 9;
+            };
+
+            const sizeLightboxFrame = (item) => {
+                const aspectRatio = getMediaAspectRatio(item);
+                const maxWidth = Math.min(window.innerWidth * 0.92, 1500);
+                const maxHeight = Math.max(window.innerHeight * 0.94 - 110, 320);
+                let frameWidth = maxWidth;
+                let frameHeight = frameWidth / aspectRatio;
+
+                if (frameHeight > maxHeight) {
+                    frameHeight = maxHeight;
+                    frameWidth = frameHeight * aspectRatio;
+                }
+
+                mediaFrame.style.width = `${frameWidth}px`;
+                mediaFrame.style.height = `${frameHeight}px`;
+            };
+
+            const showMedia = (index) => {
+                currentIndex = (index + mediaItems.length) % mediaItems.length;
+                const item = mediaItems[currentIndex];
+                const type = item.dataset.media || "image";
+                const src = item.dataset.src;
+                const title = item.dataset.title || "";
+
+                sizeLightboxFrame(item);
+
+                imageEl.style.display = type === "image" ? "block" : "none";
+                videoEl.style.display = type === "video" ? "block" : "none";
+                if (type === "image") {
+                    imageEl.src = src;
+                    imageEl.alt = title || "Transcript Rescue preview";
+                    videoEl.pause();
+                    videoEl.removeAttribute("src");
+                    videoEl.removeAttribute("poster");
+                    videoEl.load();
+                } else {
+                    videoEl.src = src;
+                    videoEl.poster = item.dataset.poster || "";
+                    imageEl.removeAttribute("src");
+                    videoEl.load();
+                }
+                captionEl.textContent = title;
+            };
+
+            const openLightbox = (index) => {
+                showMedia(index);
+                lightbox.classList.add("is-open");
+                lightbox.setAttribute("aria-hidden", "false");
+                const item = mediaItems[currentIndex];
+                if ((item.dataset.media || "image") === "video") {
+                    videoEl.play().catch(() => {});
+                }
+            };
+
+            const closeLightbox = () => {
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                videoEl.pause();
+            };
+
+            mediaItems.forEach((item, index) => {
+                item.addEventListener("click", () => openLightbox(index));
+            });
+
+            closeButtons.forEach((button) => button.addEventListener("click", closeLightbox));
+            prevButton.addEventListener("click", () => showMedia(currentIndex - 1));
+            nextButton.addEventListener("click", () => showMedia(currentIndex + 1));
+
+            document.addEventListener("keydown", (event) => {
+                if (!lightbox.classList.contains("is-open")) {
+                    return;
+                }
+                if (event.key === "Escape") {
+                    closeLightbox();
+                } else if (event.key === "ArrowLeft") {
+                    showMedia(currentIndex - 1);
+                } else if (event.key === "ArrowRight") {
+                    showMedia(currentIndex + 1);
+                }
+            });
+
+            window.addEventListener("resize", () => {
+                if (!lightbox.classList.contains("is-open")) {
+                    return;
+                }
+                sizeLightboxFrame(mediaItems[currentIndex]);
+            });
+        })();
+    </script>
 </body>
 </html>
