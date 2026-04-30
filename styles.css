@@ -334,6 +334,44 @@ img { display: block; max-width: 100%; }
 .hero-card ul,
 .feature-list { margin: 0; padding-left: 18px; display: grid; gap: 12px; }
 
+.company-hero-card {
+    display: grid;
+    gap: 18px;
+    align-content: start;
+}
+
+.hero-product-list {
+    display: grid;
+    gap: 14px;
+}
+
+.hero-product-item {
+    padding: 14px 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(106, 217, 255, 0.18);
+    background: rgba(8, 19, 31, 0.4);
+}
+
+.hero-product-top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.hero-product-top strong {
+    color: #f7fbff;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-product-item p {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.6;
+}
+
 .sales-hero {
     padding-bottom: 28px;
 }
@@ -500,6 +538,18 @@ img { display: block; max-width: 100%; }
 
 .portfolio-card {
     min-height: 100%;
+}
+
+.product-summary-card {
+    min-height: 100%;
+}
+
+.product-card-meta {
+    margin-top: 18px;
+}
+
+.product-card-actions {
+    margin-top: 18px;
 }
 
 .portfolio-head {
@@ -1208,6 +1258,14 @@ img { display: block; max-width: 100%; }
     display: grid;
     gap: 14px;
     padding: 24px;
+}
+
+.roadmap-callout {
+    gap: 18px;
+}
+
+.roadmap-pills {
+    margin-top: 0;
 }
 
 .updates-timeline {
