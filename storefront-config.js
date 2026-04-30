@@ -28,5 +28,11 @@ window.WCSStorefront = {
         liveLabel: "Buy Repro Pack for Mac",
         pendingLabel: "Available now",
         helperText: "Repro Pack for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the macOS .pkg installer and follow the included instructions."
+    },
+    "repro-pack-windows": {
+        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/c40206e8-0eb2-4a56-84cc-565eba73cb84",
+        liveLabel: "Buy Repro Pack for Windows",
+        pendingLabel: "Available now",
+        helperText: "Repro Pack for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows installer and follow the included instructions."
     }
 };
