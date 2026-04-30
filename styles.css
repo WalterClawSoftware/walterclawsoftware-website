@@ -243,6 +243,12 @@ img { display: block; max-width: 100%; }
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
+.product-mark-large {
+    width: 132px;
+    height: 132px;
+    border-radius: 30px;
+}
+
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr); gap: 30px; align-items: stretch; }
 
 .eyebrow {
@@ -899,6 +905,10 @@ img { display: block; max-width: 100%; }
     gap: 20px;
 }
 
+.storefront-grid-single {
+    grid-template-columns: minmax(0, 700px);
+}
+
 .storefront-card {
     display: grid;
     gap: 18px;
@@ -1183,6 +1193,17 @@ img { display: block; max-width: 100%; }
     border-bottom: 1px solid var(--line);
 }
 
+.product-preview-logo-card {
+    align-content: start;
+}
+
+.product-preview-logo {
+    width: min(72%, 240px);
+    margin: 28px auto 0;
+    border-bottom: 0;
+    filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.28));
+}
+
 .product-preview-copy {
     display: grid;
     gap: 14px;
@@ -1232,7 +1253,7 @@ img { display: block; max-width: 100%; }
 
 .comparison-row {
     display: grid;
-    grid-template-columns: minmax(160px, 0.85fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(150px, 0.75fr) repeat(3, minmax(0, 1fr));
     gap: 18px;
     align-items: start;
     padding: 18px 0;
@@ -1284,6 +1305,13 @@ img { display: block; max-width: 100%; }
     background: linear-gradient(90deg, rgba(255, 185, 119, 0.95), rgba(255, 118, 88, 0.88));
 }
 
+.verification-card-repro::before,
+.theme-repro .sales-buy-card::before,
+.theme-repro .proof-layout .page-card::before,
+.theme-repro .reassurance-card::before {
+    background: linear-gradient(90deg, rgba(39, 226, 119, 0.9), rgba(59, 132, 255, 0.88), rgba(239, 201, 49, 0.86));
+}
+
 .theme-clipscript .sales-buy-card,
 .theme-clipscript .verification-card,
 .theme-clipscript .reassurance-card,
@@ -1300,6 +1328,14 @@ img { display: block; max-width: 100%; }
     box-shadow: 0 24px 56px rgba(56, 27, 16, 0.28);
 }
 
+.theme-repro .sales-buy-card,
+.theme-repro .verification-card,
+.theme-repro .reassurance-card,
+.theme-repro .proof-layout .page-card {
+    border-color: rgba(92, 191, 255, 0.24);
+    box-shadow: 0 24px 56px rgba(13, 34, 76, 0.3);
+}
+
 .theme-clipscript .highlight-bar .pill {
     border-color: rgba(106, 217, 255, 0.22);
     background: rgba(15, 56, 87, 0.42);
@@ -1308,4 +1344,46 @@ img { display: block; max-width: 100%; }
 .theme-rescue .highlight-bar .pill {
     border-color: rgba(255, 185, 119, 0.22);
     background: rgba(74, 40, 22, 0.42);
+}
+
+.theme-repro .highlight-bar .pill {
+    border-color: rgba(88, 220, 142, 0.22);
+    background: rgba(20, 54, 48, 0.44);
+}
+
+.theme-repro .button-primary {
+    background: #2376ff;
+    box-shadow: 0 16px 32px rgba(35, 118, 255, 0.26);
+}
+
+.theme-repro .button-primary:hover {
+    background: #145fe0;
+}
+
+.theme-repro .nav-links .button.current,
+.theme-repro .nav-dropdown-item.current {
+    background: #2376ff;
+    border-color: #2376ff;
+    box-shadow: 0 16px 28px rgba(35, 118, 255, 0.24);
+}
+
+@media (max-width: 960px) {
+    .comparison-row {
+        grid-template-columns: 1fr;
+    }
+
+    .purchase-flow-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 720px) {
+    .purchase-flow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-mark-large {
+        width: 112px;
+        height: 112px;
+    }
 }

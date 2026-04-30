@@ -22,5 +22,11 @@ window.WCSStorefront = {
         liveLabel: "Buy Transcript Rescue for Windows",
         pendingLabel: "Available now",
         helperText: "Transcript Rescue for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout and follow the included download instructions."
+    },
+    "repro-pack-macos": {
+        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/4bfd9226-0727-4fbe-999b-709a6675b8e3",
+        liveLabel: "Buy Repro Pack for Mac",
+        pendingLabel: "Available now",
+        helperText: "Repro Pack for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the macOS .pkg installer and follow the included instructions."
     }
 };
