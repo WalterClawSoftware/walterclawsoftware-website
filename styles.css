@@ -249,6 +249,18 @@ img { display: block; max-width: 100%; }
     border-radius: 30px;
 }
 
+.sales-buy-card > .product-mark {
+    display: block;
+    width: calc(75% + 42px);
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    justify-self: center;
+    align-self: center;
+    object-fit: contain;
+    border-radius: 8%;
+}
+
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr); gap: 30px; align-items: stretch; }
 
 .eyebrow {
@@ -382,7 +394,7 @@ img { display: block; max-width: 100%; }
 
 .sales-hero-copy {
     display: grid;
-    align-content: center;
+    align-content: start;
 }
 
 .sales-hero-side {
@@ -404,6 +416,18 @@ img { display: block; max-width: 100%; }
         linear-gradient(180deg, rgba(9, 24, 40, 0.96), rgba(4, 14, 26, 0.96));
 }
 
+.sales-hero-copy > .owner-video-card {
+    margin-top: 22px;
+}
+
+.owner-video-card-compact {
+    align-content: start;
+}
+
+.owner-video-card-compact .button {
+    justify-self: start;
+}
+
 .owner-video-head {
     display: grid;
     gap: 8px;
@@ -420,36 +444,6 @@ img { display: block; max-width: 100%; }
     color: var(--text-soft);
     line-height: 1.7;
     font-size: 0.98rem;
-}
-
-.owner-video-shell {
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid rgba(106, 217, 255, 0.18);
-    background: #05080d;
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.26);
-}
-
-.owner-video-embed {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: 0;
-    background: #05080d;
-}
-
-.owner-video-link {
-    margin: -4px 0 0;
-    font-size: 0.95rem;
-    color: var(--text-soft);
-}
-
-.owner-video-link a {
-    color: #e9f7ff;
-}
-
-.owner-video-link a:hover {
-    color: var(--glow);
 }
 
 .price-stack,
@@ -607,6 +601,14 @@ img { display: block; max-width: 100%; }
 
 .proof-visuals {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.proof-layout-stacked {
+    grid-template-columns: 1fr;
+}
+
+.proof-layout-stacked .proof-details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .platform-stack {
@@ -1040,6 +1042,10 @@ img { display: block; max-width: 100%; }
     gap: 20px;
 }
 
+.storefront-steps + .grid {
+    margin-top: 20px;
+}
+
 .faq-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1130,6 +1136,7 @@ img { display: block; max-width: 100%; }
     .grid-two,
     .proof-layout,
     .proof-visuals,
+    .proof-layout-stacked .proof-details,
     .home-outro-grid,
     .demo-layout,
     .metrics,
