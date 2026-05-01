@@ -228,35 +228,52 @@
                 <div class="proof-layout">
                     <article class="page-card proof-sample-card">
                         <h3>Raw report in</h3>
-                        <pre class="proof-sample-text">Settings save seems broken.
+                        <pre class="proof-sample-text">Subject: Enterprise customer cannot enable Require SSO before Monday rollout
 
-When I open a project, go to settings, turn on require SSO, and click save, nothing happens.
+Support note from Northstar QA pilot: their admin opens Project Settings, Security, turns on Require SSO, and clicks Save. The button stops spinning, but there is no success message and no visible error.
 
-Expected it to save and stay enabled.
-No success message, no error, and the toggle does not stay on.
-Context: Firefox / Windows.</pre>
+After refreshing the page, the toggle is off again. The customer expected SSO to stay required so password login would be blocked for 18 users.
+
+Browser: Firefox 124 on Windows 11. Rachel says she saw it in production. Marcus says he reproduced something similar in staging, but he may have been using a different tenant.
+
+One teammate thinks a PUT request returned 500 once in the network tab, but nobody saved a HAR, screenshot, console log, or request ID.
+
+Unknowns: app version, exact tenant ID, whether the admin was owner or billing admin, and whether Chrome or Edge reproduce it.</pre>
                     </article>
                     <article class="page-card proof-sample-card">
                         <h3>Repro packet out</h3>
                         <pre class="proof-sample-text"># Issue Summary
-Settings save appears to fail silently when enabling Require SSO.
+Require SSO appears to save silently but does not remain enabled.
 
 ## Reported Facts
-- Browser: Firefox
-- OS: Windows
-- Action: Enable Require SSO and click Save
-- Expected: Setting remains enabled
-- Actual: No success message, no error, toggle does not stay on
+- Customer is blocked before a Monday SSO rollout for 18 users.
+- Admin enables Require SSO in Project Settings, Security, then clicks Save.
+- The button stops spinning, but no success message or visible error appears.
+- After refresh, Require SSO is off again.
+- Browser: Firefox 124
+- OS: Windows 11
+- Production and staging were both mentioned.
+- A teammate may have seen a 500 response, but no request evidence was captured.
+
+## Expected Behavior
+Require SSO should stay enabled after Save and remain enabled after refresh.
+
+## Actual Behavior
+The setting appears to revert off without a visible success or error state.
 
 ## Missing Information
 - App version or release build
-- Tenant type or account role
-- Network request or console error
+- Exact tenant ID and account role
+- HAR, console log, screenshot, or request ID for the possible 500
+- Whether Chrome or Edge reproduce the failure
+
+## Severity Guess
+High, because a security rollout is blocked, but blast radius is unconfirmed.
 
 ## Follow-Up Questions
-- Which app version was running?
-- Does the issue reproduce in Chrome?
-- Is there a captured failed request?</pre>
+- Which tenant and role reproduced the latest failure?
+- Can the team reproduce once with the network tab open?
+- Does the same save flow fail in Chrome or Edge?</pre>
                     </article>
                 </div>
             </div>
@@ -274,7 +291,7 @@ Settings save appears to fail silently when enabling Require SSO.
                 <div class="proof-layout proof-layout-stacked">
                     <div class="proof-visuals">
                         <figure class="screenshot-card">
-                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Repro-Pack-Dark-Mode.png" data-title="Repro Pack in dark mode" data-width="1711" data-height="1312">
+                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Repro-Pack-Dark-Mode.png" data-title="Repro Pack in dark mode" data-width="1713" data-height="1333">
                                 <img src="assets/screenshots/Repro-Pack-Dark-Mode.png" alt="Repro Pack in dark mode showing report fields, draft type controls, raw report text, and a GitHub issue draft.">
                             </button>
                             <figcaption>
@@ -283,7 +300,7 @@ Settings save appears to fail silently when enabling Require SSO.
                             </figcaption>
                         </figure>
                         <figure class="screenshot-card">
-                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Repro-Pack-Light-Mode.png" data-title="Repro Pack in light mode" data-width="1667" data-height="1268">
+                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Repro-Pack-Light-Mode.png" data-title="Repro Pack in light mode" data-width="1713" data-height="1333">
                                 <img src="assets/screenshots/Repro-Pack-Light-Mode.png" alt="Repro Pack in light mode showing the same bug report cleanup workflow with raw report text and GitHub issue draft output.">
                             </button>
                             <figcaption>
