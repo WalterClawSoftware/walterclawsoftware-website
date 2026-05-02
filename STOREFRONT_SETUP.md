@@ -8,7 +8,7 @@ This site is now live for ClipScript's macOS direct-download storefront.
 - Storefront product: `ClipScript`
 - Current price: `USD 9.99` one-time purchase
 - Current direct-download platform: `macOS`
-- Current fulfillment file: `/Users/jeffreywaters/Documents/Walter Claw Software LLC/clipscript/release/ClipScript-macOS-1.1.0.dmg`
+- Current fulfillment file: `ClipScript-macOS-1.1.0-installer.pkg`
 - Support email used in fulfillment copy: `support@walterclawsoftware.com`
 - Custom store domain: `https://store.walterclawsoftware.com`
 
@@ -23,14 +23,14 @@ This site is now live for ClipScript's macOS direct-download storefront.
 
 ## Checks that still need a real buyer flow or dashboard review
 
-- A full live purchase is still needed to confirm the buyer receives the current `ClipScript-macOS-1.1.0.dmg` file after payment.
+- A full live purchase is still needed to confirm post-purchase delivery behavior, but dashboard truth currently shows `ClipScript-macOS-1.1.0-installer.pkg` as the enabled customer fulfillment file.
 - The Lemon Squeezy checkout payload currently shows blank custom confirmation fields, so the thank-you note and post-purchase confirmation copy should be reviewed in the dashboard.
 - The support email was changed to `support@walterclawsoftware.com`, but that should still be confirmed in the final fulfillment email content.
 
 ## Website copy that should stay aligned
 
-- `clipscript.html` should say buyers receive the current `DMG`, not a ZIP or a generic "app package."
-- `storefront-config.js` should keep the live checkout URL plus DMG-specific helper text.
+- `clipscript.html` should say buyers receive the current macOS `.pkg` installer, not a DMG, ZIP, or generic "app package."
+- `storefront-config.js` should keep the live checkout URL plus platform-specific install helper text.
 - The product page media should point at the current real demo video when available.
 
 ## Current website assets
@@ -40,7 +40,7 @@ This site is now live for ClipScript's macOS direct-download storefront.
 
 ## Next storefront tasks
 
-- Verify one full live purchase and DMG download with a non-owner buyer flow.
+- Verify one full live purchase and `.pkg` download with a non-owner buyer flow only if the owner separately approves a controlled transaction test.
 - Improve ClipScript product media inside Lemon Squeezy to match the public website.
 - Review and polish the thank-you note and fulfillment wording if needed.
 - Replace demo assets again when a newer walkthrough is ready.
@@ -63,7 +63,7 @@ window.WCSStorefront = {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370",
         liveLabel: "Buy for macOS",
         pendingLabel: "Available now",
-        helperText: "Secure hosted checkout is now live for the macOS direct-download release. After purchase, download the current ClipScript DMG and follow the included installation instructions."
+        helperText: "Secure hosted checkout is now live for the macOS direct-download release. After purchase, download the current ClipScript .pkg installer and follow the included installation instructions."
     },
     "clipscript-windows": {
         checkoutUrl: "",
