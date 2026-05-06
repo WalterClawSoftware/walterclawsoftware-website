@@ -6,9 +6,14 @@ Pages included:
 
 - `index.html`
 - `clipscript.html`
+- `transcript-rescue.html`
+- `repro-pack.html`
+- `bannersafe-youtube.html`
 - `privacy.html`
 - `support.html`
 - `contact.html`
+- `purchase-faq.html`
+- `updates.html`
 
 ## Fast local preview
 
