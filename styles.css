@@ -1158,6 +1158,49 @@ img { display: block; max-width: 100%; }
     text-shadow: 0 0 14px rgba(106, 217, 255, 0.22);
 }
 
+@media (max-width: 1180px) {
+    .nav {
+        gap: 14px;
+    }
+
+    .brand {
+        gap: 12px;
+    }
+
+    .brand-mark {
+        width: 78px;
+        height: 78px;
+        border-radius: 18px;
+    }
+
+    .brand-mark img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .brand-text strong {
+        font-size: 0.98rem;
+    }
+
+    .brand-text span {
+        font-size: 0.74rem;
+    }
+
+    .brand-motto {
+        font-size: 0.58rem;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links .button {
+        min-height: 42px;
+        padding: 0 14px;
+        font-size: 0.86rem;
+    }
+}
+
 @media (max-width: 960px) {
     .hero-grid,
     .grid-three,
@@ -1321,6 +1364,7 @@ img { display: block; max-width: 100%; }
 
 .product-preview-grid {
     align-items: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .product-preview-card {
@@ -1420,6 +1464,10 @@ img { display: block; max-width: 100%; }
     grid-template-columns: minmax(150px, 0.72fr) repeat(4, minmax(0, 1fr));
 }
 
+.comparison-table-five .comparison-row {
+    grid-template-columns: minmax(150px, 0.7fr) repeat(5, minmax(0, 1fr));
+}
+
 .comparison-row:first-child {
     border-top: 0;
     padding-top: 0;
@@ -1435,6 +1483,15 @@ img { display: block; max-width: 100%; }
 
 .bannersafe-proof-card {
     grid-column: 1 / -1;
+}
+
+.appicon-workspace-card,
+.appicon-proof-card {
+    overflow: hidden;
+}
+
+.appicon-proof-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .bannersafe-crop-demo {
@@ -1550,6 +1607,13 @@ img { display: block; max-width: 100%; }
     background: linear-gradient(90deg, rgba(36, 196, 118, 0.92), rgba(106, 217, 255, 0.88), rgba(255, 214, 102, 0.78));
 }
 
+.verification-card-appicon::before,
+.theme-appicon .sales-buy-card::before,
+.theme-appicon .proof-layout .page-card::before,
+.theme-appicon .reassurance-card::before {
+    background: linear-gradient(90deg, rgba(45, 98, 238, 0.95), rgba(38, 203, 214, 0.9), rgba(255, 219, 78, 0.82));
+}
+
 .theme-clipscript .sales-buy-card,
 .theme-clipscript .verification-card,
 .theme-clipscript .reassurance-card,
@@ -1582,6 +1646,14 @@ img { display: block; max-width: 100%; }
     box-shadow: 0 24px 56px rgba(18, 72, 76, 0.28);
 }
 
+.theme-appicon .sales-buy-card,
+.theme-appicon .verification-card,
+.theme-appicon .reassurance-card,
+.theme-appicon .proof-layout .page-card {
+    border-color: rgba(38, 203, 214, 0.24);
+    box-shadow: 0 24px 56px rgba(24, 54, 104, 0.3);
+}
+
 .theme-clipscript .highlight-bar .pill {
     border-color: rgba(106, 217, 255, 0.22);
     background: rgba(15, 56, 87, 0.42);
@@ -1602,6 +1674,11 @@ img { display: block; max-width: 100%; }
     background: rgba(16, 58, 54, 0.44);
 }
 
+.theme-appicon .highlight-bar .pill {
+    border-color: rgba(38, 203, 214, 0.24);
+    background: rgba(18, 50, 79, 0.46);
+}
+
 .theme-repro .button-primary {
     background: #2376ff;
     box-shadow: 0 16px 32px rgba(35, 118, 255, 0.26);
@@ -1620,6 +1697,15 @@ img { display: block; max-width: 100%; }
     background: #178757;
 }
 
+.theme-appicon .button-primary {
+    background: #2563eb;
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.26);
+}
+
+.theme-appicon .button-primary:hover {
+    background: #1d4ed8;
+}
+
 .theme-repro .nav-links .button.current,
 .theme-repro .nav-dropdown-item.current {
     background: #2376ff;
@@ -1634,9 +1720,18 @@ img { display: block; max-width: 100%; }
     box-shadow: 0 16px 28px rgba(32, 168, 109, 0.24);
 }
 
+.theme-appicon .nav-links .button.current,
+.theme-appicon .nav-dropdown-item.current {
+    background: #2563eb;
+    border-color: #2563eb;
+    box-shadow: 0 16px 28px rgba(37, 99, 235, 0.24);
+}
+
 @media (max-width: 960px) {
     .comparison-row,
-    .comparison-table-four .comparison-row {
+    .comparison-table-four .comparison-row,
+    .comparison-table-five .comparison-row,
+    .appicon-proof-grid {
         grid-template-columns: 1fr;
     }
 
