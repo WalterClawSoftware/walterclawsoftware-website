@@ -1464,6 +1464,12 @@ img { display: block; max-width: 100%; }
     overflow-wrap: anywhere;
 }
 
+@media (max-width: 720px) {
+    .proof-visuals-single-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .product-preview-grid {
     align-items: stretch;
