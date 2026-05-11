@@ -25,6 +25,8 @@
     <meta name="twitter:description" content="Import existing YouTube banner art, mark protected regions, preview device crops, and export a 2560 x 1440 banner.">
     <meta name="twitter:image" content="https://walterclawsoftware.com/assets/brand/banner-safe-app-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="storefront-config.js" defer></script>
+    <script src="storefront.js" defer></script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -36,7 +38,7 @@
                 "macOS",
                 "Windows"
             ],
-            "softwareVersion": "0.1.0",
+            "softwareVersion": "0.1.1",
             "description": "BannerSafe for YouTube is a focused desktop utility for creators who already have banner art. It imports PNG or JPG artwork, previews YouTube crop guides, protects important regions, and exports a 2560 x 1440 banner.",
             "url": "https://walterclawsoftware.com/bannersafe-youtube",
             "image": "https://walterclawsoftware.com/assets/brand/banner-safe-app-icon.png",
@@ -50,6 +52,15 @@
                 "name": "Walter Claw Software LLC",
                 "url": "https://walterclawsoftware.com/",
                 "email": "support@walterclawsoftware.com"
+            },
+            "offers": {
+                "@type": "AggregateOffer",
+                "url": "https://walterclawsoftware.com/bannersafe-youtube#storefront",
+                "lowPrice": "9.99",
+                "highPrice": "9.99",
+                "priceCurrency": "USD",
+                "offerCount": "2",
+                "availability": "https://schema.org/InStock"
             }
         }
     </script>
@@ -96,11 +107,12 @@
                         <h1>Make existing YouTube banner art survive every crop.</h1>
                         <p>BannerSafe for YouTube is a small desktop utility for creators who already have banner artwork. Import a PNG or JPG, mark the logo, mascot, face, subtitle, or other protected areas, preview the YouTube canvas and device crops, then export a 2560 x 1440 banner that keeps the important parts visible.</p>
                         <div class="hero-actions">
-                            <a class="button button-primary" href="mailto:support@walterclawsoftware.com?subject=BannerSafe%20for%20YouTube%20question">Ask about BannerSafe</a>
+                            <a class="button button-primary" data-storefront-link="bannersafe-macos" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/2ca50a1b-4370-48bd-8c1f-1d135da48bf0">Buy BannerSafe for Mac</a>
+                            <a class="button button-primary" data-storefront-link="bannersafe-windows" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/619c3822-ffd0-4db5-a3af-2489854e9554">Buy BannerSafe for Windows</a>
                             <a class="button button-secondary" href="#screenshots">View screenshots</a>
                             <a class="button button-secondary" href="#proof">View crop proof</a>
                         </div>
-                        <p class="storefront-clarifier">Storefront pending: BannerSafe is staged as a product page, but public purchase links should wait until Lemon Squeezy checkout and file delivery are approved.</p>
+                        <p class="storefront-clarifier">Available now for macOS and Windows as separate $9.99 direct-download products through secure Lemon Squeezy checkout. Choose the desktop version that matches the computer where you will run BannerSafe.</p>
                         <div class="highlight-bar">
                             <span class="pill">PNG or JPG import</span>
                             <span class="pill">Protected regions</span>
@@ -122,10 +134,10 @@
                             <li>Export a YouTube-ready 2560 x 1440 image.</li>
                         </ul>
                         <div class="highlight-bar">
-                            <span class="pill">Version 0.1.0</span>
-                            <span class="pill">macOS first</span>
-                            <span class="pill">Windows prototype</span>
-                            <span class="pill">Storefront pending</span>
+                            <span class="pill">Version 0.1.1</span>
+                            <span class="pill">macOS checkout live</span>
+                            <span class="pill">Windows checkout live</span>
+                            <span class="pill">Secure Lemon Squeezy checkout</span>
                         </div>
                     </aside>
                 </div>
@@ -176,7 +188,7 @@
                             <ul class="muted-list">
                                 <li>BannerSafe is presented as a small precision utility, not a generic graphics editor.</li>
                                 <li>The page uses screenshots and crop proof instead of promising a product demo.</li>
-                                <li>Storefront links remain withheld until Lemon Squeezy checkout and file delivery are approved.</li>
+                                <li>Mac and Windows purchase links are live through separate Lemon Squeezy checkout pages.</li>
                             </ul>
                         </article>
                         <article class="page-card">
@@ -265,15 +277,16 @@
             </div>
         </section>
 
-        <section class="section" id="status">
+        <section class="section" id="storefront">
             <div class="shell callout">
                 <div>
-                    <div class="eyebrow">Release status</div>
-                    <h3>Website page is staged; checkout should wait for approval.</h3>
-                    <p>BannerSafe has a versioned macOS-first prototype, a Windows prototype path, and real crop-guide behavior under test. The public page avoids buy-now claims until Lemon Squeezy storefront links and release delivery are approved.</p>
+                    <div class="eyebrow">Storefront</div>
+                    <h3>BannerSafe for YouTube is available for Mac and Windows.</h3>
+                    <p>BannerSafe is sold through secure Lemon Squeezy checkout as separate $9.99 desktop products for macOS and Windows. Buyers receive the installer for the platform they choose, plus download and support instructions in the order flow.</p>
                 </div>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="mailto:support@walterclawsoftware.com?subject=BannerSafe%20for%20YouTube%20question">Ask about BannerSafe</a>
+                    <a class="button button-primary" data-storefront-link="bannersafe-macos" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/2ca50a1b-4370-48bd-8c1f-1d135da48bf0">Buy BannerSafe for Mac</a>
+                    <a class="button button-primary" data-storefront-link="bannersafe-windows" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/619c3822-ffd0-4db5-a3af-2489854e9554">Buy BannerSafe for Windows</a>
                     <a class="button button-secondary" href="/purchase-faq">Read purchase FAQ</a>
                 </div>
             </div>

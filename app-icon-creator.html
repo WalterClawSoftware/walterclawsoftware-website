@@ -25,6 +25,8 @@
     <meta name="twitter:description" content="Turn logo PNGs into correctly scaled macOS and Windows icon files with proof before release.">
     <meta name="twitter:image" content="https://walterclawsoftware.com/assets/brand/app-icon-creator-app-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="storefront-config.js" defer></script>
+    <script src="storefront.js" defer></script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -36,7 +38,7 @@
                 "macOS",
                 "Windows"
             ],
-            "softwareVersion": "0.1.1",
+            "softwareVersion": "0.1.4",
             "description": "App Icon Creator turns logo PNGs into standardized macOS and Windows app icon files with visible-size correction, proof sheets, and readiness checks.",
             "url": "https://walterclawsoftware.com/app-icon-creator",
             "image": "https://walterclawsoftware.com/assets/brand/app-icon-creator-app-icon.png",
@@ -50,6 +52,13 @@
                 "name": "Walter Claw Software LLC",
                 "url": "https://walterclawsoftware.com/",
                 "email": "support@walterclawsoftware.com"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ef2ebd35-478d-4264-a501-fbcccb06bfe0",
+                "priceCurrency": "USD",
+                "price": "9.99",
+                "availability": "https://schema.org/InStock"
             }
         }
     </script>
@@ -96,11 +105,12 @@
                         <h1>Create app icons that read at small sizes.</h1>
                         <p>App Icon Creator turns a logo PNG into standardized macOS and Windows icon assets. Open or drop a source image, correct the visible artwork size, generate icon files, and inspect proof sheets before the app goes into the Dock, taskbar, website, installer, or storefront.</p>
                         <div class="hero-actions">
-                            <a class="button button-primary" href="mailto:support@walterclawsoftware.com?subject=App%20Icon%20Creator%20question">Ask about App Icon Creator</a>
+                            <a class="button button-primary" data-storefront-link="app-icon-creator-macos" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ef2ebd35-478d-4264-a501-fbcccb06bfe0">Buy App Icon Creator for Mac</a>
                             <a class="button button-secondary" href="#proof">View proof sheets</a>
                             <a class="button button-secondary" href="#workflow">See workflow</a>
+                            <a class="button button-secondary" href="mailto:support@walterclawsoftware.com?subject=App%20Icon%20Creator%20question">Ask about App Icon Creator</a>
                         </div>
-                        <p class="storefront-clarifier">Pre-announced: App Icon Creator exists as a working internal tool and public product page. Storefront checkout should wait until Lemon Squeezy delivery is approved.</p>
+                        <p class="storefront-clarifier">Available now for macOS as a $9.99 direct-download product through secure Lemon Squeezy checkout. The app creates macOS and Windows icon outputs; the current storefront download is the signed and notarized macOS installer.</p>
                         <div class="highlight-bar">
                             <span class="pill">PNG input</span>
                             <span class="pill">Drag and drop</span>
@@ -123,8 +133,8 @@
                             <li>Use readiness checks before shipping installers or storefront media.</li>
                         </ul>
                         <div class="highlight-bar">
-                            <span class="pill">Version 0.1.1</span>
-                            <span class="pill">Storefront pending</span>
+                            <span class="pill">Version 0.1.4</span>
+                            <span class="pill">macOS checkout live</span>
                             <span class="pill">Built from a real release problem</span>
                         </div>
                     </aside>
@@ -280,12 +290,12 @@
         <section class="section" id="status">
             <div class="shell callout">
                 <div>
-                    <div class="eyebrow">Release status</div>
-                    <h3>Product page is pre-announced; checkout waits for storefront approval.</h3>
-                    <p>App Icon Creator is product five in the Walter Claw Software lineup. It is being presented now because the utility already solved a real company release problem, but public purchase links should wait until the Lemon Squeezy product, installers, fulfillment copy, and download delivery are verified.</p>
+                    <div class="eyebrow">Storefront</div>
+                    <h3>App Icon Creator for macOS is available now.</h3>
+                    <p>App Icon Creator for macOS is sold through secure Lemon Squeezy checkout as a $9.99 one-time purchase. Buyers receive the current signed and notarized macOS .pkg installer, with download and support instructions in the order flow.</p>
                 </div>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="mailto:support@walterclawsoftware.com?subject=App%20Icon%20Creator%20question">Ask about App Icon Creator</a>
+                    <a class="button button-primary" data-storefront-link="app-icon-creator-macos" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ef2ebd35-478d-4264-a501-fbcccb06bfe0">Buy App Icon Creator for Mac</a>
                     <a class="button button-secondary" href="/purchase-faq">Read purchase FAQ</a>
                 </div>
             </div>
