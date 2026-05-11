@@ -351,19 +351,21 @@
                 <div class="demo-layout">
                     <div class="demo-frame">
                         <div class="demo-video-shell">
-                            <iframe
+                            <video
                                 class="demo-video-embed"
-                                src="https://www.youtube-nocookie.com/embed/G3s_7rjCKUQ?rel=0"
+                                controls
+                                playsinline
+                                preload="metadata"
+                                poster="/assets/screenshots/ClipScript-Demo-Poster.png"
                                 title="ClipScript demo walkthrough"
-                                loading="lazy"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
+                            >
+                                <source src="/assets/videos/ClipScript-Demo.mp4" type="video/mp4">
+                                <a href="/assets/videos/ClipScript-Demo.mp4">Open the ClipScript demo video.</a>
+                            </video>
                         </div>
                         <div class="demo-placeholder-copy">
                             <strong>Current narrated walkthrough</strong>
-                            <span>Watch the current ClipScript demo on the page here, or <a href="https://www.youtube.com/watch?v=G3s_7rjCKUQ" target="_blank" rel="noopener noreferrer">open it on YouTube</a>.</span>
+                            <span>Watch the current ClipScript desktop workflow directly on this page before checkout.</span>
                         </div>
                     </div>
                     <article class="page-card demo-copy">

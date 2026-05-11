@@ -529,7 +529,10 @@ img { display: block; max-width: 100%; }
     font-size: 0.98rem;
 }
 
-.section { padding: 26px 0; }
+.section {
+    padding: 26px 0;
+    scroll-margin-top: 180px;
+}
 .section-heading {
     display: flex;
     justify-content: space-between;
@@ -854,7 +857,8 @@ img { display: block; max-width: 100%; }
 .demo-video-embed {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: auto;
+    aspect-ratio: 1540 / 1008;
     border: 0;
     background: #111;
 }
@@ -1396,6 +1400,9 @@ img { display: block; max-width: 100%; }
         flex-direction: column;
         align-items: start;
         gap: 12px;
+    }
+    .section {
+        scroll-margin-top: 340px;
     }
     .section-heading p {
         max-width: none;
