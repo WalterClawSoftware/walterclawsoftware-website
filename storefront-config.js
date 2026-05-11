@@ -52,5 +52,11 @@ window.WCSStorefront = {
         liveLabel: "Buy App Icon Creator for Mac",
         pendingLabel: "Available now",
         helperText: "App Icon Creator for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the notarized macOS .pkg installer and follow the included instructions."
+    },
+    "app-icon-creator-windows": {
+        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/cff47704-74a9-4cca-a88b-604aec544d0f",
+        liveLabel: "Buy App Icon Creator for Windows",
+        pendingLabel: "Available now",
+        helperText: "App Icon Creator for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows setup installer and follow the included instructions. The Windows installer is currently unsigned, so Windows SmartScreen may show a warning."
     }
 };
