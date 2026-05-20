@@ -6,10 +6,10 @@ window.WCSStorefront = {
         helperText: "ClipScript Desktop for Mac is live on the Apple App Store. The direct macOS download remains available through secure Lemon Squeezy checkout."
     },
     "clipscript-windows": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/bc0748ae-bec9-4de4-8efb-ed8a1f243929",
-        liveLabel: "Buy ClipScript for Windows",
+        checkoutUrl: "https://apps.microsoft.com/detail/9PGSDNHX74NR",
+        liveLabel: "Get ClipScript Desktop on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "Buy ClipScript for Windows for $9.99 through secure Lemon Squeezy checkout while the Microsoft Store submission is under review."
+        helperText: "ClipScript Desktop for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path."
     },
     "transcript-rescue-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/e7fb41bd-3a1b-48b9-b99f-1043a09ca6d5",
