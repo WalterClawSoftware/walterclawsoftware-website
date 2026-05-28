@@ -18,10 +18,10 @@ window.WCSStorefront = {
         helperText: "Transcript Rescue for macOS is available now for $9.99 as a direct download while Apple App Store review is in progress."
     },
     "transcript-rescue-windows": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/da3b4399-2672-4d58-b65a-5b059678284e",
-        liveLabel: "Buy Transcript Rescue for Windows",
+        checkoutUrl: "https://apps.microsoft.com/detail/9N142LRF4SD0",
+        liveLabel: "Get Transcript Rescue on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "Transcript Rescue for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout and follow the included download instructions."
+        helperText: "Transcript Rescue for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path."
     },
     "repro-pack-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/4bfd9226-0727-4fbe-999b-709a6675b8e3",
