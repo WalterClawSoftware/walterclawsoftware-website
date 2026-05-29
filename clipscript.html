@@ -213,33 +213,32 @@
                 <div class="demo-layout">
                     <div class="demo-frame">
                         <div class="demo-video-shell">
-                            <iframe
-                                class="demo-video-embed"
-                                src="https://www.youtube-nocookie.com/embed/y_BdCwoeBW8?rel=0"
-                                title="ClipScript demo walkthrough"
-                                loading="lazy"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
+                            <button class="demo-video-poster" type="button" data-youtube-id="y_BdCwoeBW8" data-youtube-title="ClipScript demo walkthrough" aria-label="Play ClipScript demo walkthrough">
+                                <img src="assets/video-thumbnails/clipscript-demo.jpg" alt="ClipScript demo video preview" loading="lazy">
+                                <span class="demo-video-play" aria-hidden="true">▶</span>
+                                <span class="demo-video-watch">Play demo</span>
+                            </button>
+                            <noscript>
+                                <p class="demo-video-noscript"><a href="https://www.youtube.com/watch?v=y_BdCwoeBW8" target="_blank" rel="noopener noreferrer">Open the ClipScript demo on YouTube</a>.</p>
+                            </noscript>
                         </div>
                         <div class="demo-placeholder-copy">
                             <strong>Current narrated walkthrough</strong>
                             <span>See the no-sign-in workflow: paste a YouTube URL, fetch captions, search, save, and export.</span>
+                            <a href="https://www.youtube.com/watch?v=y_BdCwoeBW8" target="_blank" rel="noopener noreferrer">Open the ClipScript demo on YouTube</a>
                         </div>
                     </div>
                     <article class="page-card demo-copy">
                         <h3>Owner overview</h3>
                         <div class="demo-video-shell">
-                            <iframe
-                                class="demo-video-embed"
-                                src="https://www.youtube-nocookie.com/embed/NOs0DLGRGeI?rel=0"
-                                title="Jeffrey Waters explains ClipScript"
-                                loading="lazy"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
+                            <button class="demo-video-poster" type="button" data-youtube-id="NOs0DLGRGeI" data-youtube-title="Jeffrey Waters explains ClipScript" aria-label="Play Jeffrey Waters explains ClipScript">
+                                <img src="assets/video-thumbnails/clipscript-owner-overview.jpg" alt="Jeffrey Waters owner overview video preview" loading="lazy">
+                                <span class="demo-video-play" aria-hidden="true">▶</span>
+                                <span class="demo-video-watch">Play overview</span>
+                            </button>
+                            <noscript>
+                                <p class="demo-video-noscript"><a href="https://youtu.be/NOs0DLGRGeI" target="_blank" rel="noopener noreferrer">Open the owner overview on YouTube</a>.</p>
+                            </noscript>
                         </div>
                         <p>Jeffrey’s short overview explains what ClipScript is for, what it is not for, and why the app stays focused on captioned YouTube transcript work.</p>
                         <p><a href="https://youtu.be/NOs0DLGRGeI" target="_blank" rel="noopener noreferrer">Open the owner overview on YouTube</a>.</p>
@@ -322,5 +321,6 @@
             </nav>
         </div>
     </footer>
+    <script src="demo-videos.js" defer></script>
 </body>
 </html>
