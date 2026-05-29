@@ -205,15 +205,14 @@
                 <div class="demo-layout">
                     <div class="demo-frame">
                         <div class="demo-video-shell">
-                            <iframe
-                                class="demo-video-embed"
-                                src="https://www.youtube-nocookie.com/embed/UabcWPD2geg?rel=0"
-                                title="Transcript Rescue demo walkthrough"
-                                loading="lazy"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
+                            <button class="demo-video-poster" type="button" data-youtube-id="UabcWPD2geg" data-youtube-title="Transcript Rescue demo walkthrough" aria-label="Play Transcript Rescue demo walkthrough">
+                                <img src="assets/video-thumbnails/transcript-rescue-demo.jpg" alt="Transcript Rescue demo video preview" loading="lazy">
+                                <span class="demo-video-play" aria-hidden="true">▶</span>
+                                <span class="demo-video-watch">Play demo</span>
+                            </button>
+                            <noscript>
+                                <p class="demo-video-noscript"><a href="https://www.youtube.com/watch?v=UabcWPD2geg" target="_blank" rel="noopener noreferrer">Open the Transcript Rescue demo on YouTube</a>.</p>
+                            </noscript>
                         </div>
                         <div class="demo-placeholder-copy">
                             <strong>Current narrated walkthrough</strong>
@@ -310,6 +309,7 @@
         </div>
     </footer>
 
+    <script src="demo-videos.js" defer></script>
     <script>
         (() => {
             const lightbox = document.querySelector(".lightbox");
