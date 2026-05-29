@@ -36,6 +36,16 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 
+:where(a, button, summary, [tabindex]):focus-visible {
+    outline: 3px solid rgba(106, 217, 255, 0.76);
+    outline-offset: 4px;
+}
+
+:where(.button, .nav-dropdown-item):focus-visible {
+    border-color: rgba(106, 217, 255, 0.55);
+    box-shadow: 0 0 0 4px rgba(106, 217, 255, 0.16), 0 12px 24px rgba(0, 9, 20, 0.26);
+}
+
 .shell {
     max-width: var(--max-width);
     margin: 0 auto;
