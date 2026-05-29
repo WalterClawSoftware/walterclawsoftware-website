@@ -12,10 +12,10 @@ window.WCSStorefront = {
         helperText: "ClipScript Desktop for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path."
     },
     "transcript-rescue-macos": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/e7fb41bd-3a1b-48b9-b99f-1043a09ca6d5",
-        liveLabel: "Buy Transcript Rescue for Mac",
+        checkoutUrl: "https://apps.apple.com/us/app/transcript-rescue/id6770730937?mt=12",
+        liveLabel: "Get Transcript Rescue on Mac App Store",
         pendingLabel: "Available now",
-        helperText: "Transcript Rescue for macOS is available now for $9.99 as a direct download while Apple App Store review is in progress."
+        helperText: "Transcript Rescue for Mac is live on the Apple App Store at the same $9.99 one-time price."
     },
     "transcript-rescue-windows": {
         checkoutUrl: "https://apps.microsoft.com/detail/9N142LRF4SD0",
