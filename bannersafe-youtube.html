@@ -143,13 +143,17 @@
                 </div>
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/BannerSafe-Light-Mode.webp" alt="BannerSafe for YouTube light mode showing crop guides over a loaded banner.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/BannerSafe-Light-Mode.webp" data-gallery-title="BannerSafe for YouTube light mode" data-gallery-alt="BannerSafe for YouTube light mode showing crop guides over a loaded banner." data-gallery-width="1800" data-gallery-height="1152" aria-label="Expand BannerSafe for YouTube light mode screenshot">
+                            <img src="assets/screenshots/BannerSafe-Light-Mode.webp" alt="BannerSafe for YouTube light mode showing crop guides over a loaded banner.">
+                        </button>
                         <figcaption>
                             <strong>See the safe zones clearly</strong>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/BannerSafe-Dark-Mode.webp" alt="BannerSafe for YouTube dark mode showing the same banner crop preview.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/BannerSafe-Dark-Mode.webp" data-gallery-title="BannerSafe for YouTube dark mode" data-gallery-alt="BannerSafe for YouTube dark mode showing the same banner crop preview." data-gallery-width="1800" data-gallery-height="1152" aria-label="Expand BannerSafe for YouTube dark mode screenshot">
+                            <img src="assets/screenshots/BannerSafe-Dark-Mode.webp" alt="BannerSafe for YouTube dark mode showing the same banner crop preview.">
+                        </button>
                         <figcaption>
                             <strong>Check the same art in dark mode</strong>
                         </figcaption>
@@ -232,5 +236,21 @@
             </nav>
         </div>
     </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="BannerSafe for YouTube screenshot slideshow" tabindex="-1">
+            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" alt="">
+                <iframe class="lightbox-video" title="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="demo-videos.js" defer></script>
 </body>
 </html>
