@@ -178,13 +178,17 @@
                 </div>
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/Transcript-Rescue-Light-Mode.webp" alt="Transcript Rescue light mode showing transcript input, cleaned output, and cleanup controls.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/Transcript-Rescue-Light-Mode.webp" data-gallery-title="Transcript Rescue light mode" data-gallery-alt="Transcript Rescue light mode showing transcript input, cleaned output, and cleanup controls." data-gallery-width="3644" data-gallery-height="2242" aria-label="Expand Transcript Rescue light mode screenshot">
+                            <img src="assets/screenshots/Transcript-Rescue-Light-Mode.webp" alt="Transcript Rescue light mode showing transcript input, cleaned output, and cleanup controls.">
+                        </button>
                         <figcaption>
                             <strong>Raw transcript in, cleaner text out</strong>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/Transcript-Rescue-Dark-Mode.webp" alt="Transcript Rescue dark mode showing transcript cleanup workflow.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/Transcript-Rescue-Dark-Mode.webp" data-gallery-title="Transcript Rescue dark mode" data-gallery-alt="Transcript Rescue dark mode showing transcript cleanup workflow." data-gallery-width="3644" data-gallery-height="2242" aria-label="Expand Transcript Rescue dark mode screenshot">
+                            <img src="assets/screenshots/Transcript-Rescue-Dark-Mode.webp" alt="Transcript Rescue dark mode showing transcript cleanup workflow.">
+                        </button>
                         <figcaption>
                             <strong>Same cleanup workflow in dark mode</strong>
                         </figcaption>
@@ -205,7 +209,7 @@
                 <div class="demo-layout">
                     <div class="demo-frame">
                         <div class="demo-video-shell">
-                            <button class="demo-video-poster" type="button" data-youtube-id="UabcWPD2geg" data-youtube-title="Transcript Rescue demo walkthrough" aria-label="Play Transcript Rescue demo walkthrough">
+                            <button class="demo-video-poster" type="button" data-youtube-id="UabcWPD2geg" data-youtube-title="Transcript Rescue demo walkthrough" data-gallery-media="youtube" data-gallery-youtube-id="UabcWPD2geg" data-gallery-title="Transcript Rescue demo walkthrough" data-gallery-width="16" data-gallery-height="9" aria-label="Open Transcript Rescue demo walkthrough in slideshow">
                                 <img src="assets/video-thumbnails/transcript-rescue-demo.jpg" alt="Transcript Rescue demo video preview" loading="lazy">
                                 <span class="demo-video-play" aria-hidden="true">▶</span>
                                 <span class="demo-video-watch">Play demo</span>
@@ -309,128 +313,20 @@
         </div>
     </footer>
 
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Transcript Rescue media slideshow" tabindex="-1">
+            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" alt="">
+                <iframe class="lightbox-video" title="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
+
     <script src="demo-videos.js" defer></script>
-    <script>
-        (() => {
-            const lightbox = document.querySelector(".lightbox");
-            const mediaItems = Array.from(document.querySelectorAll(".screenshot-link"));
-
-            if (!lightbox || mediaItems.length === 0) {
-                return;
-            }
-
-            const mediaFrame = lightbox.querySelector(".lightbox-media");
-            const imageEl = lightbox.querySelector(".lightbox-image");
-            const videoEl = lightbox.querySelector(".lightbox-video");
-            const captionEl = lightbox.querySelector(".lightbox-caption");
-            const closeButtons = lightbox.querySelectorAll("[data-lightbox-close]");
-            const prevButton = lightbox.querySelector("[data-lightbox-prev]");
-            const nextButton = lightbox.querySelector("[data-lightbox-next]");
-            let currentIndex = 0;
-
-            const getMediaAspectRatio = (item) => {
-                const explicitWidth = Number(item.dataset.width);
-                const explicitHeight = Number(item.dataset.height);
-                if (explicitWidth > 0 && explicitHeight > 0) {
-                    return explicitWidth / explicitHeight;
-                }
-                const thumb = item.querySelector("img");
-                if (thumb && thumb.naturalWidth > 0 && thumb.naturalHeight > 0) {
-                    return thumb.naturalWidth / thumb.naturalHeight;
-                }
-                if ((item.dataset.media || "image") === "video") {
-                    return 4 / 3;
-                }
-                return 16 / 9;
-            };
-
-            const sizeLightboxFrame = (item) => {
-                const aspectRatio = getMediaAspectRatio(item);
-                const maxWidth = Math.min(window.innerWidth * 0.92, 1500);
-                const maxHeight = Math.max(window.innerHeight * 0.94 - 110, 320);
-                let frameWidth = maxWidth;
-                let frameHeight = frameWidth / aspectRatio;
-
-                if (frameHeight > maxHeight) {
-                    frameHeight = maxHeight;
-                    frameWidth = frameHeight * aspectRatio;
-                }
-
-                mediaFrame.style.width = `${frameWidth}px`;
-                mediaFrame.style.height = `${frameHeight}px`;
-            };
-
-            const showMedia = (index) => {
-                currentIndex = (index + mediaItems.length) % mediaItems.length;
-                const item = mediaItems[currentIndex];
-                const type = item.dataset.media || "image";
-                const src = item.dataset.src;
-                const title = item.dataset.title || "";
-
-                sizeLightboxFrame(item);
-
-                imageEl.style.display = type === "image" ? "block" : "none";
-                videoEl.style.display = type === "video" ? "block" : "none";
-                if (type === "image") {
-                    imageEl.src = src;
-                    imageEl.alt = title || "Transcript Rescue preview";
-                    videoEl.pause();
-                    videoEl.removeAttribute("src");
-                    videoEl.removeAttribute("poster");
-                    videoEl.load();
-                } else {
-                    videoEl.src = src;
-                    videoEl.poster = item.dataset.poster || "";
-                    imageEl.removeAttribute("src");
-                    videoEl.load();
-                }
-                captionEl.textContent = title;
-            };
-
-            const openLightbox = (index) => {
-                showMedia(index);
-                lightbox.classList.add("is-open");
-                lightbox.setAttribute("aria-hidden", "false");
-                const item = mediaItems[currentIndex];
-                if ((item.dataset.media || "image") === "video") {
-                    videoEl.play().catch(() => {});
-                }
-            };
-
-            const closeLightbox = () => {
-                lightbox.classList.remove("is-open");
-                lightbox.setAttribute("aria-hidden", "true");
-                videoEl.pause();
-            };
-
-            mediaItems.forEach((item, index) => {
-                item.addEventListener("click", () => openLightbox(index));
-            });
-
-            closeButtons.forEach((button) => button.addEventListener("click", closeLightbox));
-            prevButton.addEventListener("click", () => showMedia(currentIndex - 1));
-            nextButton.addEventListener("click", () => showMedia(currentIndex + 1));
-
-            document.addEventListener("keydown", (event) => {
-                if (!lightbox.classList.contains("is-open")) {
-                    return;
-                }
-                if (event.key === "Escape") {
-                    closeLightbox();
-                } else if (event.key === "ArrowLeft") {
-                    showMedia(currentIndex - 1);
-                } else if (event.key === "ArrowRight") {
-                    showMedia(currentIndex + 1);
-                }
-            });
-
-            window.addEventListener("resize", () => {
-                if (!lightbox.classList.contains("is-open")) {
-                    return;
-                }
-                sizeLightboxFrame(mediaItems[currentIndex]);
-            });
-        })();
-    </script>
 </body>
 </html>

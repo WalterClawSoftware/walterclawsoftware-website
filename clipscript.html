@@ -186,13 +186,17 @@
                 </div>
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/ClipScript-Light-Mode.webp" alt="ClipScript light mode showing transcript fetch, saved transcripts, and reading workspace.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/ClipScript-Light-Mode.webp" data-gallery-title="ClipScript light mode" data-gallery-alt="ClipScript light mode showing transcript fetch, saved transcripts, and reading workspace." data-gallery-width="3644" data-gallery-height="2242" aria-label="Expand ClipScript light mode screenshot">
+                            <img src="assets/screenshots/ClipScript-Light-Mode.webp" alt="ClipScript light mode showing transcript fetch, saved transcripts, and reading workspace.">
+                        </button>
                         <figcaption>
                             <strong>Fetch, search, and reopen transcripts</strong>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/ClipScript-Dark-Mode.webp" alt="ClipScript dark mode showing transcript reading and local transcript history.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/ClipScript-Dark-Mode.webp" data-gallery-title="ClipScript dark mode" data-gallery-alt="ClipScript dark mode showing transcript reading and local transcript history." data-gallery-width="3644" data-gallery-height="2242" aria-label="Expand ClipScript dark mode screenshot">
+                            <img src="assets/screenshots/ClipScript-Dark-Mode.webp" alt="ClipScript dark mode showing transcript reading and local transcript history.">
+                        </button>
                         <figcaption>
                             <strong>Same workflow in dark mode</strong>
                         </figcaption>
@@ -213,7 +217,7 @@
                 <div class="demo-layout">
                     <div class="demo-frame">
                         <div class="demo-video-shell">
-                            <button class="demo-video-poster" type="button" data-youtube-id="y_BdCwoeBW8" data-youtube-title="ClipScript demo walkthrough" aria-label="Play ClipScript demo walkthrough">
+                            <button class="demo-video-poster" type="button" data-youtube-id="y_BdCwoeBW8" data-youtube-title="ClipScript demo walkthrough" data-gallery-media="youtube" data-gallery-youtube-id="y_BdCwoeBW8" data-gallery-title="ClipScript demo walkthrough" data-gallery-width="16" data-gallery-height="9" aria-label="Open ClipScript demo walkthrough in slideshow">
                                 <img src="assets/video-thumbnails/clipscript-demo.jpg" alt="ClipScript demo video preview" loading="lazy">
                                 <span class="demo-video-play" aria-hidden="true">▶</span>
                                 <span class="demo-video-watch">Play demo</span>
@@ -231,7 +235,7 @@
                     <article class="page-card demo-copy">
                         <h3>Owner overview</h3>
                         <div class="demo-video-shell">
-                            <button class="demo-video-poster" type="button" data-youtube-id="NOs0DLGRGeI" data-youtube-title="Jeffrey Waters explains ClipScript" aria-label="Play Jeffrey Waters explains ClipScript">
+                            <button class="demo-video-poster" type="button" data-youtube-id="NOs0DLGRGeI" data-youtube-title="Jeffrey Waters explains ClipScript" data-gallery-media="youtube" data-gallery-youtube-id="NOs0DLGRGeI" data-gallery-title="Jeffrey Waters explains ClipScript" data-gallery-width="16" data-gallery-height="9" aria-label="Open Jeffrey Waters owner overview in slideshow">
                                 <img src="assets/video-thumbnails/clipscript-owner-overview.jpg" alt="Jeffrey Waters owner overview video preview" loading="lazy">
                                 <span class="demo-video-play" aria-hidden="true">▶</span>
                                 <span class="demo-video-watch">Play overview</span>
@@ -321,6 +325,20 @@
             </nav>
         </div>
     </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="ClipScript media slideshow" tabindex="-1">
+            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" alt="">
+                <iframe class="lightbox-video" title="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
     <script src="demo-videos.js" defer></script>
 </body>
 </html>
