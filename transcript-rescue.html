@@ -27,103 +27,49 @@
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://walterclawsoftware.com/#organization",
-                    "name": "Walter Claw Software LLC",
-                    "url": "https://walterclawsoftware.com/",
-                    "logo": "https://walterclawsoftware.com/assets/brand/logo-mark.png",
-                    "email": "support@walterclawsoftware.com",
-                    "sameAs": [
-                        "https://www.youtube.com/@WalterClawSoftwareLLC",
-                        "https://x.com/WalterClawLLC",
-                        "https://www.linkedin.com/in/jeffrey-waters-222256407/"
+                    "@context": "https://schema.org",
+                    "@graph": [
+                                {
+                                            "@type": "Organization",
+                                            "@id": "https://walterclawsoftware.com/#organization",
+                                            "name": "Walter Claw Software LLC",
+                                            "url": "https://walterclawsoftware.com/",
+                                            "logo": "https://walterclawsoftware.com/assets/brand/logo-mark.png",
+                                            "email": "support@walterclawsoftware.com",
+                                            "sameAs": [
+                                                        "https://www.youtube.com/@WalterClawSoftwareLLC",
+                                                        "https://x.com/WalterClawLLC",
+                                                        "https://www.linkedin.com/in/jeffrey-waters-222256407/"
+                                            ]
+                                },
+                                {
+                                            "@type": "SoftwareApplication",
+                                            "@id": "https://walterclawsoftware.com/transcript-rescue#app",
+                                            "name": "Transcript Rescue",
+                                            "applicationCategory": "BusinessApplication",
+                                            "operatingSystem": [
+                                                        "macOS",
+                                                        "Windows"
+                                            ],
+                                            "description": "Transcript Rescue is a desktop transcript cleanup app that turns rough exports, timestamp-heavy text, and pasted transcript blobs into readable working copy.",
+                                            "url": "https://walterclawsoftware.com/transcript-rescue",
+                                            "sameAs": "https://apps.microsoft.com/detail/9N142LRF4SD0",
+                                            "image": "https://walterclawsoftware.com/assets/brand/transcript-rescue-app-icon-rounded.png",
+                                            "publisher": {
+                                                        "@id": "https://walterclawsoftware.com/#organization"
+                                            },
+                                            "offers": {
+                                                        "@type": "Offer",
+                                                        "url": "https://walterclawsoftware.com/transcript-rescue#storefront",
+                                                        "priceCurrency": "USD",
+                                                        "price": "9.99",
+                                                        "availability": "https://schema.org/InStock",
+                                                        "seller": {
+                                                                    "@id": "https://walterclawsoftware.com/#organization"
+                                                        }
+                                            }
+                                }
                     ]
-                },
-                {
-                    "@type": "SoftwareApplication",
-                    "@id": "https://walterclawsoftware.com/transcript-rescue#app",
-                    "name": "Transcript Rescue",
-                    "applicationCategory": "BusinessApplication",
-                    "operatingSystem": [
-                        "macOS",
-                        "Windows"
-                    ],
-                    "description": "Transcript Rescue is a desktop transcript cleanup app that turns rough exports, timestamp-heavy text, and pasted transcript blobs into readable working copy.",
-                    "url": "https://walterclawsoftware.com/transcript-rescue",
-                    "sameAs": "https://apps.microsoft.com/detail/9N142LRF4SD0",
-                    "image": "https://walterclawsoftware.com/assets/brand/transcript-rescue-app-icon-rounded.png",
-                    "publisher": {
-                        "@id": "https://walterclawsoftware.com/#organization"
-                    },
-                    "offers": {
-                        "@type": "Offer",
-                        "url": "https://walterclawsoftware.com/transcript-rescue#storefront",
-                        "priceCurrency": "USD",
-                        "price": "9.99",
-                        "availability": "https://schema.org/InStock",
-                        "seller": {
-                            "@id": "https://walterclawsoftware.com/#organization"
-                        }
-                    }
-                },
-                {
-                    "@type": "FAQPage",
-                    "@id": "https://walterclawsoftware.com/transcript-rescue#faq",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": "What kinds of inputs does Transcript Rescue help with?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Transcript Rescue is designed for rough inputs such as meeting notes, Zoom or Meet exports, VTT captions, interview transcripts, podcast text, and pasted raw transcript blocks."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What is the difference between Clean and Polish?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Clean mode stays closer to the original transcript. Polish mode aims for more readable, smoother output when the source material is especially rough."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What platforms are available today?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Transcript Rescue is available now for Windows in the Microsoft Store. The macOS direct download remains available while Apple App Store review continues."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Is there a subscription?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "No. Transcript Rescue is currently sold as a $9.99 one-time purchase."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Does Transcript Rescue fetch transcripts from YouTube?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "No. Transcript Rescue cleans transcript text you already have. ClipScript is the Walter Claw product for fetching transcripts from captioned YouTube videos."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Where do I get help?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Email support@walterclawsoftware.com or review the support page before or after buying."
-                            }
-                        }
-                    ]
-                }
-            ]
         }
     </script>
     <script src="storefront-config.js" defer></script>
@@ -158,7 +104,7 @@
                 </span>
                 <span class="brand-text">
                     <strong>Walter Claw Software LLC</strong>
-                    <span>Focused desktop tools for creators and small teams</span>
+                    <span>Small desktop apps for specific jobs</span>
                     <small class="brand-motto">Per aspera ad astra</small>
                 </span>
             </a>
@@ -174,10 +120,7 @@
                         <a class="nav-dropdown-item" href="/app-icon-creator">App Icon Creator</a>
                     </div>
                 </details>
-                <a class="button button-secondary" href="/about">About</a>
-                <a class="button button-secondary" href="/updates">Updates</a>
                 <a class="button button-secondary" href="/support">Support</a>
-                <a class="button button-secondary" href="/contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -187,352 +130,103 @@
             <div class="shell">
                 <div class="hero-grid sales-hero-grid">
                     <div class="hero-copy sales-hero-copy">
-                        <div class="eyebrow">For transcript cleanup jobs that should be simple</div>
-                        <h1>Fix rough transcript text fast without a full platform.</h1>
-                        <p>Paste rough transcript exports, caption text, meeting notes, interview transcripts, or raw transcript blobs, then turn them into readable working copy. Transcript Rescue keeps the job small: clean or polish the text, decide what to do with timestamps, generate an optional digest or cleanup report, and save the result.</p>
+                        <div class="eyebrow">Transcript cleanup</div>
+                        <h1>Turn rough transcript text into readable working copy.</h1>
+                        <p>Paste or open messy transcript text. Transcript Rescue cleans spacing, timestamps, and readability so you can use the copy in notes, captions, articles, or reports.</p>
                         <div class="hero-actions">
-                            <a class="button button-primary" href="#storefront">Choose Mac or Windows</a>
-                            <a class="button button-secondary" href="#proof">See the proof</a>
+                            <a class="button button-primary" href="#storefront">Choose your platform</a>
+                            <a class="button button-secondary" href="#screenshots">See screenshots</a>
                         </div>
-                        <p class="storefront-clarifier">Best when cleanup is the whole job and the source text already exists. Transcript Rescue for Windows is live in the Microsoft Store, and Mac direct download remains available while Apple App Store review continues.</p>
-                        <div class="highlight-bar">
-                            <span class="pill">Clean mode</span>
-                            <span class="pill">Polish mode</span>
-                            <span class="pill">Optional timestamps</span>
-                            <span class="pill">Digest summaries</span>
-                            <span class="pill">Cleanup reports</span>
-                            <span class="pill">Windows Microsoft Store live</span>
+                        <div class="hero-trust-strip" aria-label="Product basics">
+                                <span>$9.99 one-time price</span>
+                                <span>Clean or polish text</span>
+                                <span>Mac + Windows</span>
                         </div>
                     </div>
-                    <aside class="hero-card sales-buy-card">
-                        <img class="product-mark" src="assets/brand/transcript-rescue-app-icon-rounded.webp" alt="Transcript Rescue app icon" width="1024" height="1024">
-                        <div class="eyebrow">Mac direct, Windows Store live</div>
+                    <aside class="hero-card sales-buy-card" id="storefront" aria-label="Buy Transcript Rescue for desktop.">
+                        <img class="product-mark product-mark-large" src="assets/brand/transcript-rescue-app-icon-rounded.webp" alt="Transcript Rescue app icon" width="256" height="256">
+                        <div class="eyebrow">Available for Mac and Windows</div>
                         <h2>Buy Transcript Rescue for desktop.</h2>
-                        <p>Choose the Mac direct download or the Windows Microsoft Store listing. Transcript Rescue for Mac remains under Apple App Store review.</p>
+                        <p>Choose the desktop version for your computer. No subscription.</p>
                         <div class="price-stack">
                             <strong>$9.99</strong>
-                            <span>Per desktop version</span>
+                            <span>One-time price per desktop version.</span>
                         </div>
-                        <ul class="feature-list">
-                            <li>Cleans messy transcript exports into readable text.</li>
-                            <li>Clean mode, Polish mode, optional timestamps, digests, and cleanup reports.</li>
-                            <li>Built for local desktop use instead of a complex subscription workflow.</li>
-                            <li>Windows version is live in the Microsoft Store.</li>
-                        </ul>
                         <div class="storefront-actions">
-                            <a class="button button-primary" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/e7fb41bd-3a1b-48b9-b99f-1043a09ca6d5">Buy for Mac</a>
-                            <a class="button button-secondary" href="https://apps.microsoft.com/detail/9N142LRF4SD0" target="_blank" rel="noopener noreferrer">Get Windows from Microsoft Store</a>
+                            <a class="button button-primary" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/e7fb41bd-3a1b-48b9-b99f-1043a09ca6d5" target="_blank" rel="noopener noreferrer">Buy Mac direct</a>
+                            <a class="button button-secondary" href="https://apps.microsoft.com/detail/9N142LRF4SD0" target="_blank" rel="noopener noreferrer">Get Windows on Microsoft Store</a>
                         </div>
-                        <p class="storefront-note">Need purchase, delivery, or licensing clarification? Read the <a href="/purchase-faq">Purchase FAQ</a> or <a href="/support">contact support</a>.</p>
+                        <p>Unsure which version fits? <a href="/support">Ask support before buying</a>.</p>
                     </aside>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="proof">
+        <section class="section" id="screenshots">
             <div class="shell">
                 <div class="section-heading">
                     <div>
-                        <div class="eyebrow">Proof before checkout</div>
-                        <h2>See messy transcript text become usable working copy.</h2>
+                        <div class="eyebrow">Look first</div>
+                        <h2>Real screenshots, short explanation.</h2>
                     </div>
-                    <p>Transcript Rescue should prove its value before asking for a purchase. This section shows a simple before-and-after cleanup, the current app interface, and the honest boundary of the tool.</p>
+                    <p>No inflated claims. The screenshots show the current app and the text below says what it is for.</p>
                 </div>
-                <div class="proof-layout proof-layout-stacked">
-                    <div class="proof-visuals proof-visuals-single-row">
-                        <article class="page-card proof-sample-card">
-                            <div class="eyebrow">Before</div>
-                            <h3>Raw export / pasted transcript</h3>
-                            <div class="proof-sample-text">00:00 okay so uh welcome back everybody today we're gonna talk about why transcript exports are always kind of a mess
-00:07 if you pulled this from captions or a meeting export you probably got weird spacing filler words and timestamps you don't actually want in the final copy
-00:15 so the goal here is just to turn this into something readable fast</div>
-                        </article>
-                        <article class="page-card proof-sample-card">
-                            <div class="eyebrow">After</div>
-                            <h3>Readable working copy</h3>
-                            <div class="proof-sample-text">Welcome back, everybody.
-
-Today we're going to talk about why rough transcript exports are often such a mess.
-
-If you pulled this from captions or a meeting export, you probably got odd spacing, filler words, and timestamps you do not want in the final copy.
-
-The goal is to turn that into something readable fast.</div>
-                        </article>
-                    </div>
-                    <div class="proof-visuals">
-                        <figure class="screenshot-card">
-                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Transcript-Rescue-Light-Mode.webp" data-title="Transcript Rescue in light mode" data-width="3644" data-height="2242">
-                                <img src="assets/screenshots/Transcript-Rescue-Light-Mode.webp" alt="Transcript Rescue in light mode showing transcript input, cleaned output, cleanup report, and transcript history.">
-                            </button>
-                            <figcaption>
-                                <strong>Light mode workspace</strong>
-                                <span>Input, cleaned output, cleanup report, and transcript history are visible in the current app.</span>
-                            </figcaption>
-                        </figure>
-                        <figure class="screenshot-card">
-                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/Transcript-Rescue-Dark-Mode.webp" data-title="Transcript Rescue in dark mode" data-width="3644" data-height="2242">
-                                <img src="assets/screenshots/Transcript-Rescue-Dark-Mode.webp" alt="Transcript Rescue in dark mode showing transcript input, cleaned output, cleanup report, and transcript history.">
-                            </button>
-                            <figcaption>
-                                <strong>Dark mode workspace</strong>
-                                <span>The same focused cleanup workflow is available in a lower-glare workspace.</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="proof-details">
-                        <article class="page-card">
-                            <h3>What the current app proves</h3>
-                            <ul class="muted-list">
-                                <li>Current screenshots show transcript input, cleaned output, cleanup reports, and transcript history.</li>
-                                <li>The workflow supports rough pasted text and common transcript files such as VTT captions.</li>
-                                <li>Cleaned output can be reviewed, saved, copied, and archived without a larger platform.</li>
-                            </ul>
-                        </article>
-                        <article class="page-card">
-                            <h3>Best fit</h3>
-                            <ul class="muted-list">
-                                <li>Creators and podcasters cleaning rough transcript exports.</li>
-                                <li>Researchers and consultants working from interviews, meetings, and notes.</li>
-                                <li>People who need readable text fast without buying into a full transcript workspace.</li>
-                            </ul>
-                        </article>
-                        <article class="page-card">
-                            <h3>Boundary</h3>
-                            <ul class="muted-list">
-                                <li>Transcript Rescue cleans transcript text you already have; it is not a transcript-fetching tool.</li>
-                                <li>It is a focused desktop cleanup app, not a collaboration platform or subscription SaaS product.</li>
-                                <li>It improves readability without pretending rough source material was something else.</li>
-                            </ul>
-                        </article>
-                    </div>
+                <div class="screenshot-grid">
+                    <figure class="screenshot-card">
+                        <img src="assets/screenshots/Transcript-Rescue-Light-Mode.webp" alt="Transcript Rescue light mode showing transcript input, cleaned output, and cleanup controls.">
+                        <figcaption>
+                            <strong>Raw transcript in, cleaner text out</strong>
+                        </figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <img src="assets/screenshots/Transcript-Rescue-Dark-Mode.webp" alt="Transcript Rescue dark mode showing transcript cleanup workflow.">
+                        <figcaption>
+                            <strong>Same cleanup workflow in dark mode</strong>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="fit">
             <div class="shell">
                 <div class="section-heading">
                     <div>
-                        <div class="eyebrow">Workflow</div>
-                        <h2>Open it, clean it, save it.</h2>
+                        <div class="eyebrow">Fit and limits</div>
+                        <h2>Know what you are buying.</h2>
                     </div>
-                    <p>The workflow stays intentionally small so a cleanup job does not turn into a software adoption project.</p>
-                </div>
-                <div class="storefront-steps">
-                    <article class="step-card">
-                        <strong>1. Paste text or open a file</strong>
-                        <p>Bring in pasted raw transcript text, rough meeting notes, interview text, caption exports, or common transcript files.</p>
-                    </article>
-                    <article class="step-card">
-                        <strong>2. Choose the cleanup style</strong>
-                        <p>Use Clean mode for faithful cleanup or Polish mode when the output needs to read more smoothly.</p>
-                    </article>
-                    <article class="step-card">
-                        <strong>3. Review and save the result</strong>
-                        <p>Keep timestamps if useful, add a digest or cleanup report when needed, then copy, save, or archive the output.</p>
-                    </article>
+                    <p>Each Walter Claw app is intentionally small. If it does not match your problem, skip it.</p>
                 </div>
                 <div class="grid grid-three">
-                    <article class="feature-card">
-                        <h3>Clean or Polish</h3>
-                        <p>Choose a lighter cleanup when fidelity matters or a smoother pass when the transcript needs to read more professionally.</p>
+                    <article class="page-card">
+                        <h3>Good fit</h3>
+                        <p>You already have transcript text and need it cleaner, easier to read, and easier to reuse.</p>
                     </article>
-                    <article class="feature-card">
-                        <h3>Timestamps and digest</h3>
-                        <p>Keep timestamps when they help with reference, remove them for cleaner copy, and generate a short digest when an overview helps.</p>
+                    <article class="page-card">
+                        <h3>Not for</h3>
+                        <p>It is not a transcription service and does not fetch YouTube captions. Use ClipScript for that job.</p>
                     </article>
-                    <article class="feature-card">
-                        <h3>Reports and archive</h3>
-                        <p>Review what changed, save the cleaned transcript, and keep finished work organized without a complicated platform.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="demo">
-            <div class="shell">
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">Demo</div>
-                        <h2>See Transcript Rescue handle a real cleanup workflow.</h2>
-                    </div>
-                    <p>Watch the current app process the kind of messy transcript input Transcript Rescue is built to fix.</p>
-                </div>
-                <div class="demo-layout">
-                    <div class="demo-frame">
-                        <div class="demo-video-shell">
-                            <iframe
-                                class="demo-video-embed"
-                                src="https://www.youtube-nocookie.com/embed/UabcWPD2geg?rel=0"
-                                title="Transcript Rescue demo walkthrough"
-                                loading="lazy"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="demo-placeholder-copy">
-                            <strong>Current narrated walkthrough</strong>
-                            <span>Watch the demo here, or <a href="https://www.youtube.com/watch?v=UabcWPD2geg" target="_blank" rel="noopener noreferrer">open it on YouTube</a>.</span>
-                        </div>
-                    </div>
-                    <article class="page-card demo-copy">
-                        <h3>What the demo shows</h3>
-                        <ul class="muted-list">
-                            <li>Opening rough transcript text or a common transcript file.</li>
-                            <li>Choosing between Clean mode and Polish mode.</li>
-                            <li>Using optional timestamps, digest summaries, and cleanup reports.</li>
-                            <li>Reviewing the cleaned result and saving readable working copy.</li>
-                        </ul>
-                        <p>The demo shows the same focused workflow described above: open, clean, review, and save.</p>
+                    <article class="page-card">
+                        <h3>What you get</h3>
+                        <p>Cleaned text, polished text, timestamp handling, digest/report exports, and a local archive.</p>
                     </article>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="shell" id="storefront">
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">Pricing</div>
-                        <h2>Choose the desktop version you want.</h2>
-                    </div>
-                    <p>Transcript Rescue is a one-time $9.99 purchase. The Windows version is live in the Microsoft Store, and the Mac direct download remains available through secure Lemon Squeezy checkout while Apple App Store review continues.</p>
-                </div>
-                <div class="platform-stack">
-                    <div class="storefront-grid">
-                        <article class="storefront-card storefront-card-live" data-storefront-card="transcript-rescue-macos">
-                            <div class="storefront-head">
-                                <div>
-                                    <div class="eyebrow">Mac</div>
-                                    <h3>Transcript Rescue for Mac</h3>
-                                </div>
-                                <span class="availability-chip availability-chip-ready">Available now</span>
-                            </div>
-                            <div class="price-panel">
-                                <strong>$9.99</strong>
-                                <span>One-time purchase</span>
-                            </div>
-                            <p class="storefront-copy">Buy Transcript Rescue for Mac and download the current desktop app through secure Lemon Squeezy checkout while the Apple App Store submission is under review.</p>
-                            <ul class="muted-list">
-                                <li>macOS desktop app available now.</li>
-                                <li>Submitted to the Apple App Store and under review.</li>
-                                <li>No subscription.</li>
-                                <li>Built for fast transcript cleanup, not platform complexity.</li>
-                                <li>Developer support available through Walter Claw Software LLC.</li>
-                            </ul>
-                            <div class="storefront-actions">
-                                <a class="button button-primary" data-storefront-cta href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/e7fb41bd-3a1b-48b9-b99f-1043a09ca6d5">Buy Transcript Rescue for Mac</a>
-                                <a class="button button-secondary" href="/support">Read support details</a>
-                            </div>
-                            <p class="storefront-note" data-storefront-helper>Transcript Rescue for macOS is available now for $9.99 as a direct download while Apple App Store review is in progress.</p>
-                        </article>
-                        <article class="storefront-card storefront-card-live" data-storefront-card="transcript-rescue-windows">
-                            <div class="storefront-head">
-                                <div>
-                                    <div class="eyebrow">Windows</div>
-                                    <h3>Transcript Rescue for Windows</h3>
-                                </div>
-                                <span class="availability-chip availability-chip-ready">Microsoft Store live</span>
-                            </div>
-                            <div class="price-panel">
-                                <strong>$9.99</strong>
-                                <span>One-time purchase</span>
-                            </div>
-                            <p class="storefront-copy">Get Transcript Rescue for Windows from the Microsoft Store. The direct Windows download remains available through secure Lemon Squeezy checkout as an alternate purchase path.</p>
-                            <ul class="muted-list">
-                                <li>Live in the Microsoft Store.</li>
-                                <li>Current Windows direct-download release remains available.</li>
-                                <li>No subscription.</li>
-                                <li>Built for fast transcript cleanup, not platform complexity.</li>
-                                <li>Developer support available through Walter Claw Software LLC.</li>
-                            </ul>
-                            <div class="storefront-actions">
-                                <a class="button button-primary" data-storefront-cta href="https://apps.microsoft.com/detail/9N142LRF4SD0" target="_blank" rel="noopener noreferrer">Get Transcript Rescue on Microsoft Store</a>
-                                <a class="button button-secondary" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/da3b4399-2672-4d58-b65a-5b059678284e">Buy Windows direct</a>
-                                <a class="button button-secondary" href="/support">Read support details</a>
-                            </div>
-                            <p class="storefront-note" data-storefront-helper>Transcript Rescue for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path.</p>
-                        </article>
-                    </div>
-                    <div class="grid grid-two">
-                        <article class="page-card compatibility-card">
-                            <h3>Compatibility and delivery</h3>
-                            <ul class="muted-list">
-                                <li>Windows purchase path: live in the Microsoft Store.</li>
-                                <li>Mac purchase path: direct from walterclawsoftware.com via Lemon Squeezy checkout.</li>
-                                <li>Direct Windows download remains available as an alternate checkout path.</li>
-                                <li>Apple App Store submission is under review.</li>
-                                <li>Buyers receive the desktop version matching the checkout they choose.</li>
-                                <li>Current support path: <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a> and the <a href="/support">support page</a>.</li>
-                            </ul>
-                        </article>
-                        <article class="page-card compatibility-card">
-                            <h3>Before you buy</h3>
-                            <ul class="muted-list">
-                                <li>Same $9.99 one-time price on both desktop versions.</li>
-                                <li>Transcript Rescue is built for transcript cleanup, not transcript fetching.</li>
-                                <li>Windows is available through the Microsoft Store; Mac direct download remains available while Apple App Store review continues.</li>
-                                <li>Support stays direct through Walter Claw Software LLC.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="faq">
             <div class="shell">
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">FAQ</div>
-                        <h2>Simple answers before you buy.</h2>
+                <div class="callout">
+                    <h3>Need a straight answer?</h3>
+                    <p>Email support with your computer type and the job you are trying to finish. You will get a plain recommendation, including “do not buy it” if the app is not a fit.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="mailto:support@walterclawsoftware.com">Email support</a>
+                        <a class="button button-secondary" href="/purchase-faq">Read purchase FAQ</a>
                     </div>
-                    <p>These are the practical points a cautious desktop-app buyer usually wants answered first.</p>
-                </div>
-                <div class="faq-grid">
-                    <article class="page-card">
-                        <h3>What kinds of inputs does it help with?</h3>
-                        <p>Transcript Rescue is designed for rough inputs such as meeting notes, Zoom or Meet exports, VTT captions, interview transcripts, podcast text, and pasted raw transcript blocks.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>What is the difference between Clean and Polish?</h3>
-                        <p>Clean mode stays closer to the original transcript. Polish mode aims for more readable, smoother output when the source material is especially rough.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Is it available on Windows today?</h3>
-                        <p>Yes. Transcript Rescue for Windows is live in the Microsoft Store at the same $9.99 one-time price. The Mac direct download remains available while Apple App Store review continues.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Is there a subscription?</h3>
-                        <p>No. Transcript Rescue is currently sold as a $9.99 one-time purchase.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Does it fetch transcripts from YouTube?</h3>
-                        <p>No. Transcript Rescue cleans transcript text you already have. ClipScript is the Walter Claw product for fetching transcripts from captioned YouTube videos.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Where do I get help?</h3>
-                        <p>Email <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a> or review the <a href="/support">support page</a> before or after buying.</p>
-                    </article>
                 </div>
             </div>
         </section>
     </main>
-
-    <div class="lightbox" aria-hidden="true">
-        <div class="lightbox-backdrop" data-lightbox-close></div>
-        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Transcript Rescue media preview">
-            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
-            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
-            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
-            <div class="lightbox-media">
-                <img class="lightbox-image" alt="">
-                <video class="lightbox-video" controls playsinline></video>
-            </div>
-            <div class="lightbox-caption" aria-live="polite"></div>
-        </div>
-    </div>
 
     <footer class="site-footer">
         <div class="shell footer-grid footer-grid-rich">

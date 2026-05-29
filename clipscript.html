@@ -27,104 +27,50 @@
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://walterclawsoftware.com/#organization",
-                    "name": "Walter Claw Software LLC",
-                    "url": "https://walterclawsoftware.com/",
-                    "logo": "https://walterclawsoftware.com/assets/brand/logo-mark.png",
-                    "email": "support@walterclawsoftware.com",
-                    "sameAs": [
-                        "https://www.youtube.com/@WalterClawSoftwareLLC",
-                        "https://x.com/WalterClawLLC",
-                        "https://www.linkedin.com/in/jeffrey-waters-222256407/"
+                    "@context": "https://schema.org",
+                    "@graph": [
+                                {
+                                            "@type": "Organization",
+                                            "@id": "https://walterclawsoftware.com/#organization",
+                                            "name": "Walter Claw Software LLC",
+                                            "url": "https://walterclawsoftware.com/",
+                                            "logo": "https://walterclawsoftware.com/assets/brand/logo-mark.png",
+                                            "email": "support@walterclawsoftware.com",
+                                            "sameAs": [
+                                                        "https://www.youtube.com/@WalterClawSoftwareLLC",
+                                                        "https://x.com/WalterClawLLC",
+                                                        "https://www.linkedin.com/in/jeffrey-waters-222256407/"
+                                            ]
+                                },
+                                {
+                                            "@type": "SoftwareApplication",
+                                            "@id": "https://walterclawsoftware.com/clipscript#app",
+                                            "name": "ClipScript",
+                                            "applicationCategory": "BusinessApplication",
+                                            "operatingSystem": "macOS 12.0 or later, Windows",
+                                            "description": "ClipScript is a no-sign-in desktop YouTube transcript downloader for macOS and Windows, with tools for fetching, saving, searching, organizing, and exporting transcripts from videos that already have captions.",
+                                            "url": "https://walterclawsoftware.com/clipscript",
+                                            "sameAs": "https://apps.apple.com/us/app/clipscript-desktop/id6767946234?mt=12",
+                                            "image": "https://walterclawsoftware.com/assets/screenshots/ClipScript-Light-Mode.png",
+                                            "screenshot": [
+                                                        "https://walterclawsoftware.com/assets/screenshots/ClipScript-Light-Mode.png",
+                                                        "https://walterclawsoftware.com/assets/screenshots/ClipScript-Dark-Mode.png"
+                                            ],
+                                            "publisher": {
+                                                        "@id": "https://walterclawsoftware.com/#organization"
+                                            },
+                                            "offers": {
+                                                        "@type": "Offer",
+                                                        "url": "https://walterclawsoftware.com/clipscript#storefront",
+                                                        "priceCurrency": "USD",
+                                                        "price": "9.99",
+                                                        "availability": "https://schema.org/InStock",
+                                                        "seller": {
+                                                                    "@id": "https://walterclawsoftware.com/#organization"
+                                                        }
+                                            }
+                                }
                     ]
-                },
-                {
-                    "@type": "SoftwareApplication",
-                    "@id": "https://walterclawsoftware.com/clipscript#app",
-                    "name": "ClipScript",
-                    "applicationCategory": "BusinessApplication",
-                    "operatingSystem": "macOS 12.0 or later, Windows",
-                    "description": "ClipScript is a no-sign-in desktop YouTube transcript downloader for macOS and Windows, with tools for fetching, saving, searching, organizing, and exporting transcripts from videos that already have captions.",
-                    "url": "https://walterclawsoftware.com/clipscript",
-                    "sameAs": "https://apps.apple.com/us/app/clipscript-desktop/id6767946234?mt=12",
-                    "image": "https://walterclawsoftware.com/assets/screenshots/ClipScript-Light-Mode.png",
-                    "screenshot": [
-                        "https://walterclawsoftware.com/assets/screenshots/ClipScript-Light-Mode.png",
-                        "https://walterclawsoftware.com/assets/screenshots/ClipScript-Dark-Mode.png"
-                    ],
-                    "publisher": {
-                        "@id": "https://walterclawsoftware.com/#organization"
-                    },
-                    "offers": {
-                        "@type": "Offer",
-                        "url": "https://walterclawsoftware.com/clipscript#storefront",
-                        "priceCurrency": "USD",
-                        "price": "9.99",
-                        "availability": "https://schema.org/InStock",
-                        "seller": {
-                            "@id": "https://walterclawsoftware.com/#organization"
-                        }
-                    }
-                },
-                {
-                    "@type": "FAQPage",
-                    "@id": "https://walterclawsoftware.com/clipscript#faq",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": "Who is ClipScript for?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "ClipScript is for creators, editors, researchers, assistants, and other people who need transcripts from YouTube videos that already have captions and want a faster desktop workflow than one-video-at-a-time browsing."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Do I need a Google account, API key, or channel connection?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "No. ClipScript's current workflow does not require Google sign-in, Google OAuth, a YouTube API key, or a connected channel session. You paste a YouTube URL or video ID and fetch the transcript directly."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What happens if a video has no captions?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "ClipScript tells you clearly when no captions are available for that video. It works with YouTube videos that already have manual captions or auto-generated captions available."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What happens after purchase?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Mac buyers can get ClipScript Desktop from the Apple App Store or use the direct macOS purchase link. Windows buyers can get ClipScript Desktop from the Microsoft Store or use the direct Windows purchase link."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "What is the current store status?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "ClipScript Desktop for Mac is live on the Apple App Store. ClipScript Desktop for Windows is live in the Microsoft Store. Direct Mac and Windows purchases remain available through secure Lemon Squeezy checkout."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Is a Windows version available today?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes. ClipScript Desktop for Windows is live in the Microsoft Store and remains available through its own secure ClipScript Lemon Squeezy checkout at the same $9.99 one-time price as macOS."
-                            }
-                        }
-                    ]
-                }
-            ]
         }
     </script>
     <script src="storefront-config.js" defer></script>
@@ -159,7 +105,7 @@
                 </span>
                 <span class="brand-text">
                     <strong>Walter Claw Software LLC</strong>
-                    <span>Focused desktop tools for creators and small teams</span>
+                    <span>Small desktop apps for specific jobs</span>
                     <small class="brand-motto">Per aspera ad astra</small>
                 </span>
             </a>
@@ -175,10 +121,7 @@
                         <a class="nav-dropdown-item" href="/app-icon-creator">App Icon Creator</a>
                     </div>
                 </details>
-                <a class="button button-secondary" href="/about">About</a>
-                <a class="button button-secondary" href="/updates">Updates</a>
                 <a class="button button-secondary" href="/support">Support</a>
-                <a class="button button-secondary" href="/contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -188,468 +131,103 @@
             <div class="shell">
                 <div class="hero-grid sales-hero-grid">
                     <div class="hero-copy sales-hero-copy">
-                        <div class="eyebrow">For captioned YouTube transcript workflows</div>
-                        <h1>Fetch, save, and reuse transcripts from YouTube videos with captions.</h1>
-                        <p>Paste a YouTube URL or video ID, fetch the available caption track with timestamps, and keep useful transcripts in a local archive you can search, favorite, copy, save, and export. ClipScript gives creators, editors, assistants, and researchers working text without a Google sign-in flow, API key setup, or channel connection step.</p>
+                        <div class="eyebrow">Captioned YouTube transcripts</div>
+                        <h1>Fetch YouTube captions into a local transcript archive.</h1>
+                        <p>Paste a YouTube URL or video ID. ClipScript fetches the caption track, keeps it searchable on your desktop, and exports useful transcript files. No Google sign-in or API key setup.</p>
                         <div class="hero-actions">
                             <a class="button button-primary" href="#storefront">Choose your platform</a>
-                            <a class="button button-secondary" href="#demo">See the workflow</a>
+                            <a class="button button-secondary" href="#screenshots">See screenshots</a>
                         </div>
-                        <p class="storefront-clarifier">Best when the source video already has captions and you want the transcript material to become reusable working copy. ClipScript Desktop is live on the Apple App Store for Mac and the Microsoft Store for Windows.</p>
-                        <div class="highlight-bar">
-                            <span class="pill">No sign-in required</span>
-                            <span class="pill">No API key required</span>
-                            <span class="pill">Any video with captions</span>
-                            <span class="pill">Search saved transcripts</span>
-                            <span class="pill">TXT, SRT, VTT, and JSON export</span>
-                            <span class="pill">App Store + Microsoft Store live</span>
+                        <div class="hero-trust-strip" aria-label="Product basics">
+                                <span>$9.99 one-time price</span>
+                                <span>No Google sign-in</span>
+                                <span>Requires captions</span>
                         </div>
-                        <section class="page-card owner-video-card owner-video-card-compact" aria-labelledby="owner-video-title">
-                            <div class="owner-video-head">
-                                <div class="eyebrow">From the owner</div>
-                                <h3 id="owner-video-title">Hear ClipScript explained directly.</h3>
-                                <p>A short owner overview is available for buyers who want the plain-English explanation before checkout.</p>
-                            </div>
-                            <a class="button button-secondary" href="https://youtu.be/NOs0DLGRGeI" target="_blank" rel="noopener noreferrer">Watch Jeffrey's overview</a>
-                        </section>
                     </div>
-                    <div class="sales-hero-side">
-                        <aside class="hero-card sales-buy-card">
-                            <img class="product-mark" src="assets/brand/clipscript-app-icon.webp" alt="ClipScript app icon" width="1024" height="1024">
-                            <div class="eyebrow">ClipScript Desktop on the App Store</div>
-                            <h2>Get ClipScript for desktop.</h2>
-                            <p>ClipScript Desktop for Mac is live on the Apple App Store. ClipScript Desktop for Windows is live in the Microsoft Store. Direct Mac and Windows downloads remain available.</p>
-                            <div class="price-stack">
-                                <strong>$9.99</strong>
-                                <span>Per desktop version</span>
-                            </div>
-                            <ul class="feature-list">
-                                <li>No Google sign-in, API key, or channel connection required.</li>
-                                <li>Local transcript archive with search, favorites, copy, save, and export.</li>
-                                <li>Works with YouTube videos that already have captions available.</li>
-                                <li>ClipScript Desktop for Mac is live on the Apple App Store.</li>
-                                <li>ClipScript Desktop for Windows is live in the Microsoft Store.</li>
-                            </ul>
-                            <div class="storefront-actions">
-                                <a class="button button-primary" href="https://apps.apple.com/us/app/clipscript-desktop/id6767946234?mt=12" target="_blank" rel="noopener noreferrer">Get Mac on App Store</a>
-                                <a class="button button-primary" href="https://apps.microsoft.com/detail/9PGSDNHX74NR" target="_blank" rel="noopener noreferrer">Get Windows on Microsoft Store</a>
-                                <a class="button button-secondary" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370">Buy Mac direct</a>
-                                <a class="button button-secondary" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/bc0748ae-bec9-4de4-8efb-ed8a1f243929">Buy Windows direct</a>
-                            </div>
-                            <p class="storefront-note">Need purchase, delivery, or licensing clarification? Read the <a href="/purchase-faq">Purchase FAQ</a> or <a href="/support">contact support</a>.</p>
-                        </aside>
-                    </div>
+                    <aside class="hero-card sales-buy-card" id="storefront" aria-label="Get ClipScript for desktop.">
+                        <img class="product-mark product-mark-large" src="assets/brand/clipscript-app-icon.webp" alt="ClipScript app icon" width="256" height="256">
+                        <div class="eyebrow">Available on Mac App Store and Microsoft Store</div>
+                        <h2>Get ClipScript for desktop.</h2>
+                        <p>Pick the store for your computer. Each desktop version is a one-time purchase.</p>
+                        <div class="price-stack">
+                            <strong>$9.99</strong>
+                            <span>One-time price per desktop version.</span>
+                        </div>
+                        <div class="storefront-actions">
+                            <a class="button button-primary" href="https://apps.apple.com/us/app/clipscript-desktop/id6767946234?mt=12" target="_blank" rel="noopener noreferrer">Get Mac on App Store</a>
+                            <a class="button button-secondary" href="https://apps.microsoft.com/detail/9PGSDNHX74NR" target="_blank" rel="noopener noreferrer">Get Windows on Microsoft Store</a>
+                        </div>
+                        <p>Unsure which version fits? <a href="/support">Ask support before buying</a>.</p>
+                    </aside>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="proof">
+        <section class="section" id="screenshots">
             <div class="shell">
                 <div class="section-heading">
                     <div>
-                        <div class="eyebrow">Proof before checkout</div>
-                        <h2>See the real app, the real fit, and the real boundary.</h2>
+                        <div class="eyebrow">Look first</div>
+                        <h2>Real screenshots, short explanation.</h2>
                     </div>
-                    <p>ClipScript is best when you already have captioned YouTube videos and need a faster way to fetch, search, save, and reuse transcript material. These are the facts a cautious buyer can check before paying.</p>
+                    <p>No inflated claims. The screenshots show the current app and the text below says what it is for.</p>
                 </div>
-                <div class="proof-layout proof-layout-stacked">
-                    <div class="proof-visuals">
-                        <figure class="screenshot-card">
-                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/ClipScript-Light-Mode.webp" data-title="ClipScript in light mode">
-                                <img src="assets/screenshots/ClipScript-Light-Mode.webp" alt="ClipScript in light mode showing the fetch area, saved transcripts, and the reading workspace.">
-                            </button>
-                            <figcaption>
-                                <strong>Search, archive, and reopen</strong>
-                                <span>The saved transcript library, fetch area, and reading view are already part of the live app.</span>
-                            </figcaption>
-                        </figure>
-                        <figure class="screenshot-card">
-                            <button class="screenshot-link" type="button" data-media="image" data-src="assets/screenshots/ClipScript-Dark-Mode.webp" data-title="ClipScript in dark mode">
-                                <img src="assets/screenshots/ClipScript-Dark-Mode.webp" alt="ClipScript in dark mode showing transcript reading, the fetch workflow, and local transcript history.">
-                            </button>
-                            <figcaption>
-                                <strong>Same workflow in dark mode</strong>
-                                <span>The same transcript tools are available in a lower-glare workspace for longer sessions.</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="proof-details">
-                        <article class="page-card">
-                            <h3>What the current app proves</h3>
-                            <ul class="muted-list">
-                                <li>Current screenshots show the fetch area, saved transcripts, reading view, search, and local archive.</li>
-                                <li>The workflow starts from a pasted YouTube URL, share URL, Shorts URL, or raw video ID.</li>
-                                <li>Fetched transcripts can be searched, favorited, copied, saved, and exported.</li>
-                            </ul>
-                        </article>
-                        <article class="page-card">
-                            <h3>Best fit</h3>
-                            <ul class="muted-list">
-                                <li>Creators, editors, assistants, researchers, and course builders reusing transcript material.</li>
-                                <li>Scripts, notes, captions, outlines, research references, and repurposed content.</li>
-                                <li>People who want a local archive instead of scattered browser tabs and copied text.</li>
-                            </ul>
-                        </article>
-                        <article class="page-card">
-                            <h3>Boundary</h3>
-                            <ul class="muted-list">
-                                <li>ClipScript works when the YouTube video already has manual or auto-generated captions available.</li>
-                                <li>It does not require Google sign-in, a YouTube API key, or a connected channel session.</li>
-                                <li>If a video has no captions, ClipScript tells you instead of pretending there is transcript text to fetch.</li>
-                            </ul>
-                        </article>
-                    </div>
+                <div class="screenshot-grid">
+                    <figure class="screenshot-card">
+                        <img src="assets/screenshots/ClipScript-Light-Mode.webp" alt="ClipScript light mode showing transcript fetch, saved transcripts, and reading workspace.">
+                        <figcaption>
+                            <strong>Fetch, search, and reopen transcripts</strong>
+                        </figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <img src="assets/screenshots/ClipScript-Dark-Mode.webp" alt="ClipScript dark mode showing transcript reading and local transcript history.">
+                        <figcaption>
+                            <strong>Same workflow in dark mode</strong>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="fit">
             <div class="shell">
                 <div class="section-heading">
                     <div>
-                        <div class="eyebrow">Workflow</div>
-                        <h2>From captioned YouTube video to reusable working copy.</h2>
+                        <div class="eyebrow">Fit and limits</div>
+                        <h2>Know what you are buying.</h2>
                     </div>
-                    <p>The practical flow is simple: paste the video, fetch and search the transcript, then save or export the material into the next thing you are making.</p>
-                </div>
-                <div class="storefront-steps">
-                    <article class="step-card">
-                        <strong>1. Paste the YouTube URL or video ID</strong>
-                        <p>Start with the exact video you want to work from. ClipScript accepts common YouTube watch URLs, share URLs, Shorts URLs, and raw video IDs.</p>
-                    </article>
-                    <article class="step-card">
-                        <strong>2. Fetch, read, and search</strong>
-                        <p>Fetch the available caption track, review it with timestamps or grouped intervals, search inside it, and use Open at Time when you need source context.</p>
-                    </article>
-                    <article class="step-card">
-                        <strong>3. Save, favorite, and export</strong>
-                        <p>Keep transcripts in a local archive, mark important entries as favorites, and export the formats that fit your writing, editing, caption, or research workflow.</p>
-                    </article>
+                    <p>Each Walter Claw app is intentionally small. If it does not match your problem, skip it.</p>
                 </div>
                 <div class="grid grid-three">
-                    <article class="feature-card">
-                        <h3>Local archive and favorites</h3>
-                        <p>Reopen useful transcripts instead of fetching the same material again or losing it in scattered files.</p>
+                    <article class="page-card">
+                        <h3>Good fit</h3>
+                        <p>You work with YouTube videos that already have captions and want reusable transcript text without a browser-tab mess.</p>
                     </article>
-                    <article class="feature-card">
-                        <h3>Timestamp-aware reading</h3>
-                        <p>Read with timestamps, hide them for cleaner copy, group text into intervals, or jump back to the source video when context matters.</p>
+                    <article class="page-card">
+                        <h3>Not for</h3>
+                        <p>It does not invent transcripts for videos with no captions. It tells you when captions are unavailable.</p>
                     </article>
-                    <article class="feature-card">
-                        <h3>Multi-format export</h3>
-                        <p>Copy, save, and export as TXT, SRT, VTT, or JSON, or export a full archive folder with a manifest file.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="demo">
-            <div class="shell">
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">Demo</div>
-                        <h2>See the current ClipScript workflow in action.</h2>
-                    </div>
-                    <p>Watch the current no-sign-in, caption-based workflow before checkout.</p>
-                </div>
-                <div class="demo-layout">
-                    <div class="demo-frame">
-                        <div class="demo-video-shell">
-                            <iframe
-                                class="demo-video-embed"
-                                src="https://www.youtube-nocookie.com/embed/y_BdCwoeBW8?rel=0"
-                                title="ClipScript demo walkthrough"
-                                loading="lazy"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <div class="demo-placeholder-copy">
-                            <strong>Current narrated walkthrough</strong>
-                            <span>Watch the current ClipScript desktop workflow directly on this page before checkout.</span>
-                        </div>
-                    </div>
-                    <article class="page-card demo-copy">
-                        <h3>What the current workflow includes</h3>
-                        <ul class="muted-list">
-                            <li>Paste a YouTube URL or video ID and click Fetch Transcript.</li>
-                            <li>Review the transcript with timestamps or grouped interval views.</li>
-                            <li>Search the text, jump back to the video with Open at Time, and keep favorites.</li>
-                            <li>Save individual transcripts or export the local archive in multiple formats with a manifest file.</li>
-                        </ul>
-                        <p>The demo shows the same workflow described above: fetch, review, search, save, and export.</p>
+                    <article class="page-card">
+                        <h3>What you get</h3>
+                        <p>TXT, SRT, VTT, and JSON exports, plus a local archive with search and favorites.</p>
                     </article>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="shell" id="storefront">
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">Pricing</div>
-                        <h2>Choose the desktop version you want.</h2>
-                    </div>
-                    <p>ClipScript Desktop for Mac is live on the Apple App Store. ClipScript Desktop for Windows is live in the Microsoft Store. Direct macOS and Windows downloads remain available through secure Lemon Squeezy checkout.</p>
-                </div>
-                <div class="platform-stack">
-                    <div class="storefront-grid">
-                        <article class="storefront-card storefront-card-live" data-storefront-card="clipscript-macos">
-                            <div class="storefront-head">
-                                <div>
-                                    <div class="eyebrow">macOS</div>
-                                    <h3>ClipScript for macOS</h3>
-                                </div>
-                                <span class="availability-chip availability-chip-ready">App Store live</span>
-                            </div>
-                            <div class="price-panel">
-                                <strong>$9.99</strong>
-                                <span>One-time purchase</span>
-                            </div>
-                            <p class="storefront-copy">Get ClipScript Desktop for Mac from the Apple App Store. The direct macOS download remains available through secure Lemon Squeezy checkout.</p>
-                            <ul class="muted-list">
-                                <li>ClipScript Desktop for Mac is live on the Apple App Store.</li>
-                                <li>Current macOS direct-download release remains available.</li>
-                                <li>No Google sign-in, API key, or channel connection required.</li>
-                                <li>Works with YouTube videos that already have captions available.</li>
-                                <li>Developer support available through Walter Claw Software LLC.</li>
-                                <li>Applicable taxes, if any, are handled at checkout.</li>
-                            </ul>
-                            <div class="storefront-actions">
-                                <a class="button button-primary" href="https://apps.apple.com/us/app/clipscript-desktop/id6767946234?mt=12" target="_blank" rel="noopener noreferrer">Get Mac on App Store</a>
-                                <a class="button button-secondary" data-storefront-cta href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370">Buy Mac direct</a>
-                                <a class="button button-secondary" href="/support">Read support details</a>
-                            </div>
-                            <p class="storefront-note" data-storefront-helper>Use the Apple App Store listing for ClipScript Desktop, or buy the direct macOS download through secure Lemon Squeezy checkout.</p>
-                        </article>
-                        <article class="storefront-card storefront-card-live" data-storefront-card="clipscript-windows">
-                            <div class="storefront-head">
-                                <div>
-                                    <div class="eyebrow">Windows</div>
-                                    <h3>ClipScript for Windows</h3>
-                                </div>
-                                <span class="availability-chip availability-chip-ready">Microsoft Store live</span>
-                            </div>
-                            <div class="price-panel">
-                                <strong>$9.99</strong>
-                                <span>One-time purchase</span>
-                            </div>
-                            <p class="storefront-copy">Get ClipScript Desktop for Windows from the Microsoft Store. The direct Windows download remains available through secure Lemon Squeezy checkout.</p>
-                            <ul class="muted-list">
-                                <li>Live in the Microsoft Store.</li>
-                                <li>Current Windows direct-download release remains available.</li>
-                                <li>No Google sign-in, API key, or channel connection required.</li>
-                                <li>Works with YouTube videos that already have captions available.</li>
-                                <li>Windows has its own direct purchase link and installer delivery path.</li>
-                                <li>Applicable taxes, if any, are handled at checkout.</li>
-                            </ul>
-                            <div class="storefront-actions">
-                                <a class="button button-primary" data-storefront-cta href="https://apps.microsoft.com/detail/9PGSDNHX74NR" target="_blank" rel="noopener noreferrer">Get ClipScript Desktop on Microsoft Store</a>
-                                <a class="button button-secondary" href="https://walterclawsoftware.lemonsqueezy.com/checkout/buy/bc0748ae-bec9-4de4-8efb-ed8a1f243929">Buy Windows direct</a>
-                                <a class="button button-secondary" href="/support">Read support details</a>
-                            </div>
-                            <p class="storefront-note" data-storefront-helper>ClipScript Desktop for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path.</p>
-                        </article>
-                    </div>
-                    <div class="grid grid-two">
-                        <article class="page-card compatibility-card">
-                            <h3>Compatibility and delivery</h3>
-                            <ul class="muted-list">
-                                <li>ClipScript Desktop for Mac: live on the Apple App Store.</li>
-                                <li>Direct macOS and Windows purchases: live now through separate secure Lemon Squeezy checkout links.</li>
-                                <li>ClipScript Desktop for Windows: live in the Microsoft Store.</li>
-                                <li>Minimum supported macOS version: macOS 12.0+.</li>
-                                <li>Current support path: <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a> and the <a href="/support">support page</a>.</li>
-                                <li>Microsoft Store and direct Windows checkout are both live purchase paths.</li>
-                            </ul>
-                            <p>That keeps expectations clear: use the App Store listing for ClipScript Desktop on Mac, use the Microsoft Store listing for Windows, or choose direct checkout if you prefer direct download.</p>
-                        </article>
-                        <article class="page-card compatibility-card">
-                            <h3>Before you buy</h3>
-                            <ul class="muted-list">
-                                <li>Same $9.99 one-time price on both desktop versions.</li>
-                                <li>Each desktop version has its own secure Lemon Squeezy purchase link.</li>
-                                <li>Buyers download the macOS .pkg installer or Windows installer from the matching checkout.</li>
-                                <li>ClipScript works with YouTube videos that already have captions available.</li>
-                                <li>The Windows installer is currently unsigned, so SmartScreen warnings may appear until code signing is added.</li>
-                                <li>Support stays direct through Walter Claw Software LLC.</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="faq">
             <div class="shell">
-                <div class="section-heading">
-                    <div>
-                        <div class="eyebrow">FAQ</div>
-                        <h2>Simple answers before you buy.</h2>
+                <div class="callout">
+                    <h3>Need a straight answer?</h3>
+                    <p>Email support with your computer type and the job you are trying to finish. You will get a plain recommendation, including “do not buy it” if the app is not a fit.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="mailto:support@walterclawsoftware.com">Email support</a>
+                        <a class="button button-secondary" href="/purchase-faq">Read purchase FAQ</a>
                     </div>
-                    <p>These are the practical questions buyers usually want answered before they purchase a direct download.</p>
-                </div>
-                <div class="faq-grid">
-                    <article class="page-card">
-                        <h3>Who is ClipScript for?</h3>
-                        <p>ClipScript is for creators, editors, assistants, researchers, and other people who need transcripts from captioned YouTube videos and want a faster desktop workflow.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Do I need a Google account, API key, or channel connection?</h3>
-                        <p>No. ClipScript's current workflow does not require Google sign-in, Google OAuth, a YouTube API key, or a connected channel session. You paste a YouTube URL or video ID and fetch the transcript directly.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>What happens if a video has no captions?</h3>
-                        <p>ClipScript tells you clearly when no captions are available for that video. It works with videos that already have manual captions or auto-generated captions available.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>What happens after purchase?</h3>
-                        <p>Mac buyers can get ClipScript Desktop from the Apple App Store or use the direct macOS purchase link. Windows buyers can get ClipScript Desktop from the Microsoft Store or use the direct Windows purchase link.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>What is the current store status?</h3>
-                        <p>ClipScript Desktop for Mac is live on the Apple App Store. ClipScript Desktop for Windows is live in the Microsoft Store. Direct Mac and Windows purchases remain available through secure Lemon Squeezy checkout.</p>
-                    </article>
-                    <article class="page-card">
-                        <h3>Is a Windows version available now?</h3>
-                        <p>Yes. ClipScript Desktop for Windows is live in the Microsoft Store and remains available through its own secure ClipScript Lemon Squeezy checkout at the same $9.99 one-time price as macOS.</p>
-                    </article>
                 </div>
             </div>
         </section>
     </main>
-
-    <div class="lightbox" aria-hidden="true">
-        <div class="lightbox-backdrop" data-lightbox-close></div>
-        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="ClipScript media preview">
-            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
-            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
-            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
-            <div class="lightbox-media">
-                <img class="lightbox-image" alt="">
-                <video class="lightbox-video" controls playsinline></video>
-            </div>
-            <div class="lightbox-caption" aria-live="polite"></div>
-        </div>
-    </div>
-
-    <script>
-        (() => {
-            const lightbox = document.querySelector(".lightbox");
-            const mediaItems = Array.from(document.querySelectorAll(".screenshot-link"));
-            const mediaFrame = lightbox.querySelector(".lightbox-media");
-            const imageEl = lightbox.querySelector(".lightbox-image");
-            const videoEl = lightbox.querySelector(".lightbox-video");
-            const captionEl = lightbox.querySelector(".lightbox-caption");
-            const closeButtons = lightbox.querySelectorAll("[data-lightbox-close]");
-            const prevButton = lightbox.querySelector("[data-lightbox-prev]");
-            const nextButton = lightbox.querySelector("[data-lightbox-next]");
-            let currentIndex = 0;
-
-            const getMediaAspectRatio = (item) => {
-                const explicitWidth = Number(item.dataset.width);
-                const explicitHeight = Number(item.dataset.height);
-                if (explicitWidth > 0 && explicitHeight > 0) {
-                    return explicitWidth / explicitHeight;
-                }
-                const thumb = item.querySelector("img");
-                if (thumb && thumb.naturalWidth > 0 && thumb.naturalHeight > 0) {
-                    return thumb.naturalWidth / thumb.naturalHeight;
-                }
-                if ((item.dataset.media || "image") === "video") {
-                    return 4 / 3;
-                }
-                return 16 / 9;
-            };
-
-            const sizeLightboxFrame = (item) => {
-                const aspectRatio = getMediaAspectRatio(item);
-                const maxWidth = Math.min(window.innerWidth * 0.92, 1500);
-                const maxHeight = Math.max(window.innerHeight * 0.94 - 110, 320);
-                let frameWidth = maxWidth;
-                let frameHeight = frameWidth / aspectRatio;
-
-                if (frameHeight > maxHeight) {
-                    frameHeight = maxHeight;
-                    frameWidth = frameHeight * aspectRatio;
-                }
-
-                mediaFrame.style.width = `${frameWidth}px`;
-                mediaFrame.style.height = `${frameHeight}px`;
-            };
-
-            const showMedia = (index) => {
-                currentIndex = (index + mediaItems.length) % mediaItems.length;
-                const item = mediaItems[currentIndex];
-                const type = item.dataset.media || "image";
-                const src = item.dataset.src;
-                const title = item.dataset.title || "";
-
-                sizeLightboxFrame(item);
-
-                imageEl.style.display = type === "image" ? "block" : "none";
-                videoEl.style.display = type === "video" ? "block" : "none";
-                if (type === "image") {
-                    imageEl.src = src;
-                    imageEl.alt = title || "ClipScript preview";
-                    videoEl.pause();
-                    videoEl.removeAttribute("src");
-                    videoEl.removeAttribute("poster");
-                    videoEl.load();
-                } else {
-                    videoEl.src = src;
-                    videoEl.poster = item.dataset.poster || "";
-                    imageEl.removeAttribute("src");
-                    videoEl.load();
-                }
-                captionEl.textContent = title;
-            };
-
-            const openLightbox = (index) => {
-                showMedia(index);
-                lightbox.classList.add("is-open");
-                lightbox.setAttribute("aria-hidden", "false");
-                const item = mediaItems[currentIndex];
-                if ((item.dataset.media || "image") === "video") {
-                    videoEl.play().catch(() => {});
-                }
-            };
-
-            const closeLightbox = () => {
-                lightbox.classList.remove("is-open");
-                lightbox.setAttribute("aria-hidden", "true");
-                videoEl.pause();
-            };
-
-            mediaItems.forEach((item, index) => {
-                item.addEventListener("click", () => openLightbox(index));
-            });
-
-            closeButtons.forEach((button) => button.addEventListener("click", closeLightbox));
-            prevButton.addEventListener("click", () => showMedia(currentIndex - 1));
-            nextButton.addEventListener("click", () => showMedia(currentIndex + 1));
-
-            document.addEventListener("keydown", (event) => {
-                if (!lightbox.classList.contains("is-open")) {
-                    return;
-                }
-                if (event.key === "Escape") {
-                    closeLightbox();
-                } else if (event.key === "ArrowLeft") {
-                    showMedia(currentIndex - 1);
-                } else if (event.key === "ArrowRight") {
-                    showMedia(currentIndex + 1);
-                }
-            });
-
-            window.addEventListener("resize", () => {
-                if (!lightbox.classList.contains("is-open")) {
-                    return;
-                }
-                sizeLightboxFrame(mediaItems[currentIndex]);
-            });
-        })();
-    </script>
 
     <footer class="site-footer">
         <div class="shell footer-grid footer-grid-rich">
