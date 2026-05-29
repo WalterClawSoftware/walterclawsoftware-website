@@ -159,13 +159,17 @@
                 </div>
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/App-Icon-Creator-Workspace.webp" alt="App Icon Creator interface showing source icon loading, output previews, and export controls.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/App-Icon-Creator-Workspace.webp" data-gallery-title="App Icon Creator workspace" data-gallery-alt="App Icon Creator interface showing source icon loading, output previews, and export controls." data-gallery-width="3420" data-gallery-height="2224" aria-label="Expand App Icon Creator workspace screenshot">
+                            <img src="assets/screenshots/App-Icon-Creator-Workspace.webp" alt="App Icon Creator interface showing source icon loading, output previews, and export controls.">
+                        </button>
                         <figcaption>
                             <strong>Load, inspect, export</strong>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <img src="assets/products/app-icon-creator/qa-summary.webp" alt="App Icon Creator QA summary comparing generated icon outputs.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/products/app-icon-creator/qa-summary.webp" data-gallery-title="App Icon Creator QA summary" data-gallery-alt="App Icon Creator QA summary comparing generated icon outputs." data-gallery-width="1356" data-gallery-height="440" aria-label="Expand App Icon Creator QA summary screenshot">
+                            <img src="assets/products/app-icon-creator/qa-summary.webp" alt="App Icon Creator QA summary comparing generated icon outputs.">
+                        </button>
                         <figcaption>
                             <strong>Proof before release</strong>
                         </figcaption>
@@ -248,5 +252,21 @@
             </nav>
         </div>
     </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="App Icon Creator screenshot slideshow" tabindex="-1">
+            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" alt="">
+                <iframe class="lightbox-video" title="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="demo-videos.js" defer></script>
 </body>
 </html>

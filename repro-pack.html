@@ -160,13 +160,17 @@
                 </div>
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/Repro-Pack-Dark-Mode.webp" alt="Repro Pack dark mode showing report fields, draft controls, and repro output.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/Repro-Pack-Dark-Mode.webp" data-gallery-title="Repro Pack dark mode" data-gallery-alt="Repro Pack dark mode showing report fields, draft controls, and repro output." data-gallery-width="1713" data-gallery-height="1333" aria-label="Expand Repro Pack dark mode screenshot">
+                            <img src="assets/screenshots/Repro-Pack-Dark-Mode.webp" alt="Repro Pack dark mode showing report fields, draft controls, and repro output.">
+                        </button>
                         <figcaption>
                             <strong>Review the rough report</strong>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <img src="assets/screenshots/Repro-Pack-Light-Mode.webp" alt="Repro Pack light mode showing the bug report cleanup workflow.">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/Repro-Pack-Light-Mode.webp" data-gallery-title="Repro Pack light mode" data-gallery-alt="Repro Pack light mode showing the bug report cleanup workflow." data-gallery-width="1713" data-gallery-height="1333" aria-label="Expand Repro Pack light mode screenshot">
+                            <img src="assets/screenshots/Repro-Pack-Light-Mode.webp" alt="Repro Pack light mode showing the bug report cleanup workflow.">
+                        </button>
                         <figcaption>
                             <strong>Export a cleaner repro packet</strong>
                         </figcaption>
@@ -249,5 +253,21 @@
             </nav>
         </div>
     </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Repro Pack screenshot slideshow" tabindex="-1">
+            <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
+            <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
+            <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
+            <div class="lightbox-media">
+                <img class="lightbox-image" alt="">
+                <iframe class="lightbox-video" title="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="demo-videos.js" defer></script>
 </body>
 </html>
