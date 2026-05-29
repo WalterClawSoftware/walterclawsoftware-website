@@ -1,15 +1,15 @@
 window.WCSStorefront = {
     "clipscript-macos": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ec986bf5-14cc-4b32-ba46-d9f39cd26370",
-        liveLabel: "Buy ClipScript for macOS",
+        checkoutUrl: "https://apps.apple.com/us/app/clipscript-desktop/id6767946234?mt=12",
+        liveLabel: "Get ClipScript Desktop on Mac App Store",
         pendingLabel: "Available now",
-        helperText: "ClipScript Desktop for Mac is live on the Apple App Store. The direct macOS download remains available through secure Lemon Squeezy checkout."
+        helperText: "ClipScript Desktop for Mac is live on the Apple App Store. No Google sign-in, API key, subscription, or cloud workspace."
     },
     "clipscript-windows": {
         checkoutUrl: "https://apps.microsoft.com/detail/9PGSDNHX74NR",
         liveLabel: "Get ClipScript Desktop on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "ClipScript Desktop for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path."
+        helperText: "ClipScript Desktop for Windows is live in the Microsoft Store. It uses internet access for public caption lookup and keeps saved transcript history on your computer."
     },
     "transcript-rescue-macos": {
         checkoutUrl: "https://apps.apple.com/us/app/transcript-rescue/id6770730937?mt=12",
@@ -21,7 +21,7 @@ window.WCSStorefront = {
         checkoutUrl: "https://apps.microsoft.com/detail/9N142LRF4SD0",
         liveLabel: "Get Transcript Rescue on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "Transcript Rescue for Windows is live in the Microsoft Store. Direct Windows download remains available as an alternate purchase path."
+        helperText: "Transcript Rescue for Windows is live in the Microsoft Store. It works locally with pasted or opened transcript text; no cloud account or transcript upload required."
     },
     "repro-pack-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/4bfd9226-0727-4fbe-999b-709a6675b8e3",
