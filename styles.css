@@ -465,6 +465,8 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-proof-card {
+    display: grid;
+    align-content: start;
     padding: 22px;
     gap: 16px;
 }
@@ -638,6 +640,8 @@ img { display: block; max-width: 100%; }
 }
 
 .sales-buy-card {
+    display: grid;
+    align-content: start;
     gap: 20px;
 }
 
