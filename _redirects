@@ -13,6 +13,13 @@
 /privacy.html /privacy 301
 /support.html /support 301
 /contact.html /contact 301
+/clip-script /clipscript 301
+/privacy-policy /privacy 301
+/release-notes /updates 301
+/app-icon /app-icon-creator 301
+/banner-safe /bannersafe-youtube 301
+/transcriptrescue /transcript-rescue 301
+/repropack /repro-pack 301
 /about /about.html 200
 /clipscript /clipscript.html 200
 /youtube-transcript-downloader /youtube-transcript-downloader.html 200
