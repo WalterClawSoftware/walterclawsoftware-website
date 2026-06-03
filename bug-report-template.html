@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07131f">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Bug Report Template | Repro Pack</title>
+    <meta name="description" content="Use a practical bug report template with summary, facts, repro steps, expected vs actual behavior, environment, evidence, missing info, and follow-up questions.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://walterclawsoftware.com/bug-report-template">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Walter Claw Software LLC">
+    <meta property="og:title" content="Bug Report Template | Repro Pack">
+    <meta property="og:description" content="A claim-safe bug report template for support notes, customer emails, copied issue text, and tracker-ready Repro Pack handoffs.">
+    <meta property="og:url" content="https://walterclawsoftware.com/bug-report-template">
+    <meta property="og:image" content="https://walterclawsoftware.com/assets/screenshots/repro-pack-02-github-ready-draft.png">
+    <meta property="og:image:alt" content="Repro Pack screenshot showing a generated GitHub issue draft with title, context, steps, and environment details.">
+    <meta property="og:image:width" content="1440">
+    <meta property="og:image:height" content="900">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bug Report Template | Repro Pack">
+    <meta name="twitter:description" content="Turn rough bug report notes into a cleaner repro packet without inventing missing evidence.">
+    <meta name="twitter:image" content="https://walterclawsoftware.com/assets/screenshots/repro-pack-02-github-ready-draft.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://walterclawsoftware.com/#organization",
+                    "name": "Walter Claw Software LLC",
+                    "url": "https://walterclawsoftware.com/",
+                    "logo": "https://walterclawsoftware.com/assets/brand/logo-mark.png",
+                    "email": "support@walterclawsoftware.com",
+                    "sameAs": [
+                        "https://www.youtube.com/@WalterClawSoftwareLLC",
+                        "https://x.com/WalterClawLLC",
+                        "https://www.linkedin.com/in/jeffrey-waters-222256407/"
+                    ]
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://walterclawsoftware.com/bug-report-template#webpage",
+                    "url": "https://walterclawsoftware.com/bug-report-template",
+                    "name": "Bug Report Template | Repro Pack",
+                    "description": "A focused Repro Pack landing page for turning rough bug report notes, support tickets, customer emails, and copied issue text into a clearer repro packet template.",
+                    "isPartOf": {
+                        "@id": "https://walterclawsoftware.com/#website"
+                    },
+                    "about": {
+                        "@id": "https://walterclawsoftware.com/repro-pack#app"
+                    },
+                    "publisher": {
+                        "@id": "https://walterclawsoftware.com/#organization"
+                    }
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://walterclawsoftware.com/repro-pack#app",
+                    "name": "Repro Pack",
+                    "applicationCategory": "BusinessApplication",
+                    "operatingSystem": [
+                        "macOS",
+                        "Windows"
+                    ],
+                    "description": "Repro Pack is a local desktop bug-report cleanup app that turns messy reports into known facts, missing evidence, follow-up questions, and tracker-ready drafts while keeping unsupported details visible.",
+                    "url": "https://walterclawsoftware.com/repro-pack",
+                    "image": "https://walterclawsoftware.com/assets/screenshots/repro-pack-01-local-first-builder.png",
+                    "publisher": {
+                        "@id": "https://walterclawsoftware.com/#organization"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "url": "https://walterclawsoftware.com/repro-pack#storefront",
+                        "priceCurrency": "USD",
+                        "price": "9.99",
+                        "availability": "https://schema.org/InStock",
+                        "seller": {
+                            "@id": "https://walterclawsoftware.com/#organization"
+                        }
+                    }
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://walterclawsoftware.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Repro Pack",
+                    "item": "https://walterclawsoftware.com/repro-pack"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Bug Report Template",
+                    "item": "https://walterclawsoftware.com/bug-report-template"
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "@id": "https://walterclawsoftware.com/bug-report-template#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What should a bug report template include?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A practical bug report template should include a short summary, known facts, steps to reproduce, expected behavior, actual behavior, environment, evidence, missing information, and follow-up questions."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can Repro Pack turn a support ticket into a bug report?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Repro Pack is built for rough bug reports, support notes, customer emails, and copied issue text that the user provides. It helps separate known facts from gaps and draft a cleaner repro packet for handoff."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does Repro Pack replace Jira, Linear, GitHub Issues, or QA work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Repro Pack is a desktop cleanup utility, not a tracker replacement, QA replacement, customer investigation tool, or real reproduction test. It prepares clearer drafts for tools such as GitHub, Jira, Linear, or Markdown notes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will the template guarantee that a developer can reproduce the issue?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. A clearer template can make known details easier to review, but it cannot guarantee reproduction and should not invent missing evidence. Gaps should stay visible as missing information or follow-up questions."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Where can I get Repro Pack for Mac or Windows?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Use the Repro Pack product page for current Mac and Windows direct checkout and download options. The current Repro Pack page links direct Lemon Squeezy checkout paths rather than App Store or Microsoft Store listings."
+                    }
+                }
+            ]
+        }
+    </script>
+</head>
+<body class="theme-repro">
+    <header class="site-header">
+        <div class="shell nav">
+            <a class="brand" href="/" aria-label="Walter Claw Software home">
+                <span class="brand-mark">
+                    <img src="assets/brand/logo-mark.png" alt="Walter Claw Software logo" width="84" height="84">
+                </span>
+                <span class="brand-text">
+                    <strong>Walter Claw Software LLC</strong>
+                    <span>Small desktop apps for specific jobs</span>
+                    <small class="brand-motto">Per aspera ad astra</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Primary">
+                <a class="button button-secondary" href="/">Home</a>
+                <details class="nav-dropdown">
+                    <summary class="button button-secondary current">Products</summary>
+                    <div class="nav-dropdown-menu">
+                        <a class="nav-dropdown-item" href="/clipscript">ClipScript</a>
+                        <a class="nav-dropdown-item" href="/transcript-rescue">Transcript Rescue</a>
+                        <a class="nav-dropdown-item" href="/repro-pack">Repro Pack</a>
+                        <a class="nav-dropdown-item" href="/bannersafe-youtube">BannerSafe for YouTube</a>
+                        <a class="nav-dropdown-item" href="/app-icon-creator">App Icon Creator</a>
+                    </div>
+                </details>
+                <a class="button button-secondary" href="/support">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero sales-hero">
+            <div class="shell">
+                <div class="hero-grid sales-hero-grid">
+                    <div class="hero-copy sales-hero-copy">
+                        <div class="eyebrow">Bug report template and repro steps</div>
+                        <h1>Start with a clearer bug report template before handing the issue to a developer.</h1>
+                        <p>When a report arrives as a support ticket, customer email, rough note, or copied issue thread, the first job is not to pretend everything is known. It is to separate facts, repro steps, expected versus actual behavior, evidence, and the questions still blocking a useful handoff.</p>
+                        <p>Repro Pack helps turn that messy input into a clean repro packet for GitHub, Jira, Linear, or Markdown without replacing your tracker, QA judgment, customer investigation, or real reproduction testing.</p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="/repro-pack#storefront" data-event="cta_click" data-product="repro-pack" data-platform="desktop" data-destination="storefront">Get Repro Pack</a>
+                            <a class="button button-secondary" href="#template" data-event="cta_click" data-product="repro-pack" data-platform="web" data-destination="template">Use the template structure</a>
+                        </div>
+                        <div class="hero-trust-strip" aria-label="Bug report template basics">
+                            <span>Support ticket to bug report</span>
+                            <span>Expected vs actual behavior</span>
+                            <span>Missing info stays visible</span>
+                        </div>
+                    </div>
+                    <aside class="hero-card sales-buy-card" aria-label="Repro Pack buying summary">
+                        <img class="product-mark product-mark-large" src="assets/brand/repro-pack-app-icon.webp" alt="Repro Pack app icon" width="256" height="256">
+                        <div class="eyebrow">Repro Pack</div>
+                        <h2>For rough reports that need a cleaner handoff.</h2>
+                        <p>Use the product page to choose the direct Mac or Windows checkout, review screenshots, and check whether the messy-report cleanup workflow is the job you need done.</p>
+                        <div class="price-stack">
+                            <strong>$9.99</strong>
+                            <span>One-time price per desktop version.</span>
+                        </div>
+                        <div class="storefront-actions">
+                            <a class="button button-primary" href="/repro-pack#storefront" data-event="cta_click" data-product="repro-pack" data-platform="desktop" data-destination="storefront">Choose Mac or Windows</a>
+                            <a class="button button-secondary" href="/repro-pack" data-event="cta_click" data-product="repro-pack" data-platform="web" data-destination="product-page">Read full product page</a>
+                        </div>
+                        <p class="storefront-note">Repro Pack is positioned here through the current direct Mac and Windows checkout/download path. Ask <a href="/support">support</a> before buying if the fit is unclear.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="template">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Template structure</div>
+                        <h2>A useful bug report template keeps facts and gaps in separate boxes.</h2>
+                    </div>
+                    <p>Use this as a plain starting structure before moving the report into GitHub Issues, Jira, Linear, Markdown, or your internal support workflow.</p>
+                </div>
+                <article class="page-card table-like" aria-label="Bug report template structure">
+                    <div class="table-row">
+                        <strong>Summary</strong>
+                        <div>One or two sentences naming the visible problem, affected workflow, and user impact as currently understood.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Known facts</strong>
+                        <div>Only details already present in the report: account type, feature area, timestamps, input files, error text, screenshots, logs, or customer-provided context.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Steps to reproduce</strong>
+                        <div>Numbered repro steps when they are known. If steps are incomplete, label the uncertain step instead of filling it in from a guess.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Expected behavior</strong>
+                        <div>What the reporter thought should happen, or the product behavior implied by docs, UI labels, or prior customer expectation.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Actual behavior</strong>
+                        <div>What actually happened: error message, wrong output, stalled screen, missing item, crash, or other observable result.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Environment</strong>
+                        <div>Operating system, browser, app version, device, permissions, network state, account role, file type, or integration involved.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Evidence</strong>
+                        <div>Attach or cite screenshots, logs, console output, ticket IDs, pasted issue text, support notes, and any customer email details the team is allowed to use.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Missing info</strong>
+                        <div>Fields that are not known yet, such as exact version, reproducible frequency, last known good behavior, or whether another user can trigger it.</div>
+                    </div>
+                    <div class="table-row">
+                        <strong>Follow-up questions</strong>
+                        <div>Short, answerable questions for support, QA, or the customer before a developer spends time chasing a vague bug.</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Messy note to clean packet</div>
+                        <h2>Repro Pack is for the cleanup step between support and engineering.</h2>
+                    </div>
+                    <p>The app works from rough text you provide. It does not discover hidden facts, inspect customer systems, or prove the bug by itself.</p>
+                </div>
+                <div class="grid grid-three">
+                    <article class="page-card">
+                        <h3>Start with messy input</h3>
+                        <p>Paste a rough bug report, support note, customer email, chat excerpt, or copied issue text. Keep original wording available so unsupported details do not become false certainty.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Separate signal from gaps</h3>
+                        <p>Repro Pack helps organize known facts, likely repro steps, expected behavior, actual behavior, environment notes, evidence, missing information, and follow-up questions.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Hand off with limits intact</h3>
+                        <p>Send a cleaner packet while preserving caveats. A clean handoff can save triage time, but it is still not a guarantee that the issue is reproducible.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Tracker handoff</div>
+                        <h2>Use the same structure for GitHub, Jira, Linear, or Markdown.</h2>
+                    </div>
+                    <p>The current Repro Pack product copy supports tracker-ready drafts for GitHub, Jira, Linear, Repro packet output, and Markdown notes. It prepares copyable drafts; it does not replace those tools or decide your QA process.</p>
+                </div>
+                <div class="grid grid-four product-summary-grid">
+                    <article class="page-card">
+                        <h3>GitHub issue draft</h3>
+                        <p>Use the summary, context, repro steps, expected/actual behavior, environment, and evidence sections as a GitHub-ready starting point.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Jira ticket draft</h3>
+                        <p>Keep the same facts and follow-up questions visible so Jira fields do not hide uncertainty behind a polished-looking ticket.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Linear issue draft</h3>
+                        <p>Carry the short summary, user impact, steps, expected vs actual behavior, and missing info into a concise Linear handoff.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Markdown note</h3>
+                        <p>Save or copy a clean Markdown-style repro packet when the team needs a document, support handoff, or internal triage note first.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">FAQ</div>
+                        <h2>Plain limits before checkout.</h2>
+                    </div>
+                    <p>These answers keep the template and product positioning honest.</p>
+                </div>
+                <div class="faq-grid">
+                    <article class="page-card">
+                        <h3>What should a bug report template include?</h3>
+                        <p>A practical bug report template should include a short summary, known facts, steps to reproduce, expected behavior, actual behavior, environment, evidence, missing information, and follow-up questions.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Can Repro Pack turn a support ticket into a bug report?</h3>
+                        <p>Repro Pack is built for rough bug reports, support notes, customer emails, and copied issue text that the user provides. It helps separate known facts from gaps and draft a cleaner repro packet for handoff.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Does Repro Pack replace Jira, Linear, GitHub Issues, or QA work?</h3>
+                        <p>No. Repro Pack is a desktop cleanup utility, not a tracker replacement, QA replacement, customer investigation tool, or real reproduction test. It prepares clearer drafts for tools such as GitHub, Jira, Linear, or Markdown notes.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Will the template guarantee that a developer can reproduce the issue?</h3>
+                        <p>No. A clearer template can make known details easier to review, but it cannot guarantee reproduction and should not invent missing evidence. Gaps should stay visible as missing information or follow-up questions.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Where can I get Repro Pack for Mac or Windows?</h3>
+                        <p>Use the <a href="/repro-pack#storefront">Repro Pack product page</a> for current Mac and Windows direct checkout and download options. The current Repro Pack page links direct Lemon Squeezy checkout paths rather than App Store or Microsoft Store listings.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="shell">
+                <div class="callout">
+                    <h2>Need a cleaner repro packet from rough notes?</h2>
+                    <p>Review Repro Pack screenshots, platform options, and direct Mac or Windows checkout paths before buying. If the workflow is not a fit, skip it or ask support first.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="/repro-pack#storefront" data-event="cta_click" data-product="repro-pack" data-platform="desktop" data-destination="storefront">Choose Repro Pack for Mac or Windows</a>
+                        <a class="button button-secondary" href="/purchase-faq" data-event="cta_click" data-product="repro-pack" data-platform="web" data-destination="purchase-faq">Read purchase FAQ</a>
+                        <a class="button button-secondary" href="/privacy" data-event="cta_click" data-product="repro-pack" data-platform="web" data-destination="privacy">Read privacy notes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-grid footer-grid-rich">
+            <div class="footer-copy footer-brand-block">
+                <strong>Walter Claw Software LLC</strong>
+                <span>Arizona, USA</span>
+                <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a>
+                <span class="footer-motto">Through hardships to the stars.</span>
+                <span class="footer-fineprint">© 2026 Walter Claw Software LLC. Focused desktop tools, no subscription pitch.</span>
+            </div>
+            <nav class="footer-links footer-link-group" aria-label="Product links">
+                <strong>Products</strong>
+                <a href="/clipscript">ClipScript</a>
+                <a href="/transcript-rescue">Transcript Rescue</a>
+                <a href="/repro-pack">Repro Pack</a>
+                <a href="/bannersafe-youtube">BannerSafe for YouTube</a>
+                <a href="/app-icon-creator">App Icon Creator</a>
+            </nav>
+            <nav class="footer-links footer-link-group" aria-label="Company links">
+                <strong>Company</strong>
+                <a href="/about">About</a>
+                <a href="/updates">Updates</a>
+                <a href="/purchase-faq">Purchase FAQ</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/support">Support</a>
+                <a href="/contact">Contact</a>
+            </nav>
+            <nav class="footer-links footer-link-group" aria-label="Official channels">
+                <strong>Official channels</strong>
+                <a href="https://www.youtube.com/@WalterClawSoftwareLLC" target="_blank" rel="noopener noreferrer">YouTube demos</a>
+                <a href="https://x.com/WalterClawLLC" target="_blank" rel="noopener noreferrer">X updates</a>
+                <a href="https://www.linkedin.com/in/jeffrey-waters-222256407/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
