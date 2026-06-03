@@ -1,6 +1,7 @@
 /index.html / 301
 /about.html /about 301
 /clipscript.html /clipscript 301
+/youtube-transcript-downloader.html /youtube-transcript-downloader 301
 /transcript-rescue.html /transcript-rescue 301
 /repro-pack.html /repro-pack 301
 /bannersafe-youtube.html /bannersafe-youtube 301
@@ -10,6 +11,7 @@
 /contact.html /contact 301
 /about /about.html 200
 /clipscript /clipscript.html 200
+/youtube-transcript-downloader /youtube-transcript-downloader.html 200
 /transcript-rescue /transcript-rescue.html 200
 /repro-pack /repro-pack.html 200
 /bannersafe-youtube /bannersafe-youtube.html 200
