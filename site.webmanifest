@@ -1,7 +1,7 @@
 {
   "name": "Walter Claw Software LLC",
   "short_name": "WalterClaw",
-  "description": "Focused desktop tools for creators and small teams.",
+  "description": "Desktop tools for creators and small teams.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#07131f",
