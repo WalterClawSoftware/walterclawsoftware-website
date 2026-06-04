@@ -39,13 +39,13 @@ window.WCSStorefront = {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/2ca50a1b-4370-48bd-8c1f-1d135da48bf0",
         liveLabel: "Buy BannerSafe for Mac",
         pendingLabel: "Available now",
-        helperText: "BannerSafe for YouTube macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the macOS installer and follow the included instructions."
+        helperText: "BannerSafe for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the macOS installer and follow the included instructions."
     },
     "bannersafe-windows": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/619c3822-ffd0-4db5-a3af-2489854e9554",
         liveLabel: "Buy BannerSafe for Windows",
         pendingLabel: "Available now",
-        helperText: "BannerSafe for YouTube Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows installer and follow the included instructions."
+        helperText: "BannerSafe for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows installer and follow the included instructions."
     },
     "app-icon-creator-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ef2ebd35-478d-4264-a501-fbcccb06bfe0",

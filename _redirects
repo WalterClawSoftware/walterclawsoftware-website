@@ -6,7 +6,8 @@
 /bug-report-template.html /bug-report-template 301
 /transcript-rescue.html /transcript-rescue 301
 /repro-pack.html /repro-pack 301
-/bannersafe-youtube.html /bannersafe-youtube 301
+/bannersafe.html /bannersafe 301
+/bannersafe-youtube.html /bannersafe 301
 /youtube-banner-safe-area.html /youtube-banner-safe-area 301
 /app-icon-creator.html /app-icon-creator 301
 /png-to-icns-ico.html /png-to-icns-ico 301
@@ -17,7 +18,8 @@
 /privacy-policy /privacy 301
 /release-notes /updates 301
 /app-icon /app-icon-creator 301
-/banner-safe /bannersafe-youtube 301
+/banner-safe /bannersafe 301
+/bannersafe-youtube /bannersafe 301
 /transcriptrescue /transcript-rescue 301
 /repropack /repro-pack 301
 /about /about.html 200
@@ -27,7 +29,7 @@
 /bug-report-template /bug-report-template.html 200
 /transcript-rescue /transcript-rescue.html 200
 /repro-pack /repro-pack.html 200
-/bannersafe-youtube /bannersafe-youtube.html 200
+/bannersafe /bannersafe.html 200
 /youtube-banner-safe-area /youtube-banner-safe-area.html 200
 /app-icon-creator /app-icon-creator.html 200
 /png-to-icns-ico /png-to-icns-ico.html 200

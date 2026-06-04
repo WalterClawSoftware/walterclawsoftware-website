@@ -13,7 +13,7 @@ Public static website for **Walter Claw Software LLC**.
 - `clipscript.html` — ClipScript product page
 - `transcript-rescue.html` — Transcript Rescue product page
 - `repro-pack.html` — Repro Pack product page
-- `bannersafe-youtube.html` — BannerSafe for YouTube product page
+- `bannersafe.html` — BannerSafe product page
 - `app-icon-creator.html` — App Icon Creator product page
 - `privacy.html` — privacy policy
 - `support.html` — support entry point
