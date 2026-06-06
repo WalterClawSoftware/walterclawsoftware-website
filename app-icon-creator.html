@@ -7,22 +7,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>App Icon Creator | macOS ICNS and Windows ICO Exporter</title>
-    <meta name="description" content="App Icon Creator turns logo PNGs into macOS ICNS, Windows ICO, and PNG app icons with visible-size checks, proof sheets, and readiness reports.">
+    <title>App Icon Creator Desktop | macOS ICNS and Windows ICO Exporter</title>
+    <meta name="description" content="App Icon Creator Desktop turns logo artwork into local macOS ICNS, Windows ICO, PNG sizes, proof sheets, and small-size checks before release.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://walterclawsoftware.com/app-icon-creator">
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="Walter Claw Software LLC">
-    <meta property="og:title" content="App Icon Creator | macOS ICNS and Windows ICO Exporter">
-    <meta property="og:description" content="Create Dock and taskbar-ready app icons from logo PNGs, with macOS ICNS, Windows ICO, PNG exports, proof sheets, and readiness checks before release.">
+    <meta property="og:title" content="App Icon Creator Desktop | macOS ICNS and Windows ICO Exporter">
+    <meta property="og:description" content="Turn existing logo art into Dock and taskbar-ready icon bundles, with ICNS, ICO, PNG sizes, proof sheets, and local checks before release.">
     <meta property="og:url" content="https://walterclawsoftware.com/app-icon-creator">
     <meta property="og:image" content="https://walterclawsoftware.com/assets/brand/app-icon-creator-app-icon.png">
-    <meta property="og:image:alt" content="App Icon Creator app icon.">
+    <meta property="og:image:alt" content="App Icon Creator Desktop app icon.">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="App Icon Creator | macOS ICNS and Windows ICO Exporter">
-    <meta name="twitter:description" content="Export Mac ICNS, Windows ICO, and PNG app icons from logo files with proof before release.">
+    <meta name="twitter:title" content="App Icon Creator Desktop | macOS ICNS and Windows ICO Exporter">
+    <meta name="twitter:description" content="Create local ICNS, ICO, PNG sizes, and proof sheets from existing logo artwork before release.">
     <meta name="twitter:image" content="https://walterclawsoftware.com/assets/brand/app-icon-creator-app-icon.png">
     <link rel="stylesheet" href="styles.css">
     <script src="storefront-config.js" defer></script>
@@ -41,7 +41,7 @@
                 {
                     "@type": "ListItem",
                     "position": 2,
-                    "name": "App Icon Creator",
+                    "name": "App Icon Creator Desktop",
                     "item": "https://walterclawsoftware.com/app-icon-creator"
                 }
             ]
@@ -53,20 +53,21 @@
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "@id": "https://walterclawsoftware.com/app-icon-creator#app",
-            "name": "App Icon Creator",
+            "name": "App Icon Creator Desktop",
             "applicationCategory": "DesignApplication",
             "operatingSystem": [
                 "macOS",
                 "Windows"
             ],
-            "softwareVersion": "0.1.4",
-            "description": "App Icon Creator turns logo PNGs into standardized macOS ICNS, Windows ICO, and PNG app icon files with visible-size correction, proof sheets, and readiness checks.",
+            "softwareVersion": "1.0",
+            "description": "App Icon Creator Desktop turns existing logo artwork into local macOS ICNS, Windows ICO, PNG size sets, proof sheets, and small-size checks before release.",
             "url": "https://walterclawsoftware.com/app-icon-creator",
             "image": "https://walterclawsoftware.com/assets/brand/app-icon-creator-app-icon.png",
             "screenshot": [
-                "https://walterclawsoftware.com/assets/screenshots/App-Icon-Creator-Workspace.png",
-                "https://walterclawsoftware.com/assets/products/app-icon-creator/qa-summary.png",
-                "https://walterclawsoftware.com/assets/products/app-icon-creator/clipscript-proof-sheet.png"
+                "https://walterclawsoftware.com/assets/products/app-icon-creator/app-icon-creator-desktop-01-start-with-logo-artwork.webp",
+                "https://walterclawsoftware.com/assets/products/app-icon-creator/app-icon-creator-desktop-02-preview-dock-taskbar-readiness.webp",
+                "https://walterclawsoftware.com/assets/products/app-icon-creator/app-icon-creator-desktop-03-export-complete-icon-bundles.webp",
+                "https://walterclawsoftware.com/assets/products/app-icon-creator/app-icon-creator-desktop-04-local-offline-batch-workflow.webp"
             ],
             "publisher": {
                 "@type": "Organization",
@@ -115,10 +116,18 @@
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "Who is App Icon Creator for?",
+                    "name": "Who is App Icon Creator Desktop for?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "App Icon Creator is for people preparing Mac or Windows desktop app icons who already have logo or artwork files and want standardized icon outputs before release."
+                        "text": "App Icon Creator Desktop is for developers, small teams, and indie app makers who already have logo or artwork files and want repeatable icon outputs before release."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why use it instead of exporting icons by hand?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Manual export works until padding, small-size readability, missing file sizes, or mixed Mac and Windows outputs slow down a release. App Icon Creator Desktop puts those export and proofing steps in one local workflow."
                     }
                 },
                 {
@@ -126,7 +135,7 @@
                     "name": "What source artwork does it work with?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "It starts from a logo PNG that you provide. The page does not claim the app creates original brand artwork."
+                        "text": "It starts from PNG, JPG, or WebP artwork that you provide. The page does not claim the app creates original brand artwork."
                     }
                 },
                 {
@@ -134,7 +143,7 @@
                     "name": "What output formats does it create?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "It creates standardized PNG app icon files, macOS ICNS files, and Windows ICO files, with small-size previews, proof sheets, and a short QA report."
+                        "text": "It creates a standardized app-icon PNG, macOS ICNS, macOS iconset folder, Windows ICO, Windows PNG size set, small-size previews, proof sheets, and a short QA report."
                     }
                 },
                 {
@@ -187,7 +196,7 @@
                         <a class="nav-dropdown-item" href="/transcript-rescue">Transcript Rescue</a>
                         <a class="nav-dropdown-item" href="/repro-pack">Repro Pack</a>
                         <a class="nav-dropdown-item" href="/bannersafe">BannerSafe</a>
-                        <a class="nav-dropdown-item current" href="/app-icon-creator" aria-current="page">App Icon Creator</a>
+                        <a class="nav-dropdown-item current" href="/app-icon-creator" aria-current="page">App Icon Creator Desktop</a>
                     </div>
                 </details>
                 <a class="button button-secondary" href="/support">Support</a>
@@ -200,24 +209,25 @@
             <div class="shell">
                 <div class="hero-grid sales-hero-grid">
                     <div class="hero-copy sales-hero-copy">
-                        <div class="eyebrow">App icon output checks</div>
-                        <h1>Make app icons that still read at small sizes.</h1>
-                        <p>Load a logo PNG, standardize the icon, inspect small-size previews, and export app icon files with proof sheets.</p>
+                        <div class="eyebrow">Local icon packaging</div>
+                        <h1>Turn finished logo art into app icon files you can actually ship.</h1>
+                        <p>Create app-ready icon bundles from your artwork — locally, privately, and without memorizing platform icon rules. App Icon Creator Desktop handles ICNS, ICO, PNG sizes, small-size previews, proof sheets, and a local readiness report before you package the app.</p>
                         <div class="hero-actions">
                             <a class="button button-primary" href="#storefront" data-event="cta_click" data-product="app-icon-creator" data-platform="desktop" data-destination="storefront">Choose your platform</a>
                             <a class="button button-secondary" href="#screenshots" data-event="cta_click" data-product="app-icon-creator" data-platform="web" data-destination="screenshots">See screenshots</a>
                         </div>
                         <div class="hero-trust-strip" aria-label="Product basics">
                                 <span>$9.99 one-time price</span>
+                                <span>Local desktop workflow</span>
                                 <span>PNG / ICO / ICNS outputs</span>
                                 <span>Mac + Windows</span>
                         </div>
                     </div>
-                    <aside class="hero-card sales-buy-card" id="storefront" aria-label="Buy App Icon Creator.">
-                        <img class="product-mark product-mark-large" src="assets/brand/app-icon-creator-app-icon.webp" alt="App Icon Creator app icon" width="256" height="256">
+                    <aside class="hero-card sales-buy-card" id="storefront" aria-label="Buy App Icon Creator Desktop.">
+                        <img class="product-mark product-mark-large" src="assets/brand/app-icon-creator-app-icon.webp" alt="App Icon Creator Desktop app icon" width="256" height="256">
                         <div class="eyebrow">Available for Mac and Windows</div>
-                        <h2>Buy App Icon Creator.</h2>
-                        <p>A focused desktop pass for release-ready icon assets.</p>
+                        <h2>Buy App Icon Creator Desktop.</h2>
+                        <p>A focused desktop pass for turning existing artwork into icon files, proof sheets, and checks you can review before release.</p>
                         <div class="price-stack">
                             <strong>$9.99</strong>
                             <span>One-time price per desktop version.</span>
@@ -240,25 +250,75 @@
                         <div class="eyebrow">Look first</div>
                         <h2>Real screenshots, short explanation.</h2>
                     </div>
-                    <p>No inflated claims. The screenshots show the current app and the text below says what it is for.</p>
+                    <p>The screenshots show the current app, the corrected product artwork, and the proof-first workflow.</p>
                 </div>
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
-                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/screenshots/App-Icon-Creator-Workspace.webp" data-gallery-title="App Icon Creator workspace" data-gallery-alt="App Icon Creator interface showing source icon loading, output previews, and export controls." data-gallery-width="3420" data-gallery-height="2224" aria-label="Expand App Icon Creator workspace screenshot">
-                            <img src="assets/screenshots/App-Icon-Creator-Workspace.webp" alt="App Icon Creator interface showing source icon loading, output previews, and export controls." width="3420" height="2224">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/products/app-icon-creator/app-icon-creator-desktop-01-start-with-logo-artwork.webp" data-gallery-title="Start with logo artwork" data-gallery-alt="App Icon Creator Desktop start screen showing a local artwork drop area, export controls, and empty preview state." data-gallery-width="2880" data-gallery-height="1800" aria-label="Expand Start with logo artwork screenshot">
+                            <img src="assets/products/app-icon-creator/app-icon-creator-desktop-01-start-with-logo-artwork.webp" alt="App Icon Creator Desktop start screen showing a local artwork drop area, export controls, and empty preview state." width="2880" height="1800">
                         </button>
                         <figcaption>
-                            <strong>Load, inspect, export</strong>
+                            <strong>Start with one piece of artwork</strong>
+                            <span>Open or drop PNG, JPG, or WebP artwork before previewing icon behavior.</span>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/products/app-icon-creator/qa-summary.webp" data-gallery-title="App Icon Creator QA summary" data-gallery-alt="App Icon Creator QA summary comparing generated icon outputs." data-gallery-width="1356" data-gallery-height="440" aria-label="Expand App Icon Creator QA summary screenshot">
-                            <img src="assets/products/app-icon-creator/qa-summary.webp" alt="App Icon Creator QA summary comparing generated icon outputs." width="1356" height="440">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/products/app-icon-creator/app-icon-creator-desktop-02-preview-dock-taskbar-readiness.webp" data-gallery-title="Preview Dock and taskbar readiness" data-gallery-alt="App Icon Creator Desktop preview showing generated icon sizes from 16 px through 256 px." data-gallery-width="2880" data-gallery-height="1800" aria-label="Expand Preview Dock and taskbar readiness screenshot">
+                            <img src="assets/products/app-icon-creator/app-icon-creator-desktop-02-preview-dock-taskbar-readiness.webp" alt="App Icon Creator Desktop preview showing generated icon sizes from 16 px through 256 px." width="2880" height="1800">
                         </button>
                         <figcaption>
-                            <strong>Proof before release</strong>
+                            <strong>Preview small-size readability</strong>
+                            <span>Check whether the icon still reads in Dock, taskbar, launcher, and store contexts.</span>
                         </figcaption>
                     </figure>
+                    <figure class="screenshot-card">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/products/app-icon-creator/app-icon-creator-desktop-03-export-complete-icon-bundles.webp" data-gallery-title="Export complete icon bundles" data-gallery-alt="App Icon Creator Desktop export screen showing ICNS, iconset, ICO, PNG sizes, proof sheet, and readiness report output." data-gallery-width="2880" data-gallery-height="1800" aria-label="Expand Export complete icon bundles screenshot">
+                            <img src="assets/products/app-icon-creator/app-icon-creator-desktop-03-export-complete-icon-bundles.webp" alt="App Icon Creator Desktop export screen showing ICNS, iconset, ICO, PNG sizes, proof sheet, and readiness report output." width="2880" height="1800">
+                        </button>
+                        <figcaption>
+                            <strong>Export platform-ready bundles</strong>
+                            <span>Generate Mac and Windows icon assets without memorizing the icon-size matrix.</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <button class="screenshot-link" type="button" data-gallery-media="image" data-gallery-src="assets/products/app-icon-creator/app-icon-creator-desktop-04-local-offline-batch-workflow.webp" data-gallery-title="Local offline workflow" data-gallery-alt="App Icon Creator Desktop dark-mode batch workflow screenshot showing multiple local source images and advisory output." data-gallery-width="2880" data-gallery-height="1800" aria-label="Expand Local offline workflow screenshot">
+                            <img src="assets/products/app-icon-creator/app-icon-creator-desktop-04-local-offline-batch-workflow.webp" alt="App Icon Creator Desktop dark-mode batch workflow screenshot showing multiple local source images and advisory output." width="2880" height="1800">
+                        </button>
+                        <figcaption>
+                            <strong>Keep unreleased artwork local</strong>
+                            <span>Use a no-account desktop workflow instead of uploading source artwork to a web converter.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="why">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Why it exists</div>
+                        <h2>The annoying part is not drawing the logo. It is packaging it cleanly.</h2>
+                    </div>
+                    <p>Most icon mistakes happen after the artwork is done: padding changes, small sizes blur, or the wrong file lands in the release folder.</p>
+                </div>
+                <div class="grid grid-two">
+                    <article class="page-card">
+                        <h3>A focused release-prep tool</h3>
+                        <p>Design apps are good at making artwork. App Icon Creator Desktop is for the pass after that: normalize the source image, export Mac and Windows icon formats, and produce a proof sheet you can review before you ship.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Small-size checks</h3>
+                        <p>A mark that looks fine at 1024 px can fall apart in the Dock, Finder, Explorer, or a taskbar. The preview and proof sheet help catch weak silhouettes, cramped padding, and contrast problems while you still have time to adjust.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Repeatable outputs</h3>
+                        <p>Use the same artwork and settings to create ICNS, iconset, ICO, Windows PNG sizes, and a standardized app-icon PNG. The point is fewer hand-built export folders and fewer "which size did I miss?" moments.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Local by default</h3>
+                        <p>Your source artwork stays on your machine during the app workflow. There is no account, API key, cloud upload, or subscription required to make the files.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -275,7 +335,7 @@
                 <div class="grid grid-three">
                     <article class="page-card">
                         <h3>Good fit</h3>
-                        <p>You have logo art and need icons that look consistent across Finder, Explorer, docks, launchers, and store assets. For the plain export checklist, see the <a href="/png-to-icns-ico">PNG to ICNS and ICO page</a>.</p>
+                        <p>You already have logo art and need repeatable icon outputs that look consistent across Finder, Explorer, docks, launchers, and store assets. For the plain export checklist, see the <a href="/png-to-icns-ico">PNG to ICNS and ICO page</a>.</p>
                     </article>
                     <article class="page-card">
                         <h3>Not for</h3>
@@ -283,7 +343,7 @@
                     </article>
                     <article class="page-card">
                         <h3>What you get</h3>
-                        <p>Standardized PNG, Mac ICNS, Windows ICO, preview sheets, and a short QA report.</p>
+                        <p>Standardized PNG, Mac ICNS, iconset, Windows ICO, Windows PNG sizes, preview sheets, and a short QA report.</p>
                     </article>
                 </div>
             </div>
@@ -294,22 +354,26 @@
                 <div class="section-heading">
                     <div>
                         <div class="eyebrow">Product FAQ</div>
-                        <h2 id="app-icon-creator-faq-heading">App Icon Creator questions.</h2>
+                        <h2 id="app-icon-creator-faq-heading">App Icon Creator Desktop questions.</h2>
                     </div>
                     <p>Short answers about fit, inputs, outputs, limits, and checkout.</p>
                 </div>
                 <div class="grid grid-two">
                     <article class="page-card">
-                        <h3>Who is App Icon Creator for?</h3>
-                        <p>App Icon Creator is for people preparing Mac or Windows desktop app icons who already have logo or artwork files and want standardized icon outputs before release.</p>
+                        <h3>Who is App Icon Creator Desktop for?</h3>
+                        <p>App Icon Creator Desktop is for developers, small teams, and indie app makers who already have logo or artwork files and want repeatable icon outputs before release.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>Why use it instead of exporting icons by hand?</h3>
+                        <p>Manual export works until padding, small-size readability, missing file sizes, or mixed Mac and Windows outputs slow down a release. App Icon Creator Desktop puts those export and proofing steps in one local workflow.</p>
                     </article>
                     <article class="page-card">
                         <h3>What source artwork does it work with?</h3>
-                        <p>It starts from a logo PNG that you provide. The page does not claim the app creates original brand artwork.</p>
+                        <p>It starts from PNG, JPG, or WebP artwork that you provide. The page does not claim the app creates original brand artwork.</p>
                     </article>
                     <article class="page-card">
                         <h3>What output formats does it create?</h3>
-                        <p>It creates standardized PNG app icon files, macOS ICNS files, and Windows ICO files, with small-size previews, proof sheets, and a short QA report.</p>
+                        <p>It creates a standardized app-icon PNG, macOS ICNS, macOS iconset folder, Windows ICO, Windows PNG size set, small-size previews, proof sheets, and a short QA report.</p>
                     </article>
                     <article class="page-card">
                         <h3>Does it design a new logo or icon from scratch?</h3>
@@ -356,7 +420,7 @@
                 <a href="/transcript-rescue">Transcript Rescue</a>
                 <a href="/repro-pack">Repro Pack</a>
                 <a href="/bannersafe">BannerSafe</a>
-                <a href="/app-icon-creator">App Icon Creator</a>
+                <a href="/app-icon-creator">App Icon Creator Desktop</a>
             </nav>
             <nav class="footer-links footer-link-group" aria-label="Company links">
                 <strong>Company</strong>
@@ -378,7 +442,7 @@
 
     <div class="lightbox" aria-hidden="true">
         <div class="lightbox-backdrop" data-lightbox-close></div>
-        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="App Icon Creator screenshot slideshow" tabindex="-1">
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="App Icon Creator Desktop screenshot slideshow" tabindex="-1">
             <button class="lightbox-close" type="button" aria-label="Close preview" data-lightbox-close>&times;</button>
             <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous preview" data-lightbox-prev>&lsaquo;</button>
             <button class="lightbox-nav lightbox-next" type="button" aria-label="Next preview" data-lightbox-next>&rsaquo;</button>
