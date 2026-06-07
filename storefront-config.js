@@ -25,38 +25,38 @@ window.WCSStorefront = {
     },
     "repro-pack-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/4bfd9226-0727-4fbe-999b-709a6675b8e3",
-        liveLabel: "Buy Repro Pack for Mac",
+        liveLabel: "Buy Repro Pack for Mac direct",
         pendingLabel: "Available now",
-        helperText: "Repro Pack for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the macOS .pkg installer and follow the included instructions."
+        helperText: "Repro Pack for Mac remains available as a direct download while its Apple App Store version waits/in review."
     },
     "repro-pack-windows": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/c40206e8-0eb2-4a56-84cc-565eba73cb84",
-        liveLabel: "Buy Repro Pack for Windows",
+        checkoutUrl: "https://apps.microsoft.com/detail/9MXD6042C83Q",
+        liveLabel: "Get Repro Pack on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "Repro Pack for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows installer and follow the included instructions."
+        helperText: "Repro Pack for Windows is live in the Microsoft Store under Walter Claw Software LLC at the same $9.99 one-time price."
     },
     "bannersafe-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/2ca50a1b-4370-48bd-8c1f-1d135da48bf0",
-        liveLabel: "Buy BannerSafe for Mac",
+        liveLabel: "Buy BannerSafe for Mac direct",
         pendingLabel: "Available now",
-        helperText: "BannerSafe for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the macOS installer and follow the included instructions."
+        helperText: "BannerSafe for Mac remains available as a direct download while its Apple App Store version waits/in review."
     },
     "bannersafe-windows": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/619c3822-ffd0-4db5-a3af-2489854e9554",
-        liveLabel: "Buy BannerSafe for Windows",
+        checkoutUrl: "https://apps.microsoft.com/detail/9NVQHVXLMP9Z",
+        liveLabel: "Get BannerSafe on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "BannerSafe for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows installer and follow the included instructions."
+        helperText: "BannerSafe for Windows is live in the Microsoft Store under Walter Claw Software LLC at the same $9.99 one-time price."
     },
     "app-icon-creator-macos": {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ef2ebd35-478d-4264-a501-fbcccb06bfe0",
-        liveLabel: "Buy App Icon Creator for Mac",
+        liveLabel: "Buy App Icon Creator for Mac direct",
         pendingLabel: "Available now",
-        helperText: "App Icon Creator for macOS is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the notarized macOS .pkg installer and follow the included instructions."
+        helperText: "App Icon Creator for Mac remains available as a direct download while its Apple App Store version waits/in review."
     },
     "app-icon-creator-windows": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/cff47704-74a9-4cca-a88b-604aec544d0f",
-        liveLabel: "Buy App Icon Creator for Windows",
+        checkoutUrl: "https://apps.microsoft.com/detail/9NWVSK378WRT",
+        liveLabel: "Get App Icon Creator on Microsoft Store",
         pendingLabel: "Available now",
-        helperText: "App Icon Creator for Windows is available now for $9.99. Buy direct through secure Lemon Squeezy checkout, then download the Windows setup installer and follow the included instructions. The Windows installer is currently unsigned, so Windows SmartScreen may show a warning."
+        helperText: "App Icon Creator Desktop for Windows is live in the Microsoft Store under Walter Claw Software LLC at the same $9.99 one-time price."
     }
 };
