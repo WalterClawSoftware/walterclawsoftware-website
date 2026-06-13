@@ -27,7 +27,7 @@ window.WCSStorefront = {
         checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/4bfd9226-0727-4fbe-999b-709a6675b8e3",
         liveLabel: "Buy Repro Pack for Mac direct",
         pendingLabel: "Available now",
-        helperText: "Repro Pack for Mac remains available as a direct download while its Apple App Store version waits/in review."
+        helperText: "Repro Pack for Mac is available as a direct download while its Apple App Store version is in review."
     },
     "repro-pack-windows": {
         checkoutUrl: "https://apps.microsoft.com/detail/9MXD6042C83Q",
@@ -36,10 +36,10 @@ window.WCSStorefront = {
         helperText: "Repro Pack for Windows is live in the Microsoft Store under Walter Claw Software LLC at the same $9.99 one-time price."
     },
     "bannersafe-macos": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/2ca50a1b-4370-48bd-8c1f-1d135da48bf0",
-        liveLabel: "Buy BannerSafe for Mac direct",
+        checkoutUrl: "https://apps.apple.com/us/app/bannersafe/id6776421214?mt=12",
+        liveLabel: "Get BannerSafe on Mac App Store",
         pendingLabel: "Available now",
-        helperText: "BannerSafe for Mac remains available as a direct download while its Apple App Store version waits/in review."
+        helperText: "BannerSafe for Mac is live on the Apple App Store at the same $9.99 one-time price."
     },
     "bannersafe-windows": {
         checkoutUrl: "https://apps.microsoft.com/detail/9NVQHVXLMP9Z",
@@ -48,10 +48,10 @@ window.WCSStorefront = {
         helperText: "BannerSafe for Windows is live in the Microsoft Store under Walter Claw Software LLC at the same $9.99 one-time price."
     },
     "app-icon-creator-macos": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/ef2ebd35-478d-4264-a501-fbcccb06bfe0",
-        liveLabel: "Buy App Icon Creator for Mac direct",
+        checkoutUrl: "https://apps.apple.com/us/app/app-icon-creator-desktop/id6777243662?mt=12",
+        liveLabel: "Get App Icon Creator Desktop on Mac App Store",
         pendingLabel: "Available now",
-        helperText: "App Icon Creator for Mac remains available as a direct download while its Apple App Store version waits/in review."
+        helperText: "App Icon Creator Desktop for Mac is live on the Apple App Store at the same $9.99 one-time price."
     },
     "app-icon-creator-windows": {
         checkoutUrl: "https://apps.microsoft.com/detail/9NWVSK378WRT",
