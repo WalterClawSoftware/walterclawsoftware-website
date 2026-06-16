@@ -24,10 +24,10 @@ window.WCSStorefront = {
         helperText: "Transcript Rescue for Windows is live in the Microsoft Store. It works locally with pasted or opened transcript text; no cloud account or transcript upload required."
     },
     "repro-pack-macos": {
-        checkoutUrl: "https://walterclawsoftware.lemonsqueezy.com/checkout/buy/4bfd9226-0727-4fbe-999b-709a6675b8e3",
-        liveLabel: "Buy Repro Pack for Mac direct",
+        checkoutUrl: "https://apps.apple.com/us/app/repro-pack/id6775072336?mt=12",
+        liveLabel: "Get Repro Pack on Mac App Store",
         pendingLabel: "Available now",
-        helperText: "Repro Pack for Mac is available as a direct download while its Apple App Store version is in review."
+        helperText: "Repro Pack for Mac is live on the Apple App Store at the same $9.99 one-time price."
     },
     "repro-pack-windows": {
         checkoutUrl: "https://apps.microsoft.com/detail/9MXD6042C83Q",
