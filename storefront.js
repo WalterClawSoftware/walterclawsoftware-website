@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        if (product.store linkUrl) {
-            link.setAttribute("href", product.store linkUrl);
+        if (product.storeLinkUrl) {
+            link.setAttribute("href", product.storeLinkUrl);
             link.removeAttribute("aria-disabled");
             link.classList.remove("button-disabled");
         } else {
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        if (product.store linkUrl) {
+        if (product.storeLinkUrl) {
             cta.textContent = product.liveLabel || "Get now";
-            cta.setAttribute("href", product.store linkUrl);
+            cta.setAttribute("href", product.storeLinkUrl);
             cta.removeAttribute("aria-disabled");
             cta.classList.remove("button-disabled");
         } else {
