@@ -60,8 +60,8 @@ window.WCSStorefront = {
         helperText: "App Icon Creator Desktop for Windows is live in the Microsoft Store under Walter Claw Software LLC as a free download."
     },
     "simple-voice-reader-macos": {
-        storeLinkUrl: "https://apps.apple.com/us/app/simple-voice-reader/id6787165967",
-        liveLabel: "Get Simple Voice Reader on the App Store",
+        storeLinkUrl: "https://apps.apple.com/us/app/simple-voice-reader/id6787165967?mt=12",
+        liveLabel: "Get Simple Voice Reader for Mac",
         pendingLabel: "Available now",
         helperText: "Simple Voice Reader is free on the App Store for iPhone, iPad, and Mac."
     },

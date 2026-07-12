@@ -14,6 +14,7 @@ This document is public-safe because Netlify publishes the repository root. Live
 
 - Updated the homepage, Simple Voice Reader product page, storefront configuration, metadata, structured data, FAQ, and update history to show live Apple App Store and Microsoft Store availability.
 - Added the live Apple listing for iPhone, iPad, and Mac and a Microsoft Store search link for the Windows listing.
+- Split the Apple storefront call to action into clearly labeled Mac and iPhone/iPad buttons; the Mac link uses Apple’s `mt=12` platform hint.
 - Clarified Simple Voice Reader’s local text-to-speech privacy wording.
 - Established the shared Codex/Hermes continuity contract.
 
