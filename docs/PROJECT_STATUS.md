@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-11
+Last updated: 2026-07-12
 
 This document is public-safe because Netlify publishes the repository root. Live Git, Netlify, public storefronts, and `https://walterclawsoftware.com` override this handoff when they differ.
 
@@ -12,11 +12,15 @@ This document is public-safe because Netlify publishes the repository root. Live
 
 ## Recently Completed
 
+- Updated the homepage, Simple Voice Reader product page, storefront configuration, metadata, structured data, FAQ, and update history to show live Apple App Store and Microsoft Store availability.
+- Added the live Apple listing for iPhone, iPad, and Mac and a Microsoft Store search link for the Windows listing.
 - Clarified Simple Voice Reader’s local text-to-speech privacy wording.
 - Established the shared Codex/Hermes continuity contract.
 
 ## Verification
 
+- Apple’s public lookup API returned Simple Voice Reader as a free app under ID `6787165967`, supporting iPhone, iPad, and Mac.
+- Microsoft Store availability was supplied by the product owner; the public site points to Microsoft Store search until a stable product-detail URL is recorded.
 - Clean GitHub-origin continuity checkout inspected.
 - No customer-facing HTML, assets, redirects, sitemap, or Netlify configuration changed in this continuity update.
 
@@ -31,4 +35,4 @@ This document is public-safe because Netlify publishes the repository root. Live
 
 ## Next Recommended Action
 
-- For the next public change, verify source claims, preview locally and on Netlify, then smoke-check production after deployment.
+- Replace the Microsoft Store search URL with the stable product-detail URL when its product ID is recorded, then smoke-check both storefront links.
