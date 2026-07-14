@@ -32,6 +32,8 @@ This document is public-safe because Netlify publishes the repository root. Live
 - Local HTTP smoke checks returned 200 for the product, privacy, support, and
   screenshot assets. Both screenshot PNGs are 1280x800 without alpha and were
   visually inspected after derivation from the release screenshots.
+- Cache-busted production readback verified the WAV/MP3, Smart Chapter,
+  privacy, release-state, and screenshot changes at `walterclawsoftware.com`.
 - Apple’s public lookup API returned Simple Voice Reader as a free app under ID `6787165967`, supporting iPhone, iPad, and Mac.
 - Microsoft Store availability was supplied by the product owner; the public site points to Microsoft Store search until a stable product-detail URL is recorded.
 - Clean GitHub-origin continuity checkout inspected.
@@ -42,6 +44,8 @@ This document is public-safe because Netlify publishes the repository root. Live
 - Live product availability and prices must be verified against Apple/Microsoft storefronts before changing website claims.
 - The current Mac App Store release remains 1.0.1; macOS 1.1 is still in final
   local release testing and has not been represented as available.
+- Netlify production is serving website revision `46293a3` with the corrected
+  Simple Voice Reader export copy and screenshots.
 
 ## Known Issues and Risks
 
