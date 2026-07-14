@@ -56,8 +56,8 @@
             "name": "Simple Voice Reader",
             "applicationCategory": "ProductivityApplication",
             "operatingSystem": "iOS, iPadOS, macOS, Windows",
-            "softwareVersion": "1.0",
-            "description": "Simple Voice Reader is a free Mac text-to-speech reader for listening to pasted text, imported TXT, RTF, and PDF files, and exporting spoken audio.",
+            "softwareVersion": "1.0.1",
+            "description": "Simple Voice Reader is a free text-to-speech reader for listening to pasted text and imported TXT, RTF, and PDF files, or exporting spoken audio as WAV or MP3.",
             "url": "https://walterclawsoftware.com/simple-voice-reader",
             "image": "https://walterclawsoftware.com/assets/brand/simple-voice-reader-app-icon.png",
             "screenshot": [
@@ -109,10 +109,18 @@
                 },
                 {
                     "@type": "Question",
+                    "name": "Is text sent to a cloud speech service?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Kokoro and compatible installed system voices process speech locally. Simple Voice Reader does not send text or documents to Walter Claw Software or to a cloud text-to-speech service."
+                    }
+                },
+                {
+                    "@type": "Question",
                     "name": "Can Simple Voice Reader export audio?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. The app can export spoken audio, and Smart Chapter Export can create separate chapter files when recognizable chapter structure is present."
+                        "text": "Yes. The Mac app exports WAV or MP3 audio. Smart Chapter Export detects recognizable chapter structure and creates a separate audio file for each chapter."
                     }
                 },
                 {
@@ -120,7 +128,7 @@
                     "name": "What voices are included?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "The Apple editions use American English Apple system voices. The Windows edition supports Kokoro and installed American English Windows voices."
+                        "text": "The current Windows edition and forthcoming macOS 1.1 release support American English Kokoro voices plus compatible installed system voices. The iPhone and iPad editions use installed American English Apple system voices."
                     }
                 }
             ]
@@ -176,7 +184,8 @@
                             <span>iPhone / iPad / Mac / Windows</span>
                             <span>TXT / RTF / PDF import</span>
                             <span>Word highlighting</span>
-                            <span>Audio export</span>
+                            <span>Local processing</span>
+                            <span>WAV / MP3 export</span>
                         </div>
                     </div>
                     <aside class="hero-card sales-buy-card" id="storefront" aria-label="Get Simple Voice Reader.">
@@ -193,7 +202,7 @@
                             <a class="button button-secondary" href="https://apps.apple.com/us/app/simple-voice-reader/id6787165967" target="_blank" rel="noopener noreferrer" data-event="cta_click" data-product="simple-voice-reader" data-platform="ios" data-destination="app-store">Get Simple Voice Reader for iPhone &amp; iPad</a>
                             <a class="button button-secondary" href="https://apps.microsoft.com/search?query=Simple%20Voice%20Reader" target="_blank" rel="noopener noreferrer" data-event="cta_click" data-product="simple-voice-reader" data-platform="windows" data-destination="microsoft-store">Get it from Microsoft</a>
                         </div>
-                        <p class="storefront-note" data-storefront-helper>The Apple App Store listing supports iPhone, iPad, and Mac. The Windows edition is available from Microsoft Store.</p>
+                        <p class="storefront-note" data-storefront-helper>The Apple App Store listing supports iPhone, iPad, and Mac. The Windows edition is available from Microsoft Store. macOS 1.1 with 19 Kokoro voices is in final release testing.</p>
                     </aside>
                 </div>
             </div>
@@ -218,8 +227,8 @@
                         <p>Choose an American English voice, set the speed from 0.75x to 2.0x, pause when needed, and resume from the current position.</p>
                     </article>
                     <article class="page-card">
-                        <h3>Export spoken audio</h3>
-                        <p>Render audio without real-time playback, choose a destination, and use Smart Chapter Export when a document has recognizable chapter structure.</p>
+                        <h3>Create listening files</h3>
+                        <p>Export the whole document as WAV or MP3, or let Smart Chapter Export create a separate audio file for each detected chapter.</p>
                     </article>
                 </div>
             </div>
@@ -237,7 +246,7 @@
                 <div class="screenshot-grid">
                     <figure class="screenshot-card">
                         <a class="screenshot-link" href="assets/screenshots/Simple-Voice-Reader-Light-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-Light-Mode.png" data-gallery-title="Simple Voice Reader light mode" data-gallery-width="1280" data-gallery-height="800">
-                            <img src="assets/screenshots/Simple-Voice-Reader-Light-Mode.webp" alt="Simple Voice Reader light mode showing text, voice controls, speed selection, import, export, and speech controls." width="1280" height="800">
+                            <img src="assets/screenshots/Simple-Voice-Reader-Light-Mode.webp" alt="Simple Voice Reader light mode showing Kokoro Heart, text, speed, font, import, WAV or MP3 export, and speech controls." width="1280" height="800">
                         </a>
                         <figcaption>
                             <strong>Light mode reading workspace</strong>
@@ -246,7 +255,7 @@
                     </figure>
                     <figure class="screenshot-card">
                         <a class="screenshot-link" href="assets/screenshots/Simple-Voice-Reader-Dark-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-Dark-Mode.png" data-gallery-title="Simple Voice Reader dark mode" data-gallery-width="1280" data-gallery-height="800">
-                            <img src="assets/screenshots/Simple-Voice-Reader-Dark-Mode.webp" alt="Simple Voice Reader dark mode showing the same text-to-speech workflow with dark appearance selected." width="1280" height="800">
+                            <img src="assets/screenshots/Simple-Voice-Reader-Dark-Mode.webp" alt="Simple Voice Reader dark mode showing Smart Chapter Export enabled with WAV selected." width="1280" height="800">
                         </a>
                         <figcaption>
                             <strong>Dark mode for long sessions</strong>
@@ -277,7 +286,7 @@
                     </article>
                     <article class="feature-card">
                         <h3>American English voices</h3>
-                        <p>The submitted Mac build includes American English Kokoro voices and selected normal American English Apple system voices.</p>
+                        <p>The forthcoming macOS 1.1 release includes 19 American English Kokoro voices and displays compatible American English Apple system voices installed on the Mac.</p>
                     </article>
                     <article class="feature-card">
                         <h3>File import</h3>
@@ -288,8 +297,8 @@
                         <p>Choose a font and font size from the system fonts available on your Mac.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>Export options</h3>
-                        <p>Export rendered speech to popular audio formats and choose the folder and file name that fit your workflow.</p>
+                        <h3>WAV, MP3, and chapters</h3>
+                        <p>Choose WAV or MP3 for a full-document export. Smart Chapter Export can parse recognizable headings in text or PDF imports and create individually named chapter files.</p>
                     </article>
                 </div>
             </div>
@@ -329,7 +338,7 @@
                         <div class="eyebrow">Product FAQ</div>
                         <h2 id="simple-voice-reader-faq-heading">Simple Voice Reader questions.</h2>
                     </div>
-                    <p>Short answers about release status, file types, voices, export, and support.</p>
+                    <p>Short answers about release status, file types, voices, privacy, export, and support.</p>
                 </div>
                 <div class="grid grid-two">
                     <article class="page-card">
@@ -345,12 +354,20 @@
                         <p>You can paste or type text directly, or import TXT, RTF, and PDF files.</p>
                     </article>
                     <article class="page-card">
+                        <h3>Is speech processed locally?</h3>
+                        <p>Yes. Kokoro and compatible installed system voices process speech on the device. Text and documents are not sent to Walter Claw Software or to a cloud text-to-speech service.</p>
+                    </article>
+                    <article class="page-card">
                         <h3>Can I export audio?</h3>
-                        <p>Yes. Export lets you choose the file name, folder, and popular audio format. Smart Chapter Export can create separate files from detected chapters.</p>
+                        <p>Yes. The Mac app exports the full document as WAV or MP3. You choose the file name, format, and destination.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>What does Smart Chapter Export do?</h3>
+                        <p>When recognizable chapter headings are present in text or an imported PDF, it creates separate, clearly named WAV or MP3 files for the detected chapters.</p>
                     </article>
                     <article class="page-card">
                         <h3>What voices are supported?</h3>
-                        <p>The Apple editions use American English Apple system voices. The Windows edition supports Kokoro and installed American English Windows voices.</p>
+                        <p>The current Windows edition and forthcoming macOS 1.1 release support American English Kokoro voices plus compatible installed system voices. iPhone and iPad use installed American English Apple system voices.</p>
                     </article>
                     <article class="page-card">
                         <h3>Where do I get help?</h3>
@@ -364,7 +381,7 @@
             <div class="shell">
                 <div class="callout">
                     <h3>Want a simple answer before downloading?</h3>
-                    <p>Email support with the kind of text you want to listen to, the file type, and whether you need live speech or exported audio. You will get a plain recommendation.</p>
+                    <p>Email support with the kind of text you want to listen to, the file type, voice engine, whether you need live speech or exported audio, and any visible error. You will get a plain recommendation.</p>
                     <div class="hero-actions">
                         <a class="button button-primary" href="mailto:support@walterclawsoftware.com" data-event="cta_click" data-product="simple-voice-reader" data-platform="support" data-destination="support-email">Email support</a>
                         <a class="button button-secondary" href="/simple-voice-reader/privacy" data-event="cta_click" data-product="simple-voice-reader" data-platform="web" data-destination="privacy">Read privacy policy</a>
