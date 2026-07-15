@@ -30,11 +30,13 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Parsed all 20 HTML files, parsed every JSON-LD block, checked every local `href` and `src`, and ran `git diff --check`; all passed.
 - Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
 - Netlify preview `6a56cf424db301cb324144cb` returned HTTP 200 for the product, support, privacy, site-wide supporting pages, and both new screenshot assets. Preview copy assertions passed.
+- Cache-busted production readback returned HTTP 200 for the same routes and assets, and exact copy assertions passed. The live desktop and phone layouts had no overflow, broken media, or browser console warning/error.
 
 ## External State
 
 - No Apple or Microsoft store record was changed during this website update.
-- Production deployment and live readback are the remaining steps for this revision.
+- GitHub `main` published customer-facing revision `467f744036fe3dc105be6cf2ad6a9ef1aacfd1e5`.
+- Netlify production deployment `6a56cfed61592fc90dc47696` published and verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
