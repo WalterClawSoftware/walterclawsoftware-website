@@ -63,10 +63,10 @@ window.WCSStorefront = {
         storeLinkUrl: "https://apps.apple.com/us/app/simple-voice-reader/id6787165967?mt=12",
         liveLabel: "Get Simple Voice Reader for Mac",
         pendingLabel: "Available now",
-        helperText: "Simple Voice Reader is free on the App Store for iPhone, iPad, and Mac."
+        helperText: "Mac 1.1 and Windows include local Kokoro voices. The current iPhone and iPad release uses installed Apple voices; its optional Kokoro pack is awaiting Apple review in version 1.1."
     },
     "simple-voice-reader-windows": {
-        storeLinkUrl: "https://apps.microsoft.com/search?query=Simple%20Voice%20Reader",
+        storeLinkUrl: "https://apps.microsoft.com/detail/9NJ66Q625LL6",
         liveLabel: "Get Simple Voice Reader on Microsoft Store",
         pendingLabel: "Available now",
         helperText: "Simple Voice Reader for Windows is free in the Microsoft Store."

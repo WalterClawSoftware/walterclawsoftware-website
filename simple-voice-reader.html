@@ -13,7 +13,7 @@
     <link rel="canonical" href="https://walterclawsoftware.com/simple-voice-reader">
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="Walter Claw Software LLC">
-    <meta property="og:title" content="Simple Voice Reader | Free Mac Text-to-Speech Reader">
+    <meta property="og:title" content="Simple Voice Reader | Free Text-to-Speech Reader">
     <meta property="og:description" content="Listen to long text, imported files, drafts, and PDFs in a focused free app for iPhone, iPad, Mac, and Windows.">
     <meta property="og:url" content="https://walterclawsoftware.com/simple-voice-reader">
     <meta property="og:image" content="https://walterclawsoftware.com/assets/brand/simple-voice-reader-app-icon.png">
@@ -21,7 +21,7 @@
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Simple Voice Reader | Free Mac Text-to-Speech Reader">
+    <meta name="twitter:title" content="Simple Voice Reader | Free Text-to-Speech Reader">
     <meta name="twitter:description" content="A focused, free reader for listening to pasted text, TXT, RTF, and PDF files on iPhone, iPad, Mac, and Windows.">
     <meta name="twitter:image" content="https://walterclawsoftware.com/assets/brand/simple-voice-reader-app-icon.png">
     <link rel="stylesheet" href="styles.css">
@@ -56,13 +56,14 @@
             "name": "Simple Voice Reader",
             "applicationCategory": "ProductivityApplication",
             "operatingSystem": "iOS, iPadOS, macOS, Windows",
-            "softwareVersion": "1.0.1",
-            "description": "Simple Voice Reader is a free text-to-speech reader for listening to pasted text and imported TXT, RTF, and PDF files, or exporting spoken audio as WAV or MP3.",
+            "softwareVersion": "macOS 1.1; iOS and iPadOS 1.0.1; Windows 1.0.1",
+            "description": "Simple Voice Reader is a free, local text-to-speech reader for iPhone, iPad, Mac, and Windows. It reads pasted text and imported TXT, RTF, and PDF files; the desktop editions also export spoken audio.",
             "url": "https://walterclawsoftware.com/simple-voice-reader",
             "image": "https://walterclawsoftware.com/assets/brand/simple-voice-reader-app-icon.png",
             "screenshot": [
                 "https://walterclawsoftware.com/assets/screenshots/Simple-Voice-Reader-Light-Mode.png",
-                "https://walterclawsoftware.com/assets/screenshots/Simple-Voice-Reader-Dark-Mode.png"
+                "https://walterclawsoftware.com/assets/screenshots/Simple-Voice-Reader-iPhone-Light-Mode.png",
+                "https://walterclawsoftware.com/assets/screenshots/Simple-Voice-Reader-Windows-Light-Mode.png"
             ],
             "publisher": {
                 "@type": "Organization",
@@ -75,13 +76,26 @@
                     "https://www.linkedin.com/in/jeffrey-waters-222256407/"
                 ]
             },
-            "offers": {
-                "@type": "Offer",
-                "url": "https://walterclawsoftware.com/simple-voice-reader#storefront",
-                "priceCurrency": "USD",
-                "price": "0.00",
-                "availability": "https://schema.org/InStock"
-            }
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "url": "https://apps.apple.com/us/app/simple-voice-reader/id6787165967",
+                    "priceCurrency": "USD",
+                    "price": "0.00",
+                    "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "url": "https://apps.microsoft.com/detail/9NJ66Q625LL6",
+                    "priceCurrency": "USD",
+                    "price": "0.00",
+                    "availability": "https://schema.org/InStock"
+                }
+            ],
+            "sameAs": [
+                "https://apps.apple.com/us/app/simple-voice-reader/id6787165967",
+                "https://apps.microsoft.com/detail/9NJ66Q625LL6"
+            ]
         }
     </script>
 
@@ -120,7 +134,7 @@
                     "name": "Can Simple Voice Reader export audio?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. The Mac app exports WAV or MP3 audio. Smart Chapter Export detects recognizable chapter structure and creates a separate audio file for each chapter."
+                        "text": "Yes on desktop. The Mac app exports WAV or MP3. The Windows app exports MP3, WAV, FLAC, OGG, or AIFF. Both desktop editions include Smart Chapter Export. Audio export is not part of the current iPhone and iPad app."
                     }
                 },
                 {
@@ -128,7 +142,7 @@
                     "name": "What voices are included?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "The current Windows edition and forthcoming macOS 1.1 release support American English Kokoro voices plus compatible installed system voices. The iPhone and iPad editions use installed American English Apple system voices."
+                        "text": "Mac includes 19 American English Kokoro voices plus selected installed Apple voices. Windows includes American English Kokoro voices plus installed Windows voices. The current iPhone and iPad release uses installed Apple voices; an optional Kokoro pack is awaiting Apple review as part of iOS 1.1."
                     }
                 }
             ]
@@ -172,20 +186,20 @@
                 <div class="hero-grid sales-hero-grid">
                     <div class="hero-copy sales-hero-copy">
                         <div class="eyebrow">Free text-to-speech reader</div>
-                        <h1>Listen to long text without turning it into another chore.</h1>
-                        <p>Simple Voice Reader reads pasted text, TXT, RTF, and PDF files aloud in a focused app for iPhone, iPad, Mac, and Windows. It is for people who want to review drafts, listen through long documents, export spoken audio, or give their eyes a break without setting up a larger media workflow.</p>
+                        <h1>Simple Voice Reader</h1>
+                        <p>Turn long text into clear spoken audio on iPhone, iPad, Mac, or Windows. Paste text or import TXT, RTF, and PDF files, start from any point, and follow the live word highlight. The Mac and Windows editions also create audio files for later listening.</p>
                         <div class="hero-actions">
                             <a class="button button-primary" href="#storefront" data-event="cta_click" data-product="simple-voice-reader" data-platform="all" data-destination="storefront">Get the app</a>
                             <a class="button button-secondary" href="#screenshots" data-event="cta_click" data-product="simple-voice-reader" data-platform="web" data-destination="screenshots">See screenshots</a>
                         </div>
                         <div class="hero-trust-strip" aria-label="Product basics">
                             <span>Free</span>
-                            <span>Available now</span>
+                            <span>Four platforms</span>
                             <span>iPhone / iPad / Mac / Windows</span>
                             <span>TXT / RTF / PDF import</span>
                             <span>Word highlighting</span>
                             <span>Local processing</span>
-                            <span>WAV / MP3 export</span>
+                            <span>Desktop audio export</span>
                         </div>
                     </div>
                     <aside class="hero-card sales-buy-card" id="storefront" aria-label="Get Simple Voice Reader.">
@@ -200,10 +214,45 @@
                         <div class="storefront-actions" data-storefront-card="simple-voice-reader-macos">
                             <a class="button button-primary" href="https://apps.apple.com/us/app/simple-voice-reader/id6787165967?mt=12" target="_blank" rel="noopener noreferrer" data-storefront-cta data-event="cta_click" data-product="simple-voice-reader" data-platform="macos" data-destination="app-store">Get Simple Voice Reader for Mac</a>
                             <a class="button button-secondary" href="https://apps.apple.com/us/app/simple-voice-reader/id6787165967" target="_blank" rel="noopener noreferrer" data-event="cta_click" data-product="simple-voice-reader" data-platform="ios" data-destination="app-store">Get Simple Voice Reader for iPhone &amp; iPad</a>
-                            <a class="button button-secondary" href="https://apps.microsoft.com/search?query=Simple%20Voice%20Reader" target="_blank" rel="noopener noreferrer" data-event="cta_click" data-product="simple-voice-reader" data-platform="windows" data-destination="microsoft-store">Get it from Microsoft</a>
+                            <a class="button button-secondary" href="https://apps.microsoft.com/detail/9NJ66Q625LL6" target="_blank" rel="noopener noreferrer" data-event="cta_click" data-product="simple-voice-reader" data-platform="windows" data-destination="microsoft-store">Get Simple Voice Reader for Windows</a>
                         </div>
-                        <p class="storefront-note" data-storefront-helper>The Apple App Store listing supports iPhone, iPad, and Mac. The Windows edition is available from Microsoft Store. macOS 1.1 with 19 Kokoro voices is in final release testing.</p>
+                        <p class="storefront-note" data-storefront-helper>Mac 1.1 and Windows include local Kokoro voices. The current iPhone and iPad release uses installed Apple voices; its optional Kokoro voice pack is awaiting Apple review in version 1.1.</p>
                     </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="platforms">
+            <div class="shell">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Choose your platform</div>
+                        <h2>One reader, tuned for each device.</h2>
+                    </div>
+                    <p>Every edition imports common document formats, reads from the cursor, highlights the current word, and keeps speech on the device. Voice engines and export tools differ by platform.</p>
+                </div>
+                <div class="grid grid-three">
+                    <article class="feature-card">
+                        <div class="eyebrow">Mac</div>
+                        <h3>Kokoro and Apple voices</h3>
+                        <p>Version 1.1 includes 19 American English Kokoro voices, with Heart as the default, plus selected Apple system voices installed on the Mac.</p>
+                        <p>Export WAV or MP3, or use resumable Smart Chapter Export for a book-length text or PDF.</p>
+                        <p><strong>Requires:</strong> macOS 13 or later on Apple silicon.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="eyebrow">Windows</div>
+                        <h3>Kokoro and Windows voices</h3>
+                        <p>Bundled American English Kokoro voices work offline after installation. Installed American English Windows voices offer the fastest possible start.</p>
+                        <p>Export MP3, WAV, FLAC, OGG, or AIFF, with Smart Chapter Export, a playlist, and a manifest.</p>
+                        <p><strong>Requires:</strong> Windows 10 version 19041 or later; x64 and ARM64 are supported.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="eyebrow">iPhone and iPad</div>
+                        <h3>Apple voices, ready immediately</h3>
+                        <p>Use the American English Apple voices installed on the device, including Enhanced and Premium voices when available. Playback continues through screen lock with Lock Screen and Control Center commands.</p>
+                        <p>Audio export is desktop-only. An optional approximately 170 MB Kokoro pack for iOS or iPadOS 26+ devices with at least 5 GB of memory is awaiting Apple review in version 1.1.</p>
+                        <p><strong>Requires:</strong> iOS or iPadOS 17 or later.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -228,7 +277,7 @@
                     </article>
                     <article class="page-card">
                         <h3>Create listening files</h3>
-                        <p>Export the whole document as WAV or MP3, or let Smart Chapter Export create a separate audio file for each detected chapter.</p>
+                        <p>On Mac or Windows, export the whole document or let Smart Chapter Export create a separate audio file for each detected chapter.</p>
                     </article>
                 </div>
             </div>
@@ -241,25 +290,34 @@
                         <div class="eyebrow">Screenshots</div>
                         <h2>Built as a reader first.</h2>
                     </div>
-                    <p>The main screen keeps the text front and center, with voice, speed, font, import, export, and light or dark appearance controls close by.</p>
+                    <p>The same focused reading workflow adapts to Mac, iPhone and iPad, and Windows. Desktop editions add export controls; mobile adds background and Lock Screen playback.</p>
                 </div>
-                <div class="screenshot-grid">
+                <div class="screenshot-grid screenshot-grid-platforms">
                     <figure class="screenshot-card">
-                        <a class="screenshot-link" href="assets/screenshots/Simple-Voice-Reader-Light-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-Light-Mode.png" data-gallery-title="Simple Voice Reader light mode" data-gallery-width="1280" data-gallery-height="800">
+                        <a class="screenshot-link screenshot-platform-stage" href="assets/screenshots/Simple-Voice-Reader-Light-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-Light-Mode.png" data-gallery-title="Simple Voice Reader for Mac" data-gallery-width="1280" data-gallery-height="800">
                             <img src="assets/screenshots/Simple-Voice-Reader-Light-Mode.webp" alt="Simple Voice Reader light mode showing Kokoro Heart, text, speed, font, import, WAV or MP3 export, and speech controls." width="1280" height="800">
                         </a>
                         <figcaption>
-                            <strong>Light mode reading workspace</strong>
-                            <span>Paste text, import files, select a voice, choose a readable font, and start speaking from the cursor position.</span>
+                            <strong>Mac</strong>
+                            <span>Kokoro and Apple voices, focused playback, WAV or MP3 export, and Smart Chapter Export.</span>
                         </figcaption>
                     </figure>
                     <figure class="screenshot-card">
-                        <a class="screenshot-link" href="assets/screenshots/Simple-Voice-Reader-Dark-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-Dark-Mode.png" data-gallery-title="Simple Voice Reader dark mode" data-gallery-width="1280" data-gallery-height="800">
-                            <img src="assets/screenshots/Simple-Voice-Reader-Dark-Mode.webp" alt="Simple Voice Reader dark mode showing Smart Chapter Export enabled with WAV selected." width="1280" height="800">
+                        <a class="screenshot-link screenshot-platform-stage" href="assets/screenshots/Simple-Voice-Reader-iPhone-Light-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-iPhone-Light-Mode.png" data-gallery-title="Simple Voice Reader for iPhone" data-gallery-width="1320" data-gallery-height="2868">
+                            <img class="screenshot-platform-portrait" src="assets/screenshots/Simple-Voice-Reader-iPhone-Light-Mode.webp" alt="Simple Voice Reader on iPhone showing the reading workspace, Apple and Kokoro selectors, voice pack control, speed, font, and appearance settings." width="1320" height="2868">
                         </a>
                         <figcaption>
-                            <strong>Dark mode for long sessions</strong>
-                            <span>Switch appearance without changing the reading workflow, then speak or export with the same document loaded.</span>
+                            <strong>iPhone and iPad</strong>
+                            <span>Immediate Apple speech, optional Kokoro for compatible devices in the submitted 1.1 update, and playback through screen lock.</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="screenshot-card">
+                        <a class="screenshot-link screenshot-platform-stage" href="assets/screenshots/Simple-Voice-Reader-Windows-Light-Mode.png" data-gallery-media="image" data-gallery-src="assets/screenshots/Simple-Voice-Reader-Windows-Light-Mode.png" data-gallery-title="Simple Voice Reader for Windows" data-gallery-width="1936" data-gallery-height="1048">
+                            <img src="assets/screenshots/Simple-Voice-Reader-Windows-Light-Mode.webp" alt="Simple Voice Reader on Windows showing text, Kokoro Heart, import, speech, export, Smart Chapter Export, and progress controls." width="1936" height="1048">
+                        </a>
+                        <figcaption>
+                            <strong>Windows</strong>
+                            <span>Local Kokoro and installed Windows voices, five export formats, Smart Chapter Export, and native menus.</span>
                         </figcaption>
                     </figure>
                 </div>
@@ -286,7 +344,7 @@
                     </article>
                     <article class="feature-card">
                         <h3>American English voices</h3>
-                        <p>The forthcoming macOS 1.1 release includes 19 American English Kokoro voices and displays compatible American English Apple system voices installed on the Mac.</p>
+                        <p>Mac and Windows include local American English Kokoro voices plus compatible installed system voices. iPhone and iPad use installed Apple voices in the current release.</p>
                     </article>
                     <article class="feature-card">
                         <h3>File import</h3>
@@ -294,11 +352,11 @@
                     </article>
                     <article class="feature-card">
                         <h3>Readable text controls</h3>
-                        <p>Choose a font and font size from the system fonts available on your Mac.</p>
+                        <p>Choose a readable font and text size, with light, dark, or system appearance.</p>
                     </article>
                     <article class="feature-card">
-                        <h3>WAV, MP3, and chapters</h3>
-                        <p>Choose WAV or MP3 for a full-document export. Smart Chapter Export can parse recognizable headings in text or PDF imports and create individually named chapter files.</p>
+                        <h3>Desktop audio export</h3>
+                        <p>Mac exports WAV or MP3. Windows exports MP3, WAV, FLAC, OGG, or AIFF. Both can parse recognizable chapter headings and create individually named files.</p>
                     </article>
                 </div>
             </div>
@@ -311,7 +369,7 @@
                         <div class="eyebrow">Fit and limits</div>
                         <h2>Use it when listening beats staring at text.</h2>
                     </div>
-                    <p>The goal is not to replace full audiobook studios or cloud narration platforms. It is a practical Mac reader for everyday documents.</p>
+                    <p>The goal is not to replace a full audiobook studio or cloud narration platform. It is a practical reader for everyday documents on the devices people already use.</p>
                 </div>
                 <div class="grid grid-three">
                     <article class="page-card">
@@ -324,7 +382,7 @@
                     </article>
                     <article class="page-card">
                         <h3>Privacy posture</h3>
-                        <p>Text-to-speech conversion with Kokoro and Apple system voices is performed on the user’s Mac. Simple Voice Reader does not send text, documents, or rendered audio to Walter Claw Software or to a cloud text-to-speech service. macOS may contact Apple only to download system voice assets selected by the user.</p>
+                        <p>Text-to-speech conversion with Kokoro and compatible Apple or Windows system voices is performed on the user's device. Simple Voice Reader does not send text, documents, or rendered audio to Walter Claw Software or to a cloud text-to-speech service.</p>
                         <p>Read the <a href="/simple-voice-reader/privacy">privacy policy</a> for details.</p>
                     </article>
                 </div>
@@ -359,15 +417,19 @@
                     </article>
                     <article class="page-card">
                         <h3>Can I export audio?</h3>
-                        <p>Yes. The Mac app exports the full document as WAV or MP3. You choose the file name, format, and destination.</p>
+                        <p>On desktop. Mac exports WAV or MP3; Windows exports MP3, WAV, FLAC, OGG, or AIFF. Audio export is not part of the current iPhone and iPad app.</p>
                     </article>
                     <article class="page-card">
                         <h3>What does Smart Chapter Export do?</h3>
-                        <p>When recognizable chapter headings are present in text or an imported PDF, it creates separate, clearly named WAV or MP3 files for the detected chapters.</p>
+                        <p>On Mac and Windows, recognizable chapter headings in text or an imported PDF can become separate, clearly named audio files, plus a playlist and manifest.</p>
                     </article>
                     <article class="page-card">
                         <h3>What voices are supported?</h3>
-                        <p>The current Windows edition and forthcoming macOS 1.1 release support American English Kokoro voices plus compatible installed system voices. iPhone and iPad use installed American English Apple system voices.</p>
+                        <p>Mac 1.1 includes 19 Kokoro voices plus selected Apple voices. Windows includes bundled Kokoro plus installed Windows voices. The current iPhone and iPad release uses installed Apple voices.</p>
+                    </article>
+                    <article class="page-card">
+                        <h3>When will Kokoro be available on iPhone and iPad?</h3>
+                        <p>The optional Kokoro voice pack is included in the submitted iOS 1.1 update, which is waiting for Apple review. Until Apple approves it, the public mobile release uses Apple voices.</p>
                     </article>
                     <article class="page-card">
                         <h3>Where do I get help?</h3>
@@ -398,7 +460,7 @@
                 <span>Arizona, USA</span>
                 <a href="mailto:support@walterclawsoftware.com">support@walterclawsoftware.com</a>
                 <span class="footer-motto">Through hardships to the stars.</span>
-                <span class="footer-fineprint">&copy; 2026 Walter Claw Software LLC. Desktop tools for creators and small teams. Free Mac and Windows downloads.</span>
+                <span class="footer-fineprint">&copy; 2026 Walter Claw Software LLC. Software for creators and small teams. Free apps for Apple and Windows devices.</span>
             </div>
             <nav class="footer-links footer-link-group" aria-label="Product links">
                 <strong>Products</strong>

@@ -1207,6 +1207,10 @@ img { display: block; max-width: 100%; }
     gap: 20px;
 }
 
+.screenshot-grid-platforms {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .screenshot-card {
     margin: 0;
     overflow: hidden;
@@ -1228,6 +1232,25 @@ img { display: block; max-width: 100%; }
     background: transparent;
     width: 100%;
     text-align: left;
+}
+
+.screenshot-platform-stage {
+    aspect-ratio: 16 / 10;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #07131f;
+    border-bottom: 1px solid var(--line);
+}
+
+.screenshot-platform-stage img,
+.screenshot-platform-stage img.screenshot-platform-portrait {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-bottom: 0;
 }
 
 .screenshot-link:hover img,

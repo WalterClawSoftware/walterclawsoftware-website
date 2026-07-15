@@ -1,61 +1,46 @@
 # Project Status
 
-Last updated: 2026-07-12
+Last updated: 2026-07-14
 
-This document is public-safe because Netlify publishes the repository root. Live Git, Netlify, public storefronts, and `https://walterclawsoftware.com` override this handoff when they differ.
+This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and `https://walterclawsoftware.com` override this handoff when they differ.
 
 ## Current Product State
 
-- Active public static website for Walter Claw Software LLC.
-- The repository root is the Netlify publish directory.
-- Product pages emphasize honest capabilities, real screenshots, privacy/support links, and current store availability.
+- The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
+- Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
+- macOS 1.1 is Ready for Sale. It uses local Kokoro and installed Apple voices, exports WAV or MP3, and includes resumable Smart Chapter Export.
+- The Windows release is public in Microsoft Store under product ID `9NJ66Q625LL6`. It uses local Kokoro and installed Windows voices, exports MP3, WAV, FLAC, OGG, or AIFF, and includes Smart Chapter Export.
+- iOS/iPadOS 1.0.1 is public with installed Apple voices, background playback, and Lock Screen controls. Audio export is not part of the mobile app.
+- iOS/iPadOS 1.1, including an optional approximately 170 MB Kokoro pack for compatible iOS/iPadOS 26+ devices with at least 5 GB of memory, is Waiting for Review. Apple voices remain the immediate and fallback engine.
+- Text, documents, and rendered audio stay on the user's device. Apple or Microsoft may be contacted only to obtain system voice assets, and Apple hosts the optional mobile Kokoro pack download.
 
-## Recently Completed
+## Completed Work
 
-- Restored accurate WAV, MP3, and Smart Chapter Export coverage across the
-  Simple Voice Reader product, support, privacy, FAQ, and structured-data copy
-  while retaining the newer local-processing and Kokoro disclosures.
-- Replaced the Mac product screenshots with current light and dark images that
-  visibly show Export, WAV/MP3 selection, and Smart Chapter Export.
-- Labeled macOS 1.1 as being in final release testing rather than implying that
-  its Kokoro build is already available from the App Store.
-- Updated the homepage, Simple Voice Reader product page, storefront configuration, metadata, structured data, FAQ, and update history to show live Apple App Store and Microsoft Store availability.
-- Added the live Apple listing for iPhone, iPad, and Mac and a Microsoft Store search link for the Windows listing.
-- Split the Apple storefront call to action into clearly labeled Mac and iPhone/iPad buttons; the Mac link uses Apple’s `mt=12` platform hint.
-- Clarified Simple Voice Reader’s local text-to-speech privacy wording.
-- Established the shared Codex/Hermes continuity contract.
+- Rebuilt the Simple Voice Reader product page around the verified Mac, Windows, iPhone, and iPad editions, with platform-specific capabilities and requirements.
+- Added real iPhone and Windows product screenshots while retaining the current Mac screenshot.
+- Replaced the Microsoft Store search URL with the permanent product-detail URL.
+- Updated product metadata, JSON-LD, privacy, support, homepage, About, Store FAQ, Updates, and storefront configuration.
+- Clarified that audio and Smart Chapter export are desktop-only and documented each desktop platform's actual export formats.
+- Removed stale desktop-only language from the shared site footer.
 
 ## Verification
 
-- Parsed all three changed HTML pages, validated every JSON-LD block, and
-  confirmed referenced image assets exist.
-- Local HTTP smoke checks returned 200 for the product, privacy, support, and
-  screenshot assets. Both screenshot PNGs are 1280x800 without alpha and were
-  visually inspected after derivation from the release screenshots.
-- Cache-busted production readback verified the WAV/MP3, Smart Chapter,
-  privacy, release-state, and screenshot changes at `walterclawsoftware.com`.
-- Apple’s public lookup API returned Simple Voice Reader as a free app under ID `6787165967`, supporting iPhone, iPad, and Mac.
-- Microsoft Store availability was supplied by the product owner; the public site points to Microsoft Store search until a stable product-detail URL is recorded.
-- Clean GitHub-origin continuity checkout inspected.
-- No customer-facing HTML, assets, redirects, sitemap, or Netlify configuration changed in this continuity update.
+- App Store Connect readback confirmed macOS 1.1 as Ready for Sale and iOS/iPadOS 1.1 as Waiting for Review.
+- Apple's public listing and Microsoft product-detail page both returned HTTP 200 with the correct Simple Voice Reader titles.
+- Parsed all 20 HTML files, parsed every JSON-LD block, checked every local `href` and `src`, and ran `git diff --check`; all passed.
+- Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
+- Netlify preview `6a56cf424db301cb324144cb` returned HTTP 200 for the product, support, privacy, site-wide supporting pages, and both new screenshot assets. Preview copy assertions passed.
 
 ## External State
 
-- Live product availability and prices must be verified against Apple/Microsoft storefronts before changing website claims.
-- The current Mac App Store release remains 1.0.1; macOS 1.1 is still in final
-  local release testing and has not been represented as available.
-- Netlify production is serving website revision `46293a3` with the corrected
-  Simple Voice Reader export copy and screenshots.
+- No Apple or Microsoft store record was changed during this website update.
+- Production deployment and live readback are the remaining steps for this revision.
 
-## Known Issues and Risks
+## Known Risks
 
-- Static copy can drift from store state or application capabilities.
-- Replace the macOS 1.1 testing language only after App Store Connect and the
-  public storefront confirm the corresponding state.
-- Any future status update committed here must remain suitable for public exposure.
+- iOS/iPadOS 1.1 remains subject to Apple review. Do not describe the optional mobile Kokoro pack as publicly available until the public App Store release confirms it.
+- Store state and product capabilities can drift from static website copy; verify live records before future availability changes.
 
 ## Next Recommended Action
 
-- After macOS 1.1 is submitted and released, update its release-state language
-  from verified App Store Connect and public storefront evidence. Replace the
-  Microsoft Store search URL when its stable product-detail URL is recorded.
+- After Apple releases iOS/iPadOS 1.1, verify it on the public App Store and replace the Waiting for Review language with the confirmed public state.
