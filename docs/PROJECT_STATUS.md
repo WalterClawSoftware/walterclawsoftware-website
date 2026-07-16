@@ -7,6 +7,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Current Product State
 
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
+- The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026; the name came from Jeffrey Waters naming his original OpenClaw agent Walter; and Hermes Agent was later adopted as the more capable working choice.
 - The homepage names Threshold Lab, Unspoken Room, and Genome Explorer as projects in development. Unspoken Room is identified as the next planned release and links to `https://unspokenroom.app/`; no release date or final feature set is announced.
 - Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
@@ -18,6 +19,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Replaced the vague About-page founding note with a dedicated founding story that preserves the exact founding date, explains the Walter/OpenClaw name origin, and describes the later move to Hermes without making a universal product claim.
 - Added a restrained homepage section for Threshold Lab, Unspoken Room, and Genome Explorer, then identified Unspoken Room as the next planned release and linked its dedicated website without making a release-date or final-feature claim.
 - Reserved the exact `Genome Explorer` app name for a macOS record in App Store Connect and an MSIX or PWA app in Microsoft Partner Center, and registered `genomeexplorer.app` through Porkbun.
 - Rebuilt the Simple Voice Reader product page around the verified Mac, Windows, iPhone, and iPad editions, with platform-specific capabilities and requirements.
@@ -29,11 +31,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
-- Parsed all 20 HTML files and 44 JSON-LD blocks, checked 915 local `href` and `src` references, verified the unique external CTA and its safety attributes, and ran `git diff --check`; all passed.
-- Tested the revised Unspoken Room card locally and on Netlify preview `6a5838e4510340d877a2bdcf` at desktop and phone widths. The longer status badge, copy, and button remained readable and free of horizontal overflow or browser warning/error.
-- Direct HTTPS checks confirmed `https://unspokenroom.app/` returns HTTP 200 and identifies itself as the intended Unspoken Room Mac preview.
-- Netlify production deploy `6a583927bd28be00086f0908` reported ready for customer-facing revision `7dff49c90490c55ea2f560ebb6f24d1a50fad895`.
-- Cache-busted production readback returned HTTP 200 with the next-release wording and `unspokenroom.app` CTA. Live `index.html` was byte-for-byte identical to the verified repository file, and the live phone-width card had no overflow or browser warning/error.
+- Parsed all 20 HTML files and 44 JSON-LD blocks, checked 915 local `href` and `src` references, verified the four founding-story factual anchors and removal of the stale note, and ran `git diff --check`; all passed.
+- Tested the founding story locally and on Netlify preview `6a584d537526f82642e80ab1` at desktop and phone widths. The card remained readable and free of horizontal overflow or browser warning/error.
+- Netlify production deploy `6a584e1412403b000823ecd4` reported ready for customer-facing revision `f6c2e8785121deb2ce449fc7639924fa1c46c038`.
+- Cache-busted production readback returned HTTP 200 with the exact March 11 date, OpenClaw/Walter origin, Hermes transition, and no stale founding note. Live `about.html` was byte-for-byte identical to the verified repository file.
 - App Store Connect readback confirmed macOS 1.1 as Ready for Sale and iOS/iPadOS 1.1 as Waiting for Review.
 - Apple's public listing and Microsoft product-detail page both returned HTTP 200 with the correct Simple Voice Reader titles.
 - Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
@@ -49,11 +50,13 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
 - The homepage now links to the live `https://unspokenroom.app/` preview and identifies Unspoken Room as the next planned release.
-- GitHub `main` published customer-facing revision `7dff49c90490c55ea2f560ebb6f24d1a50fad895`.
-- Netlify production deployment `6a583927bd28be00086f0908` published and verified that revision at `https://walterclawsoftware.com`.
+- The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters.
+- GitHub `main` published customer-facing revision `f6c2e8785121deb2ce449fc7639924fa1c46c038`.
+- Netlify production deployment `6a584e1412403b000823ecd4` published and verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
+- The founding narrative is founder-supplied history. Preserve March 11, 2026, the Walter/OpenClaw name origin, and the later Hermes transition as exact anchors unless Jeffrey Waters explicitly revises them.
 - Unspoken Room is publicly identified as the next planned release, but no date or final feature set is announced. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the customer artifact and public release state are verified.
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
 - Genome Explorer's implemented app source is intentionally kept outside Git in its approved local-only privacy workspace; the reserved Apple and Microsoft identities are not yet wired into a customer build.
