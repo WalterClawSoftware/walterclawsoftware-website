@@ -8,6 +8,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
 - The homepage names Threshold Lab, Unspoken Room, and Genome Explorer as projects in development without announcing downloads, release dates, platforms, or final feature sets.
+- Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
 - macOS 1.1 is Ready for Sale. It uses local Kokoro and installed Apple voices, exports WAV or MP3, and includes resumable Smart Chapter Export.
 - The Windows release is public in Microsoft Store under product ID `9NJ66Q625LL6`. It uses local Kokoro and installed Windows voices, exports MP3, WAV, FLAC, OGG, or AIFF, and includes Smart Chapter Export.
@@ -18,6 +19,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Completed Work
 
 - Added a restrained homepage section for Threshold Lab, Unspoken Room, and Genome Explorer, with no product-page links or availability claims.
+- Reserved the exact `Genome Explorer` app name for a macOS record in App Store Connect and an MSIX or PWA app in Microsoft Partner Center, and registered `genomeexplorer.app` through Porkbun.
 - Rebuilt the Simple Voice Reader product page around the verified Mac, Windows, iPhone, and iPad editions, with platform-specific capabilities and requirements.
 - Added real iPhone and Windows product screenshots while retaining the current Mac screenshot.
 - Replaced the Microsoft Store search URL with the permanent product-detail URL.
@@ -36,19 +38,27 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
 - Netlify preview `6a56cf424db301cb324144cb` returned HTTP 200 for the product, support, privacy, site-wide supporting pages, and both new screenshot assets. Preview copy assertions passed.
 - Cache-busted production readback returned HTTP 200 for the same routes and assets, and exact copy assertions passed. The live desktop and phone layouts had no overflow, broken media, or browser console warning/error.
+- Porkbun Domain Management listed `genomeexplorer.app` as a new domain in the account with expiration date 2027-07-16.
+- App Store Connect showed `Genome Explorer` as macOS 1.0 Prepare for Submission. App Information confirmed Apple ID `6791394608`, bundle ID `com.walterclawsoftware.genomeexplorer`, SKU `GENOMEEXPLORER-MACOS-2026`, and primary language English (U.S.).
+- Microsoft Partner Center showed `Genome Explorer` as an In draft MSIX or PWA app. Manage app names reported `Reserved for this app`, and Product Identity confirmed Store ID `9N6CJ95SQR49`, identity name `WalterClawSoftwareLLC.GenomeExplorer`, and PFN `WalterClawSoftwareLLC.GenomeExplorer_jvgzfyt5v7qd8`.
 
 ## External State
 
-- No Apple or Microsoft store record was changed during this website update.
+- App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
+- Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
+- Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
 - GitHub `main` published customer-facing revision `56a4ecd3d6e35a9ad2221e59f378ea6283147bbd`.
 - Netlify production deployment `6a5832882fcc580009b16901` published and verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
 - The three development project names are public, but their scope and release plans remain unsettled. Keep future copy equally limited until details can be verified.
+- Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
+- Genome Explorer's implemented app source is intentionally kept outside Git in its approved local-only privacy workspace; the reserved Apple and Microsoft identities are not yet wired into a customer build.
+- Store and domain availability do not establish trademark rights; complete a separate brand review before public launch.
 - iOS/iPadOS 1.1 remains subject to Apple review. Do not describe the optional mobile Kokoro pack as publicly available until the public App Store release confirms it.
 - Store state and product capabilities can drift from static website copy; verify live records before future availability changes.
 
 ## Next Recommended Action
 
-- Keep the development-project wording limited until one project is ready for a verified public introduction; separately, update the Simple Voice Reader review language after Apple releases iOS/iPadOS 1.1.
+- Define a privacy-safe Genome Explorer packaging and release plan that wires the exact reserved Apple and Microsoft identities into a customer build while keeping genomic evidence outside Git and distributable artifacts, and preserve the Microsoft reservation before its three-month deadline. Keep public wording limited until a customer artifact and public listings are verified; separately, update the Simple Voice Reader review language after Apple releases iOS/iPadOS 1.1.
