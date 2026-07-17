@@ -41,6 +41,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Apple's public lookup returned one `Simple Voice Reader` result at version 1.1, price `Free`, with a July 16 release date and release notes covering the optional 20-voice Kokoro pack.
 - Re-ran the release-copy validator on July 17: all 20 HTML files, 44 JSON-LD blocks, 738 local references, 20 sitemap URLs, metadata, store-link inventory, and stale-review-language assertions passed; JavaScript syntax, XML parsing, and `git diff --check` also passed.
 - Rendered the updated product page in isolated headless Chromium at 1440x1000 and 390x844. The desktop and phone layouts had no horizontal overflow, clipped content, overlap, or visible broken media, and the iPhone/iPad Kokoro requirements remained readable.
+- Netlify deploy preview `6a5a785035ed10000886b044` for GitHub pull request 43 returned HTTP 200 on the homepage, About, Updates, product, support, privacy, storefront configuration, and sitemap routes. After removing Netlify's preview-only instrumentation, every response was byte-for-byte identical to the verified repository file.
+- GitHub pull request 43 was squash-merged as customer-facing revision `cfb4a0c53f94766dc2ab1fcc07ccc11eb085866b`. Cache-busted production readback returned HTTP 200 on the same eight routes, every response was byte-for-byte identical to that revision, and no stale iPhone/iPad review language remained.
 - Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
 - Netlify preview `6a56cf424db301cb324144cb` returned HTTP 200 for the product, support, privacy, site-wide supporting pages, and both new screenshot assets. Preview copy assertions passed.
 - Cache-busted production readback returned HTTP 200 for the same routes and assets, and exact copy assertions passed. The live desktop and phone layouts had no overflow, broken media, or browser console warning/error.
@@ -55,8 +57,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
 - The homepage now links to the live `https://unspokenroom.app/` preview and identifies Unspoken Room as the next planned release.
 - The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters.
-- GitHub `main` published customer-facing revision `f6c2e8785121deb2ce449fc7639924fa1c46c038`.
-- Netlify production deployment `6a584e1412403b000823ecd4` published and verified that revision at `https://walterclawsoftware.com`.
+- GitHub `main` published customer-facing revision `cfb4a0c53f94766dc2ab1fcc07ccc11eb085866b`.
+- Netlify production published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
