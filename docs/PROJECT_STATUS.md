@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-15
+Last updated: 2026-07-17
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and `https://walterclawsoftware.com` override this handoff when they differ.
 
@@ -13,12 +13,14 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
 - macOS 1.1 is Ready for Sale. It uses local Kokoro and installed Apple voices, exports WAV or MP3, and includes resumable Smart Chapter Export.
 - The Windows release is public in Microsoft Store under product ID `9NJ66Q625LL6`. It uses local Kokoro and installed Windows voices, exports MP3, WAV, FLAC, OGG, or AIFF, and includes Smart Chapter Export.
-- iOS/iPadOS 1.0.1 is public with installed Apple voices, background playback, and Lock Screen controls. Audio export is not part of the mobile app.
-- iOS/iPadOS 1.1, including an optional approximately 170 MB Kokoro pack for compatible iOS/iPadOS 26+ devices with at least 5 GB of memory, is Waiting for Review. Apple voices remain the immediate and fallback engine.
+- iOS/iPadOS 1.1 build 7 is Ready for Sale and public as a free download. Apple voices remain immediate and serve as the fallback engine. Compatible iOS/iPadOS 26+ devices with at least 5 GB of memory can optionally download an approximately 170 MB Apple-hosted pack of 20 American English Kokoro voices.
+- Audio export is not part of the mobile app.
 - Text, documents, and rendered audio stay on the user's device. Apple or Microsoft may be contacted only to obtain system voice assets, and Apple hosts the optional mobile Kokoro pack download.
 
 ## Completed Work
 
+- Replaced every visitor-facing Simple Voice Reader waiting-for-review statement with the verified public iOS/iPadOS 1.1 state across the homepage, product metadata and JSON-LD, product copy and FAQ, About, Updates, support, privacy, storefront configuration, and sitemap.
+- Added a dated public update for the July 16 iPhone/iPad release and marked the July 14 review-state note as historical and superseded.
 - Replaced the vague About-page founding note with a dedicated founding story that preserves the exact founding date, explains the Walter/OpenClaw name origin, and describes the later move to Hermes without making a universal product claim.
 - Added a restrained homepage section for Threshold Lab, Unspoken Room, and Genome Explorer, then identified Unspoken Room as the next planned release and linked its dedicated website without making a release-date or final-feature claim.
 - Reserved the exact `Genome Explorer` app name for a macOS record in App Store Connect and an MSIX or PWA app in Microsoft Partner Center, and registered `genomeexplorer.app` through Porkbun.
@@ -35,8 +37,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Tested the founding story locally and on Netlify preview `6a584d537526f82642e80ab1` at desktop and phone widths. The card remained readable and free of horizontal overflow or browser warning/error.
 - Netlify production deploy `6a584e1412403b000823ecd4` reported ready for customer-facing revision `f6c2e8785121deb2ce449fc7639924fa1c46c038`.
 - Cache-busted production readback returned HTTP 200 with the exact March 11 date, OpenClaw/Walter origin, Hermes transition, and no stale founding note. Live `about.html` was byte-for-byte identical to the verified repository file.
-- App Store Connect readback confirmed macOS 1.1 as Ready for Sale and iOS/iPadOS 1.1 as Waiting for Review.
-- Apple's public listing and Microsoft product-detail page both returned HTTP 200 with the correct Simple Voice Reader titles.
+- App Store Connect readback confirmed both macOS 1.1 build 10 and iOS/iPadOS 1.1 build 7 as Ready for Sale and downloadable. The combined iOS review submission is complete, both review items are approved, and the hosted Kokoro asset version is complete.
+- Apple's public lookup returned one `Simple Voice Reader` result at version 1.1, price `Free`, with a July 16 release date and release notes covering the optional 20-voice Kokoro pack.
+- Re-ran the release-copy validator on July 17: all 20 HTML files, 44 JSON-LD blocks, 738 local references, 20 sitemap URLs, metadata, store-link inventory, and stale-review-language assertions passed; JavaScript syntax, XML parsing, and `git diff --check` also passed.
+- Rendered the updated product page in isolated headless Chromium at 1440x1000 and 390x844. The desktop and phone layouts had no horizontal overflow, clipped content, overlap, or visible broken media, and the iPhone/iPad Kokoro requirements remained readable.
 - Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
 - Netlify preview `6a56cf424db301cb324144cb` returned HTTP 200 for the product, support, privacy, site-wide supporting pages, and both new screenshot assets. Preview copy assertions passed.
 - Cache-busted production readback returned HTTP 200 for the same routes and assets, and exact copy assertions passed. The live desktop and phone layouts had no overflow, broken media, or browser console warning/error.
@@ -61,9 +65,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
 - Genome Explorer's implemented app source is intentionally kept outside Git in its approved local-only privacy workspace; the reserved Apple and Microsoft identities are not yet wired into a customer build.
 - Store and domain availability do not establish trademark rights; complete a separate brand review before public launch.
-- iOS/iPadOS 1.1 remains subject to Apple review. Do not describe the optional mobile Kokoro pack as publicly available until the public App Store release confirms it.
+- The public iOS/iPadOS 1.1 listing and hosted-asset state are verified, but a clean public-install pack-download and playback test remains a separate device-level checkpoint.
 - Store state and product capabilities can drift from static website copy; verify live records before future availability changes.
 
 ## Next Recommended Action
 
-- Prepare and verify the Unspoken Room customer artifact and public release state before changing its next-release wording to available-now language. Separately, preserve Genome Explorer's Microsoft reservation before its three-month deadline and update the Simple Voice Reader review language after Apple releases iOS/iPadOS 1.1.
+- Verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install, optional Kokoro pack download, Heart playback, and number pronunciation. Separately, preserve Genome Explorer's Microsoft reservation before its three-month deadline and prepare the Unspoken Room customer artifact before changing its next-release wording.
