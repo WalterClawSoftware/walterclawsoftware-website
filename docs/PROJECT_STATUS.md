@@ -9,6 +9,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
 - Option A is live in production from customer-facing revision `4cd28e28b8561b7a8e2d10c80d9a53eca181aa24`, merged through GitHub pull request 45.
 - The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
+- The `/utilities` introduction is a simple single-column hero without the redundant screenshot/proof panel. Its product grid keeps Simple Voice Reader first and ClipScript Desktop second.
 - The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
 - The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026; the name came from Jeffrey Waters naming his original OpenClaw agent Walter; and Hermes Agent was later adopted as the more capable working choice.
 - The self-help/improvement page names Threshold Lab, Unspoken Room, and Genome Explorer as projects in development. Unspoken Room is identified as the next planned release and links to `https://unspokenroom.app/`; no release date or final feature set is announced.
@@ -22,6 +23,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Removed the redundant Simple Voice Reader screenshot/proof panel from `/utilities`, converted the introduction to a single-column layout, changed “original six apps” to “utility apps,” and shortened the utilities footer fine print while preserving the requested product order.
 - Adopted the exact user-approved 1730 x 909 doorway artwork as the root landing experience. The blue and orange halves are real keyboard-, pointer-, and touch-accessible links, while semantic page copy and mobile choices preserve clarity beyond the embedded image text.
 - Implemented selected Option A as a simple two-path company landing page.
 - Moved the existing product-heavy homepage experience to `/utilities`, limited it to the six free utility apps, and made Simple Voice Reader the lead app in the hero, product grid, utility menus, and product footers.
@@ -42,6 +44,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- Rendered the simplified utilities page at 1600 px and confirmed that the removed panel leaves no empty column, broken media, overlap, or clipped copy. Verified six product cards with Simple Voice Reader first and ClipScript Desktop second.
+- Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references with no unresolved local target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `utilities.html` and `styles.css`, and ran `git diff --check`; all passed.
 - Confirmed that the landing artwork is byte-for-byte identical to the user-supplied PNG, is 1730 x 909 with no alpha, and renders cleanly in the centered doorway layout at 1600 px.
 - Verified that the artwork path exposes `/utilities` and `/self-help-improvement` as separate accessible links and that small-screen fallback choices state both destinations in live text.
 - Netlify deploy preview `6a5bba194f12910008ce15dd` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, the homepage, both path pages, stylesheet, and artwork were byte-for-byte identical to the verified branch files.

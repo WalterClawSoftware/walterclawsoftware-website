@@ -278,6 +278,8 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr); gap: 32px; align-items: start; }
+.hero-grid-single { grid-template-columns: minmax(0, 1fr); }
+.hero-grid-single .hero-copy { max-width: 940px; }
 
 .eyebrow {
     display: inline-flex;
