@@ -7,7 +7,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Current Product State
 
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
-- Option A and the simplified utilities introduction are live in production from customer-facing revision `928f77667573e99b11a7f8d94d30a562552b24d5`, with the utilities cleanup merged through GitHub pull request 47.
+- Option A, the simplified utilities introduction, and the current About-page agent roles are live in production from customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde`, with the About update merged through GitHub pull request 49.
 - The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
 - The `/utilities` introduction is a simple single-column hero without the redundant screenshot/proof panel. Its product grid keeps Simple Voice Reader first and ClipScript Desktop second.
 - The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
@@ -48,6 +48,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - Verified the About page contains the current GPT-5.6 Sol/Codex, sole coding and product-development agent, personal AI assistant, and Hermes/home-automation statements exactly once; the prior claim that Hermes was better suited to much of the company’s work is absent, while the March 11 and Walter/OpenClaw founding anchors remain.
 - Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references including 772 local references with no unresolved target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `about.html`, and ran `git diff --check`; all passed.
+- Netlify deploy preview `6a5bff976ef85f0008287bf3` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/about` and the public project-status record were byte-for-byte identical to the verified branch files, and the current-role and founding-anchor assertions passed.
+- GitHub pull request 49 was squash-merged as customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde`. Netlify production deploy `6a5bffb83063800007e10c89` reported ready, and cache-busted production readback returned HTTP 200 with byte-exact content for `/about` and the project-status record; the new GPT-5.6 Sol/Codex and Hermes/home-automation statements were present and the superseded Hermes role claim was absent.
 - Rendered the simplified utilities page at 1600 px and confirmed that the removed panel leaves no empty column, broken media, overlap, or clipped copy. Verified six product cards with Simple Voice Reader first and ClipScript Desktop second.
 - Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references with no unresolved local target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `utilities.html` and `styles.css`, and ran `git diff --check`; all passed.
 - Netlify deploy preview `6a5bc2aa245637000858087e` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/utilities` and `styles.css` were byte-for-byte identical to the verified branch files, and the requested copy/removal assertions passed.
@@ -86,9 +88,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
 - The self-help/improvement page links to the live `https://unspokenroom.app/` preview and identifies Unspoken Room as the next planned release.
-- The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters.
-- GitHub `main` published customer-facing revision `928f77667573e99b11a7f8d94d30a562552b24d5` through pull request 47.
-- Netlify production deploy `6a5bc2f6a6d39a0008bb7063` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
+- The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters together with the current GPT-5.6 Sol/Codex development and personal-assistant role and Hermes’s narrower home-automation role.
+- GitHub `main` published customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde` through pull request 49.
+- Netlify production deploy `6a5bffb83063800007e10c89` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
