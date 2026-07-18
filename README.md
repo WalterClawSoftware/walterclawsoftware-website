@@ -8,7 +8,9 @@ Public static website for **Walter Claw Software LLC**.
 
 ## Public pages
 
-- `index.html` — company homepage and product picker
+- `index.html` — interactive two-path company landing page
+- `utilities.html` — six free utility apps, led by Simple Voice Reader
+- `self-help-improvement.html` — paid apps in development for self-help, improvement, and understanding
 - `about.html` — company/product context
 - `clipscript.html` — ClipScript product page
 - `transcript-rescue.html` — Transcript Rescue product page

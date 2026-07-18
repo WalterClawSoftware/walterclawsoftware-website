@@ -132,100 +132,65 @@
         }
     </script>
 </head>
-<body class="home-two-paths">
-    <header class="site-header home-site-header">
-        <nav class="shell home-nav" aria-label="Primary navigation">
-            <a class="home-brand" href="/" aria-label="Walter Claw Software LLC home">
-                <img src="assets/brand/logo-mark.png" alt="" width="84" height="84">
-                <span class="home-brand-text">
-                    <strong>Walter Claw</strong>
-                    <span>Software LLC</span>
-                </span>
+<body class="doorway-home">
+    <main class="doorway-main" aria-labelledby="page-title">
+        <div class="visually-hidden">
+            <h1 id="page-title">Choose your path at Walter Claw Software LLC.</h1>
+            <p>Choose six free utility apps led by Simple Voice Reader, or explore paid apps in development for self-help, improvement, and understanding.</p>
+        </div>
+
+        <div class="doorway-frame">
+            <img
+                class="doorway-art"
+                src="assets/brand/two-path-doorways-landing.png"
+                alt="Two illuminated paths: a blue doorway for free utility apps and an orange doorway for paid apps in development."
+                width="1730"
+                height="909"
+                fetchpriority="high"
+            >
+            <a
+                class="doorway-choice doorway-choice-utilities"
+                href="/utilities"
+                aria-label="Enter the free utility apps path. Six free apps are available now, led by Simple Voice Reader."
+                data-event="cta_click"
+                data-product="company"
+                data-platform="web"
+                data-destination="free-utility-apps"
+            >
+                <span class="doorway-enter-label">Enter free utilities <span aria-hidden="true">→</span></span>
             </a>
-            <div class="home-nav-meta">
-                <span>Three new apps in development</span>
-                <a href="/support">Support</a>
-            </div>
+            <a
+                class="doorway-choice doorway-choice-development"
+                href="/self-help-improvement"
+                aria-label="Enter the paid apps in development path for self-help, improvement, and understanding."
+                data-event="cta_click"
+                data-product="company"
+                data-platform="web"
+                data-destination="self-help-improvement"
+            >
+                <span class="doorway-enter-label">Explore the new direction <span aria-hidden="true">→</span></span>
+            </a>
+        </div>
+
+        <nav class="doorway-mobile-choices" aria-label="Choose a Walter Claw Software path">
+            <a class="doorway-mobile-choice doorway-mobile-utilities" href="/utilities" data-event="cta_click" data-product="company" data-platform="mobile" data-destination="free-utility-apps">
+                <strong>Free utility apps</strong>
+                <span>Available now · Simple Voice Reader leads six free apps</span>
+            </a>
+            <a class="doorway-mobile-choice doorway-mobile-development" href="/self-help-improvement" data-event="cta_click" data-product="company" data-platform="mobile" data-destination="self-help-improvement">
+                <strong>Paid apps in development</strong>
+                <span>Self-help, improvement, and understanding</span>
+            </a>
         </nav>
-    </header>
-
-    <main>
-        <section class="shell home-hero" aria-labelledby="page-title">
-            <div class="home-hero-intro">
-                <div>
-                    <p class="home-eyebrow">Software with two purposes</p>
-                    <h1 id="page-title">Choose your path.</h1>
-                </div>
-                <p class="home-intro-copy">Start with six free utilities, or see what we are building for self-help, improvement, and understanding.</p>
-            </div>
-
-            <div class="home-path-grid" aria-label="Choose a product path">
-                <article class="home-path home-path-free">
-                    <a class="home-path-link" href="/utilities" aria-describedby="free-path-summary" data-event="cta_click" data-product="company" data-platform="web" data-destination="free-utility-apps">
-                        <div class="home-path-topline">
-                            <span class="home-status home-status-live">Available now · Free</span>
-                            <span class="home-path-number">Path 01</span>
-                        </div>
-                        <h2>Free utility apps</h2>
-                        <p class="home-path-summary" id="free-path-summary">Six focused apps available through official stores. Simple Voice Reader leads the collection.</p>
-                        <div class="home-lead-app" aria-label="Lead app: Simple Voice Reader">
-                            <img src="assets/brand/simple-voice-reader-app-icon.webp" alt="Simple Voice Reader app icon" width="1024" height="1024">
-                            <div>
-                                <span class="home-lead-label">Lead app</span>
-                                <h3>Simple Voice Reader</h3>
-                                <p>Listen to long text and documents.</p>
-                                <ul class="home-platforms" aria-label="Available platforms">
-                                    <li>iPhone</li>
-                                    <li>iPad</li>
-                                    <li>Mac</li>
-                                    <li>Windows</li>
-                                </ul>
-                            </div>
-                            <span class="home-path-arrow" aria-hidden="true">→</span>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="home-path home-path-future">
-                    <a class="home-path-link" href="/self-help-improvement" aria-describedby="future-path-summary" data-event="cta_click" data-product="company" data-platform="web" data-destination="self-help-improvement">
-                        <div class="home-path-topline">
-                            <span class="home-status home-status-future">In development · Paid</span>
-                            <span class="home-path-number">Path 02</span>
-                        </div>
-                        <h2>Paid apps in development</h2>
-                        <p class="home-path-summary" id="future-path-summary">A new direction focused on self-help, improvement, and understanding.</p>
-                        <div class="home-future-list" aria-label="Apps in development">
-                            <div class="home-future-item">
-                                <span>Unspoken Room</span>
-                                <span class="home-next-label">Next planned release</span>
-                            </div>
-                            <div class="home-future-item"><span>Threshold Lab</span></div>
-                            <div class="home-future-item"><span>Genome Explorer</span></div>
-                        </div>
-                        <div class="home-future-cta">
-                            <span>See what is coming</span>
-                            <span aria-hidden="true">→</span>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </section>
-
     </main>
 
-    <footer class="site-footer home-footer">
-        <div class="shell home-footer-inner">
-            <div>
-                <strong>Walter Claw Software LLC</strong>
-                <span>Free utility apps now. New paid apps in development.</span>
-            </div>
-            <nav class="home-footer-links" aria-label="Footer navigation">
-                <a href="/utilities">Free utility apps</a>
-                <a href="/self-help-improvement">Paid apps in development</a>
-                <a href="/about">About</a>
-                <a href="/support">Support</a>
-            </nav>
-        </div>
+    <footer class="doorway-footer">
+        <span>&copy; 2026 Walter Claw Software LLC</span>
+        <nav aria-label="Company links">
+            <a href="/about">About</a>
+            <a href="/support">Support</a>
+            <a href="/privacy">Privacy</a>
+        </nav>
     </footer>
 </body>
 </html>
