@@ -7,7 +7,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Current Product State
 
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
-- Option A is selected and implemented for review on branch `design/homepage-two-path-prototypes`; the production homepage remains unchanged until that branch is merged and deployed.
+- Option A is live in production from customer-facing revision `4cd28e28b8561b7a8e2d10c80d9a53eca181aa24`, merged through GitHub pull request 45.
 - The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
 - The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
 - The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026; the name came from Jeffrey Waters naming his original OpenClaw agent Walter; and Hermes Agent was later adopted as the more capable working choice.
@@ -44,6 +44,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - Confirmed that the landing artwork is byte-for-byte identical to the user-supplied PNG, is 1730 x 909 with no alpha, and renders cleanly in the centered doorway layout at 1600 px.
 - Verified that the artwork path exposes `/utilities` and `/self-help-improvement` as separate accessible links and that small-screen fallback choices state both destinations in live text.
+- Netlify deploy preview `6a5bba194f12910008ce15dd` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, the homepage, both path pages, stylesheet, and artwork were byte-for-byte identical to the verified branch files.
+- GitHub pull request 45 was squash-merged as revision `4cd28e28b8561b7a8e2d10c80d9a53eca181aa24`. Netlify production deploy `6a5bbb04a36b6f0008ef98e9` reported ready, and cache-busted production readback returned HTTP 200 with byte-exact content for the homepage, `/utilities`, `/self-help-improvement`, `homepage.css`, and the approved doorway artwork.
 - Parsed all 22 production-site HTML files and 46 JSON-LD blocks, resolved 955 local `href` and `src` references, parsed the sitemap, and verified the two path routes.
 - Verified exactly six utility cards with Simple Voice Reader first, no Unspoken Room, Threshold Lab, or Genome Explorer names on `/utilities`, all three names on `/self-help-improvement`, removal of the rejected positioning phrases, and Simple Voice Reader first in every shared utility dropdown and product footer.
 - Rendered the selected landing page, utility homepage, and self-help/improvement page at 1600 px. The path hierarchy, utility lead, and development-page facts were visually readable without broken media or overlap.
@@ -69,18 +71,18 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- No production website, ChatGPT Sites project, ChatGPT Sites host, or store state was changed for the selected homepage work. The implementation remains on branch `design/homepage-two-path-prototypes`; the existing GitHub/Netlify workflow remains the intended publication path.
+- The approved two-path homepage is live through the existing GitHub/Netlify workflow. No ChatGPT Sites project, ChatGPT Sites host, or store state was created or changed for this work.
 - App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
 - Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
-- The homepage now links to the live `https://unspokenroom.app/` preview and identifies Unspoken Room as the next planned release.
+- The self-help/improvement page links to the live `https://unspokenroom.app/` preview and identifies Unspoken Room as the next planned release.
 - The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters.
-- GitHub `main` published customer-facing revision `cfb4a0c53f94766dc2ab1fcc07ccc11eb085866b`.
-- Netlify production published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
+- GitHub `main` published customer-facing revision `4cd28e28b8561b7a8e2d10c80d9a53eca181aa24` through pull request 45.
+- Netlify production deploy `6a5bbb04a36b6f0008ef98e9` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
-- The selected Option A implementation is reviewed locally but is not yet merged, deployed, or live-verified. Complete a branch preview review before merging and publishing it through the existing Netlify workflow.
+- The doorway artwork contains embedded display copy. Semantic hidden copy, accessible path links, and live-text mobile choices preserve usability, but any future wording change must keep the artwork and those live-text surfaces aligned.
 - The founding narrative is founder-supplied history. Preserve March 11, 2026, the Walter/OpenClaw name origin, and the later Hermes transition as exact anchors unless Jeffrey Waters explicitly revises them.
 - Unspoken Room is publicly identified as the next planned release, but no date or final feature set is announced. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the customer artifact and public release state are verified.
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
@@ -91,4 +93,4 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Review the selected Option A branch preview, then merge and deploy it through the existing GitHub/Netlify workflow if approved. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install, preserve Genome Explorer's Microsoft reservation before its three-month deadline, and prepare the Unspoken Room customer artifact before changing its next-release wording.
+- Monitor the live two-path choice for real-device usability and keep the artwork synchronized with future positioning changes. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install, preserve Genome Explorer's Microsoft reservation before its three-month deadline, and prepare the Unspoken Room customer artifact before changing its next-release wording.
