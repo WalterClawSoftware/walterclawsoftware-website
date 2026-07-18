@@ -1,4 +1,6 @@
 /index.html / 301
+/utilities.html /utilities 301
+/self-help-improvement.html /self-help-improvement 301
 /about.html /about 301
 /clipscript.html /clipscript 301
 /youtube-transcript-downloader.html /youtube-transcript-downloader 301
@@ -25,6 +27,8 @@
 /repropack /repro-pack 301
 /simple-voice-reader/support /simple-voice-reader/support/index.html 200
 /simple-voice-reader/privacy /simple-voice-reader/privacy/index.html 200
+/utilities /utilities.html 200
+/self-help-improvement /self-help-improvement.html 200
 /about /about.html 200
 /clipscript /clipscript.html 200
 /youtube-transcript-downloader /youtube-transcript-downloader.html 200
