@@ -11,7 +11,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
 - The `/utilities` introduction is a simple single-column hero without the redundant screenshot/proof panel. Its product grid keeps Simple Voice Reader first and ClipScript Desktop second.
 - The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
-- The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026; the name came from Jeffrey Waters naming his original OpenClaw agent Walter; and Hermes Agent was later adopted as the more capable working choice.
+- The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026, and the name came from Jeffrey Waters naming his original OpenClaw agent Walter.
+- The About page identifies OpenAI’s GPT-5.6 Sol through Codex as Jeffrey’s sole agent for coding and product development and as his personal AI assistant. Hermes Agent remains in a focused operational role for work such as home automation.
 - The self-help/improvement page names Threshold Lab, Unspoken Room, and Genome Explorer as projects in development. Unspoken Room is identified as the next planned release and links to `https://unspokenroom.app/`; no release date or final feature set is announced.
 - Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
@@ -23,6 +24,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Updated the About-page founding story to reflect the current agent roles while preserving the original OpenClaw/Walter origin and Hermes chapter: GPT-5.6 Sol through Codex now handles coding, product development, and personal-assistant work; Hermes remains for focused operational tasks such as home automation.
 - Removed the redundant Simple Voice Reader screenshot/proof panel from `/utilities`, converted the introduction to a single-column layout, changed “original six apps” to “utility apps,” and shortened the utilities footer fine print while preserving the requested product order.
 - Adopted the exact user-approved 1730 x 909 doorway artwork as the root landing experience. The blue and orange halves are real keyboard-, pointer-, and touch-accessible links, while semantic page copy and mobile choices preserve clarity beyond the embedded image text.
 - Implemented selected Option A as a simple two-path company landing page.
@@ -44,6 +46,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- Verified the About page contains the current GPT-5.6 Sol/Codex, sole coding and product-development agent, personal AI assistant, and Hermes/home-automation statements exactly once; the prior claim that Hermes was better suited to much of the company’s work is absent, while the March 11 and Walter/OpenClaw founding anchors remain.
+- Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references including 772 local references with no unresolved target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `about.html`, and ran `git diff --check`; all passed.
 - Rendered the simplified utilities page at 1600 px and confirmed that the removed panel leaves no empty column, broken media, overlap, or clipped copy. Verified six product cards with Simple Voice Reader first and ClipScript Desktop second.
 - Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references with no unresolved local target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `utilities.html` and `styles.css`, and ran `git diff --check`; all passed.
 - Netlify deploy preview `6a5bc2aa245637000858087e` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/utilities` and `styles.css` were byte-for-byte identical to the verified branch files, and the requested copy/removal assertions passed.
@@ -89,7 +93,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Known Risks
 
 - The doorway artwork contains embedded display copy. Semantic hidden copy, accessible path links, and live-text mobile choices preserve usability, but any future wording change must keep the artwork and those live-text surfaces aligned.
-- The founding narrative is founder-supplied history. Preserve March 11, 2026, the Walter/OpenClaw name origin, and the later Hermes transition as exact anchors unless Jeffrey Waters explicitly revises them.
+- The founding narrative and current agent-role statement are founder-supplied. Preserve March 11, 2026, the Walter/OpenClaw name origin, the current GPT-5.6 Sol/Codex role, and Hermes’s narrower operational role unless Jeffrey Waters explicitly revises them.
 - Unspoken Room is publicly identified as the next planned release, but no date or final feature set is announced. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the customer artifact and public release state are verified.
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
 - Genome Explorer's implemented app source is intentionally kept outside Git in its approved local-only privacy workspace; the reserved Apple and Microsoft identities are not yet wired into a customer build.
