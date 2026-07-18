@@ -460,6 +460,32 @@ img { display: block; max-width: 100%; }
     align-content: start;
 }
 
+.product-facts {
+    display: grid;
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.product-facts > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.product-facts strong {
+    color: white;
+}
+
+.product-facts span {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.86rem;
+    text-align: right;
+}
+
 .hero-actions-primary {
     margin-top: 24px;
 }
@@ -1816,6 +1842,15 @@ body.lightbox-open {
     .shell {
         width: min(100%, 390px);
         margin: 0;
+    }
+
+    .product-facts > div {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .product-facts span {
+        text-align: left;
     }
 }
 

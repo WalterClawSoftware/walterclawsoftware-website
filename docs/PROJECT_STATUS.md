@@ -7,7 +7,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Current Product State
 
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
-- The production homepage remains unchanged while three two-path homepage directions are reviewed on branch `design/homepage-two-path-prototypes`.
+- Option A is selected and implemented for review on branch `design/homepage-two-path-prototypes`; the production homepage remains unchanged until that branch is merged and deployed.
+- The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
 - The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026; the name came from Jeffrey Waters naming his original OpenClaw agent Walter; and Hermes Agent was later adopted as the more capable working choice.
 - The homepage names Threshold Lab, Unspoken Room, and Genome Explorer as projects in development. Unspoken Room is identified as the next planned release and links to `https://unspokenroom.app/`; no release date or final feature set is announced.
 - Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
@@ -20,7 +21,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
-- Created three standalone homepage prototypes that separate the six free utility apps from the paid self-help, improvement, and understanding apps in development. Every direction puts Simple Voice Reader first, removes the desktop-only and creators/small-teams framing, and keeps the production homepage untouched pending selection.
+- Implemented selected Option A as a simple two-path company landing page.
+- Moved the existing product-heavy homepage experience to `/utilities`, limited it to the six free utility apps, and made Simple Voice Reader the lead app in the hero, product grid, utility menus, and product footers.
+- Added `/self-help-improvement` as the separate page for Unspoken Room, Threshold Lab, and Genome Explorer, with paid/in-development status and no unverified dates, final features, or availability claims.
+- Removed the desktop-only and creators/small-teams company framing, added clean redirects and sitemap entries for both paths, and created a 1200 x 630 two-path social preview card without overwriting the prior source asset.
+- Preserved the three standalone prototype files under `design/homepage-prototypes/` for design history and rollback.
 - Replaced every visitor-facing Simple Voice Reader waiting-for-review statement with the verified public iOS/iPadOS 1.1 state across the homepage, product metadata and JSON-LD, product copy and FAQ, About, Updates, support, privacy, storefront configuration, and sitemap.
 - Added a dated public update for the July 16 iPhone/iPad release and marked the July 14 review-state note as historical and superseded.
 - Replaced the vague About-page founding note with a dedicated founding story that preserves the exact founding date, explains the Walter/OpenClaw name origin, and describes the later move to Hermes without making a universal product claim.
@@ -35,6 +40,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- Parsed all 22 production-site HTML files and 46 JSON-LD blocks, resolved 957 local `href` and `src` references, parsed the sitemap, and verified the two new routes.
+- Verified exactly six utility cards with Simple Voice Reader first, no Unspoken Room, Threshold Lab, or Genome Explorer names on `/utilities`, all three names on `/self-help-improvement`, removal of the rejected positioning phrases, and Simple Voice Reader first in every shared utility dropdown and product footer.
+- Rendered the selected landing page, utility homepage, and self-help/improvement page at 1600 px. The path hierarchy, utility lead, and development-page facts were visually readable without broken media or overlap.
+- Verified the new social card at 1200 x 630 with no alpha, checked JavaScript syntax, and ran `git diff --check`; all passed.
+- Confirmed that the repository contains no ChatGPT Sites hosting configuration or `chatgpt.site` reference.
 - Checked all three prototypes for required company/app names, the two-path hierarchy, Simple Voice Reader platform coverage, portable local asset references, absence of the rejected phrases, responsive rules down to 320px, valid relative assets, and clean rendered 1600×1000 previews.
 - Parsed all 20 HTML files and 44 JSON-LD blocks, checked 915 local `href` and `src` references, verified the four founding-story factual anchors and removal of the stale note, and ran `git diff --check`; all passed.
 - Tested the founding story locally and on Netlify preview `6a584d537526f82642e80ab1` at desktop and phone widths. The card remained readable and free of horizontal overflow or browser warning/error.
@@ -55,7 +65,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- No production website or store state was changed for the homepage prototype work. The design artifacts are isolated from `index.html` and `styles.css` on branch `design/homepage-two-path-prototypes`.
+- No production website, ChatGPT Sites project, ChatGPT Sites host, or store state was changed for the selected homepage work. The implementation remains on branch `design/homepage-two-path-prototypes`; the existing GitHub/Netlify workflow remains the intended publication path.
 - App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
 - Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
@@ -66,7 +76,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Known Risks
 
-- The three homepage directions are prototypes, not approved production copy or a deployed homepage. Select one direction before integrating it into the shared site structure, metadata, navigation, JSON-LD, sitemap, and production deployment.
+- The selected Option A implementation is reviewed locally but is not yet merged, deployed, or live-verified. Complete a branch preview review before merging and publishing it through the existing Netlify workflow.
 - The founding narrative is founder-supplied history. Preserve March 11, 2026, the Walter/OpenClaw name origin, and the later Hermes transition as exact anchors unless Jeffrey Waters explicitly revises them.
 - Unspoken Room is publicly identified as the next planned release, but no date or final feature set is announced. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the customer artifact and public release state are verified.
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
@@ -77,4 +87,4 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Select Option A, B, or C (or identify elements to combine), then implement that direction in the production homepage and verify the final desktop/mobile experience before deployment. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install, preserve Genome Explorer's Microsoft reservation before its three-month deadline, and prepare the Unspoken Room customer artifact before changing its next-release wording.
+- Review the selected Option A branch preview, then merge and deploy it through the existing GitHub/Netlify workflow if approved. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install, preserve Genome Explorer's Microsoft reservation before its three-month deadline, and prepare the Unspoken Room customer artifact before changing its next-release wording.
