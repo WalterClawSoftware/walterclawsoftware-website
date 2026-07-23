@@ -940,6 +940,11 @@ img { display: block; max-width: 100%; }
     color: #ffb0a5;
 }
 
+.status-review {
+    background: rgba(255, 214, 102, 0.14);
+    color: #ffe3a6;
+}
+
 .status-explore {
     background: rgba(255, 214, 102, 0.14);
     color: #ffe3a6;
