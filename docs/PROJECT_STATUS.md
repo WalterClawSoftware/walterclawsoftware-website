@@ -7,7 +7,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Current Product State
 
 - The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
-- Option A, the simplified utilities introduction, and the current About-page agent roles are live in production from customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde`, with the About update merged through GitHub pull request 49.
+- Option A, the simplified utilities introduction, and the current About-page agent roles remain live. Customer-facing revision `4482a97437330e538cd864d0cbb1bac3dd9f054e` adds the synchronized Unspoken Room submission status through GitHub pull request 51.
 - The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
 - The `/utilities` introduction is a simple single-column hero without the redundant screenshot/proof panel. Its product grid keeps Simple Voice Reader first and ClipScript Desktop second.
 - The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
@@ -54,6 +54,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Parsed all 22 production HTML files and 46 JSON-LD blocks and checked 953 `href`/`src` references with no missing local target.
 - Fresh 1440-pixel and 390-pixel full-page renders of the self-help/improvement page, a 390-pixel homepage render, and a 1440-pixel Updates render show the new status without horizontal overflow, clipped text, broken media, or overlap.
 - Netlify draft `6a62a5051459948034cdd70c` serves the homepage, self-help/improvement page, Updates, stylesheet, and sitemap byte-for-byte identically to the edited source.
+- GitHub pull request 51 was squash-merged as customer-facing revision `4482a97437330e538cd864d0cbb1bac3dd9f054e`. Netlify production deploy `6a62a5d9e07f5f8c011a35d9` is ready, and cache-busted production readback is byte-for-byte identical to the committed homepage, self-help/improvement page, Updates, stylesheet, and sitemap.
 - Verified the About page contains the current GPT-5.6 Sol/Codex, sole coding and product-development agent, personal AI assistant, and Hermes/home-automation statements exactly once; the prior claim that Hermes was better suited to much of the company’s work is absent, while the March 11 and Walter/OpenClaw founding anchors remain.
 - Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references including 772 local references with no unresolved target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `about.html`, and ran `git diff --check`; all passed.
 - Netlify deploy preview `6a5bff976ef85f0008287bf3` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/about` and the public project-status record were byte-for-byte identical to the verified branch files, and the current-role and founding-anchor assertions passed.
@@ -98,8 +99,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
 - The self-help/improvement page links to `https://unspokenroom.app/`; its verified draft identifies version 1.0 as Waiting for Review and clearly says no public download is available.
 - The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters together with the current GPT-5.6 Sol/Codex development and personal-assistant role and Hermes’s narrower home-automation role.
-- GitHub `main` published customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde` through pull request 49.
-- Netlify production deploy `6a5bffb83063800007e10c89` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
+- GitHub `main` published customer-facing revision `4482a97437330e538cd864d0cbb1bac3dd9f054e` through pull request 51.
+- Netlify production deploy `6a62a5d9e07f5f8c011a35d9` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
@@ -114,4 +115,4 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Publish and verify the Unspoken Room submission-status update, then keep both sites synchronized with App Review and the separate manual-release decision. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install and preserve Genome Explorer's Microsoft reservation before its three-month deadline.
+- Keep both sites synchronized with App Review and the separate manual-release decision. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install and preserve Genome Explorer's Microsoft reservation before its three-month deadline.
