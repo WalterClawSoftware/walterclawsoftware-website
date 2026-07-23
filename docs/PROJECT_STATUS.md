@@ -13,7 +13,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
 - The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026, and the name came from Jeffrey Waters naming his original OpenClaw agent Walter.
 - The About page identifies OpenAI’s GPT-5.6 Sol through Codex as Jeffrey’s sole agent for coding and product development and as his personal AI assistant. Hermes Agent remains in a focused operational role for work such as home automation.
-- The self-help/improvement page names Threshold Lab, Unspoken Room, and Genome Explorer as projects in development. Unspoken Room is identified as the next planned release and links to `https://unspokenroom.app/`; no release date or final feature set is announced.
+- The homepage and self-help/improvement page now identify Unspoken Room version 1.0 as submitted to App Store Connect and Waiting for Review. The submitted U.S. price is $29.99 as a one-time purchase with manual release after approval; the app is not yet approved, public, or downloadable.
+- The self-help/improvement page summarizes the submitted Unspoken Room feature set and continues to identify Threshold Lab and Genome Explorer as projects in development.
 - Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
 - macOS 1.1 is Ready for Sale. It uses local Kokoro and installed Apple voices, exports WAV or MP3, and includes resumable Smart Chapter Export.
@@ -24,6 +25,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Updated homepage metadata and the mobile path choice to identify Unspoken Room's App Review state without altering the user-approved doorway artwork.
+- Rebuilt the Unspoken Room card and surrounding self-help/improvement copy around the submitted standalone feature set, one-time price, manual-release boundary, and not-yet-public status.
+- Added a dated public update for the July 23 App Store Connect submission and linked the dedicated product and privacy sites.
 - Updated the About-page founding story to reflect the current agent roles while preserving the original OpenClaw/Walter origin and Hermes chapter: GPT-5.6 Sol through Codex now handles coding, product development, and personal-assistant work; Hermes remains for focused operational tasks such as home automation.
 - Removed the redundant Simple Voice Reader screenshot/proof panel from `/utilities`, converted the introduction to a single-column layout, changed “original six apps” to “utility apps,” and shortened the utilities footer fine print while preserving the requested product order.
 - Adopted the exact user-approved 1730 x 909 doorway artwork as the root landing experience. The blue and orange halves are real keyboard-, pointer-, and touch-accessible links, while semantic page copy and mobile choices preserve clarity beyond the embedded image text.
@@ -46,6 +50,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- `html-validate` passes for the three edited HTML pages; the sitemap parses; all site JavaScript passes syntax checks; and `git diff --check` passes.
+- Parsed all 22 production HTML files and 46 JSON-LD blocks and checked 953 `href`/`src` references with no missing local target.
+- Fresh 1440-pixel and 390-pixel full-page renders of the self-help/improvement page, a 390-pixel homepage render, and a 1440-pixel Updates render show the new status without horizontal overflow, clipped text, broken media, or overlap.
+- Netlify draft `6a62a5051459948034cdd70c` serves the homepage, self-help/improvement page, Updates, stylesheet, and sitemap byte-for-byte identically to the edited source.
 - Verified the About page contains the current GPT-5.6 Sol/Codex, sole coding and product-development agent, personal AI assistant, and Hermes/home-automation statements exactly once; the prior claim that Hermes was better suited to much of the company’s work is absent, while the March 11 and Walter/OpenClaw founding anchors remain.
 - Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references including 772 local references with no unresolved target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `about.html`, and ran `git diff --check`; all passed.
 - Netlify deploy preview `6a5bff976ef85f0008287bf3` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/about` and the public project-status record were byte-for-byte identical to the verified branch files, and the current-role and founding-anchor assertions passed.
@@ -84,10 +92,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## External State
 
 - The approved two-path homepage is live through the existing GitHub/Netlify workflow. No ChatGPT Sites project, ChatGPT Sites host, or store state was created or changed for this work.
+- Submission-status draft `6a62a5051459948034cdd70c` is verified at `https://6a62a5051459948034cdd70c--walter-claw-software.netlify.app`.
 - App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
 - Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
-- The self-help/improvement page links to the live `https://unspokenroom.app/` preview and identifies Unspoken Room as the next planned release.
+- The self-help/improvement page links to `https://unspokenroom.app/`; its verified draft identifies version 1.0 as Waiting for Review and clearly says no public download is available.
 - The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters together with the current GPT-5.6 Sol/Codex development and personal-assistant role and Hermes’s narrower home-automation role.
 - GitHub `main` published customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde` through pull request 49.
 - Netlify production deploy `6a5bffb83063800007e10c89` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
@@ -96,7 +105,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - The doorway artwork contains embedded display copy. Semantic hidden copy, accessible path links, and live-text mobile choices preserve usability, but any future wording change must keep the artwork and those live-text surfaces aligned.
 - The founding narrative and current agent-role statement are founder-supplied. Preserve March 11, 2026, the Walter/OpenClaw name origin, the current GPT-5.6 Sol/Codex role, and Hermes’s narrower operational role unless Jeffrey Waters explicitly revises them.
-- Unspoken Room is publicly identified as the next planned release, but no date or final feature set is announced. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the customer artifact and public release state are verified.
+- Unspoken Room is publicly identified as submitted and Waiting for Review, but it is not approved or publicly available. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the public release state is verified.
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
 - Genome Explorer's implemented app source is intentionally kept outside Git in its approved local-only privacy workspace; the reserved Apple and Microsoft identities are not yet wired into a customer build.
 - Store and domain availability do not establish trademark rights; complete a separate brand review before public launch.
@@ -105,4 +114,4 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Monitor the live two-path choice and simplified utilities introduction for real-device usability, and keep the artwork synchronized with future positioning changes. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install, preserve Genome Explorer's Microsoft reservation before its three-month deadline, and prepare the Unspoken Room customer artifact before changing its next-release wording.
+- Publish and verify the Unspoken Room submission-status update, then keep both sites synchronized with App Review and the separate manual-release decision. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install and preserve Genome Explorer's Microsoft reservation before its three-month deadline.
