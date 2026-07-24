@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-18
+Last updated: 2026-07-23
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and `https://walterclawsoftware.com` override this handoff when they differ.
 
