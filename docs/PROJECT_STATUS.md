@@ -54,6 +54,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - `html-validate` passes for `index.html`, `self-help-improvement.html`, and `updates.html`; all 20 HTML files and 45 JSON-LD blocks parse; 929 `href`/`src` references resolve; the sitemap and all JavaScript parse; and `git diff --check` passes.
 - Desktop and 390-pixel mobile browser checks show the new Threshold Lab card, button, and Updates entry without horizontal overflow or browser warnings. Netlify preview `6a64dea533af34b30871c05a` returns HTTP 200 and is byte-for-byte identical to the edited homepage, self-help/improvement page, Updates page, and sitemap.
+- GitHub pull request 54 was squash-merged as customer-facing revision `9aa47e0ed992f1a14535211ae26581a684d8edc8`. Netlify production deploy `6a64df65f419970008f8a910` is ready, and cache-busted production readback is byte-for-byte identical to the committed homepage, self-help/improvement page, Updates page, and sitemap.
+- The live self-help/improvement page exposes one visible `Visit thresholdlab.app` link with safe new-tab attributes; the 390-pixel production browser check has no horizontal overflow or console warnings.
 - `html-validate` passes for the three edited HTML pages; the sitemap parses; all site JavaScript passes syntax checks; and `git diff --check` passes.
 - Parsed all 22 production HTML files and 46 JSON-LD blocks and checked 953 `href`/`src` references with no missing local target.
 - Fresh 1440-pixel and 390-pixel full-page renders of the self-help/improvement page, a 390-pixel homepage render, and a 1440-pixel Updates render show the new status without horizontal overflow, clipped text, broken media, or overlap.
@@ -96,7 +98,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- Threshold Lab’s standalone site has a Netlify production deploy and `thresholdlab.app` is being connected through Porkbun DNS. The Walter Claw link update is verified on Netlify preview `6a64dea533af34b30871c05a`.
+- Threshold Lab production deploy `6a64dc8c19585807ae312be2` is live at `https://thresholdlab.app/` with Porkbun DNS, HTTPS for the apex and `www`, and an automatic `www` redirect to the apex domain.
 - The approved two-path homepage is live through the existing GitHub/Netlify workflow. No ChatGPT Sites project, ChatGPT Sites host, or store state was created or changed for this work.
 - Submission-status draft `6a62a5051459948034cdd70c` is verified at `https://6a62a5051459948034cdd70c--walter-claw-software.netlify.app`.
 - App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
@@ -104,8 +106,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
 - The self-help/improvement page links to `https://unspokenroom.app/`; its verified draft identifies version 1.0 as Waiting for Review and clearly says no public download is available.
 - The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters together with the current GPT-5.6 Sol/Codex development and personal-assistant role and Hermes’s narrower home-automation role.
-- GitHub `main` published customer-facing revision `4482a97437330e538cd864d0cbb1bac3dd9f054e` through pull request 51.
-- Netlify production deploy `6a62a5d9e07f5f8c011a35d9` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
+- GitHub `main` published customer-facing revision `9aa47e0ed992f1a14535211ae26581a684d8edc8` through pull request 54.
+- Netlify production deploy `6a64df65f419970008f8a910` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
 
 ## Known Risks
 
@@ -121,4 +123,4 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Verify `thresholdlab.app` HTTPS after DNS and certificate propagation, publish this link update through the existing GitHub/Netlify workflow, and keep all three product sites synchronized with their real store and development state.
+- Keep `walterclawsoftware.com`, `thresholdlab.app`, and `unspokenroom.app` synchronized with their real store and development state. Separately, mirror the Threshold Lab website source to its canonical private GitHub repository when GitHub write authentication is restored.
