@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-23
+Last updated: 2026-07-25
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and `https://walterclawsoftware.com` override this handoff when they differ.
 
@@ -15,6 +15,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - The About page identifies OpenAI’s GPT-5.6 Sol through Codex as Jeffrey’s sole agent for coding and product development and as his personal AI assistant. Hermes Agent remains in a focused operational role for work such as home automation.
 - The homepage and self-help/improvement page now identify Unspoken Room version 1.0 as submitted to App Store Connect and Waiting for Review. The submitted U.S. price is $29.99 as a one-time purchase with manual release after approval; the app is not yet approved, public, or downloadable.
 - The self-help/improvement page summarizes the submitted Unspoken Room feature set and continues to identify Threshold Lab and Genome Explorer as projects in development.
+- Threshold Lab’s public product website is live at `https://thresholdlab.app/`. The Mac-first, one-time-purchase app remains in development, with no store download or announced release date.
 - Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
 - macOS 1.1 is Ready for Sale. It uses local Kokoro and installed Apple voices, exports WAV or MP3, and includes resumable Smart Chapter Export.
@@ -25,6 +26,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Added Threshold Lab’s public product URL to homepage and self-help/improvement structured data, added a product-site button and clearer development copy to its project card, and published a dated Updates entry without implying that the app itself is available.
 - Updated homepage metadata and the mobile path choice to identify Unspoken Room's App Review state without altering the user-approved doorway artwork.
 - Rebuilt the Unspoken Room card and surrounding self-help/improvement copy around the submitted standalone feature set, one-time price, manual-release boundary, and not-yet-public status.
 - Added a dated public update for the July 23 App Store Connect submission and linked the dedicated product and privacy sites.
@@ -50,6 +52,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- `html-validate` passes for `index.html`, `self-help-improvement.html`, and `updates.html`; all 20 HTML files and 45 JSON-LD blocks parse; 929 `href`/`src` references resolve; the sitemap and all JavaScript parse; and `git diff --check` passes.
+- Desktop and 390-pixel mobile browser checks show the new Threshold Lab card, button, and Updates entry without horizontal overflow or browser warnings. Netlify preview `6a64dea533af34b30871c05a` returns HTTP 200 and is byte-for-byte identical to the edited homepage, self-help/improvement page, Updates page, and sitemap.
 - `html-validate` passes for the three edited HTML pages; the sitemap parses; all site JavaScript passes syntax checks; and `git diff --check` passes.
 - Parsed all 22 production HTML files and 46 JSON-LD blocks and checked 953 `href`/`src` references with no missing local target.
 - Fresh 1440-pixel and 390-pixel full-page renders of the self-help/improvement page, a 390-pixel homepage render, and a 1440-pixel Updates render show the new status without horizontal overflow, clipped text, broken media, or overlap.
@@ -92,6 +96,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
+- Threshold Lab’s standalone site has a Netlify production deploy and `thresholdlab.app` is being connected through Porkbun DNS. The Walter Claw link update is verified on Netlify preview `6a64dea533af34b30871c05a`.
 - The approved two-path homepage is live through the existing GitHub/Netlify workflow. No ChatGPT Sites project, ChatGPT Sites host, or store state was created or changed for this work.
 - Submission-status draft `6a62a5051459948034cdd70c` is verified at `https://6a62a5051459948034cdd70c--walter-claw-software.netlify.app`.
 - App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
@@ -104,6 +109,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Known Risks
 
+- The Threshold Lab product website is public, but the app remains in development. Keep the company site and `thresholdlab.app` aligned, and do not add store-download, approval, or release-date language until verified.
 - The doorway artwork contains embedded display copy. Semantic hidden copy, accessible path links, and live-text mobile choices preserve usability, but any future wording change must keep the artwork and those live-text surfaces aligned.
 - The founding narrative and current agent-role statement are founder-supplied. Preserve March 11, 2026, the Walter/OpenClaw name origin, the current GPT-5.6 Sol/Codex role, and Hermes’s narrower operational role unless Jeffrey Waters explicitly revises them.
 - Unspoken Room is publicly identified as submitted and Waiting for Review, but it is not approved or publicly available. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the public release state is verified.
@@ -115,4 +121,4 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Keep both sites synchronized with App Review and the separate manual-release decision. Separately, verify a clean public Simple Voice Reader iOS/iPadOS 1.1 install and preserve Genome Explorer's Microsoft reservation before its three-month deadline.
+- Verify `thresholdlab.app` HTTPS after DNS and certificate propagation, publish this link update through the existing GitHub/Netlify workflow, and keep all three product sites synchronized with their real store and development state.
