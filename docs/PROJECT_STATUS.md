@@ -1,126 +1,46 @@
 # Project Status
 
-Last updated: 2026-07-25
+Last updated: 2026-07-26
 
-This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and `https://walterclawsoftware.com` override this handoff when they differ.
+This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and the public websites override this handoff when they differ.
 
 ## Current Product State
 
-- The repository root is the Netlify publish directory for the active Walter Claw Software LLC website.
-- Option A, the simplified utilities introduction, and the current About-page agent roles remain live. Customer-facing revision `4482a97437330e538cd864d0cbb1bac3dd9f054e` adds the synchronized Unspoken Room submission status through GitHub pull request 51.
-- The selected structure uses `/` as a simple two-path choice, `/utilities` as the familiar product-focused home for the six free utility apps, and `/self-help-improvement` as the separate home for the paid apps in development.
-- The `/utilities` introduction is a simple single-column hero without the redundant screenshot/proof panel. Its product grid keeps Simple Voice Reader first and ClipScript Desktop second.
-- The root path choice now uses the user-approved blue-and-orange doorway artwork as the interactive landing surface, with each half linking to its corresponding path and separate compact choices for small screens.
-- The About page records the founder-supplied company history: Walter Claw Software LLC was founded on March 11, 2026, and the name came from Jeffrey Waters naming his original OpenClaw agent Walter.
-- The About page identifies OpenAI’s GPT-5.6 Sol through Codex as Jeffrey’s sole agent for coding and product development and as his personal AI assistant. Hermes Agent remains in a focused operational role for work such as home automation.
-- The homepage and self-help/improvement page now identify Unspoken Room version 1.0 as submitted to App Store Connect and Waiting for Review. The submitted U.S. price is $29.99 as a one-time purchase with manual release after approval; the app is not yet approved, public, or downloadable.
-- The self-help/improvement page summarizes the submitted Unspoken Room feature set and continues to identify Threshold Lab and Genome Explorer as projects in development.
-- Threshold Lab’s public product website is live at `https://thresholdlab.app/`. The Mac-first, one-time-purchase app remains in development, with no store download or announced release date.
-- Genome Explorer now has private draft records reserved in App Store Connect and Microsoft Partner Center, and `genomeexplorer.app` is registered. It remains unavailable for download and has no announced release date or final feature set.
+- The repository root is the Netlify publish directory for `https://walterclawsoftware.com`.
+- The home page directs visitors to the six free utility apps or the separate self-help and improvement projects.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
-- macOS 1.1 is Ready for Sale. It uses local Kokoro and installed Apple voices, exports WAV or MP3, and includes resumable Smart Chapter Export.
-- The Windows release is public in Microsoft Store under product ID `9NJ66Q625LL6`. It uses local Kokoro and installed Windows voices, exports MP3, WAV, FLAC, OGG, or AIFF, and includes Smart Chapter Export.
-- iOS/iPadOS 1.1 build 7 is Ready for Sale and public as a free download. Apple voices remain immediate and serve as the fallback engine. Compatible iOS/iPadOS 26+ devices with at least 5 GB of memory can optionally download an approximately 170 MB Apple-hosted pack of 20 American English Kokoro voices.
-- Audio export is not part of the mobile app.
-- Text, documents, and rendered audio stay on the user's device. Apple or Microsoft may be contacted only to obtain system voice assets, and Apple hosts the optional mobile Kokoro pack download.
+- Simple Voice Reader for Mac version `1.1.1 (11)` is public. It supports local Kokoro and installed Apple voices, WAV or MP3 export, Smart Chapter Export, adaptive playback buffering, synthesized-word timing, and spoken-word auto-scroll.
+- Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
+- Simple Voice Reader for Windows is public through Microsoft Store product `9NJ66Q625LL6`.
+- Unspoken Room version 1.0 Build 47 remains described as submitted to App Store Connect and not publicly downloadable. Live store state must be rechecked before changing that copy.
+- Threshold Lab has its own public product website at `https://thresholdlab.app/`. Its application and submission work are maintained in their own repositories and are not governed by this handoff.
 
 ## Completed Work
 
-- Added Threshold Lab’s public product URL to homepage and self-help/improvement structured data, added a product-site button and clearer development copy to its project card, and published a dated Updates entry without implying that the app itself is available.
-- Updated homepage metadata and the mobile path choice to identify Unspoken Room's App Review state without altering the user-approved doorway artwork.
-- Rebuilt the Unspoken Room card and surrounding self-help/improvement copy around the submitted standalone feature set, one-time price, manual-release boundary, and not-yet-public status.
-- Added a dated public update for the July 23 App Store Connect submission and linked the dedicated product and privacy sites.
-- Updated the About-page founding story to reflect the current agent roles while preserving the original OpenClaw/Walter origin and Hermes chapter: GPT-5.6 Sol through Codex now handles coding, product development, and personal-assistant work; Hermes remains for focused operational tasks such as home automation.
-- Removed the redundant Simple Voice Reader screenshot/proof panel from `/utilities`, converted the introduction to a single-column layout, changed “original six apps” to “utility apps,” and shortened the utilities footer fine print while preserving the requested product order.
-- Adopted the exact user-approved 1730 x 909 doorway artwork as the root landing experience. The blue and orange halves are real keyboard-, pointer-, and touch-accessible links, while semantic page copy and mobile choices preserve clarity beyond the embedded image text.
-- Implemented selected Option A as a simple two-path company landing page.
-- Moved the existing product-heavy homepage experience to `/utilities`, limited it to the six free utility apps, and made Simple Voice Reader the lead app in the hero, product grid, utility menus, and product footers.
-- Added `/self-help-improvement` as the separate page for Unspoken Room, Threshold Lab, and Genome Explorer, with paid/in-development status and no unverified dates, final features, or availability claims.
-- Removed the desktop-only and creators/small-teams company framing, added clean redirects and sitemap entries for both paths, and created a 1200 x 630 two-path social preview card without overwriting the prior source asset.
-- Preserved the three standalone prototype files under `design/homepage-prototypes/` for design history and rollback.
-- Replaced every visitor-facing Simple Voice Reader waiting-for-review statement with the verified public iOS/iPadOS 1.1 state across the homepage, product metadata and JSON-LD, product copy and FAQ, About, Updates, support, privacy, storefront configuration, and sitemap.
-- Added a dated public update for the July 16 iPhone/iPad release and marked the July 14 review-state note as historical and superseded.
-- Replaced the vague About-page founding note with a dedicated founding story that preserves the exact founding date, explains the Walter/OpenClaw name origin, and describes the later move to Hermes without making a universal product claim.
-- Added a restrained homepage section for Threshold Lab, Unspoken Room, and Genome Explorer, then identified Unspoken Room as the next planned release and linked its dedicated website without making a release-date or final-feature claim.
-- Reserved the exact `Genome Explorer` app name for a macOS record in App Store Connect and an MSIX or PWA app in Microsoft Partner Center, and registered `genomeexplorer.app` through Porkbun.
-- Rebuilt the Simple Voice Reader product page around the verified Mac, Windows, iPhone, and iPad editions, with platform-specific capabilities and requirements.
-- Added real iPhone and Windows product screenshots while retaining the current Mac screenshot.
-- Replaced the Microsoft Store search URL with the permanent product-detail URL.
-- Updated product metadata, JSON-LD, privacy, support, homepage, About, Store FAQ, Updates, and storefront configuration.
-- Clarified that audio and Smart Chapter export are desktop-only and documented each desktop platform's actual export formats.
-- Removed stale desktop-only language from the shared site footer.
+- Corrected every current Simple Voice Reader Mac version reference from `1.1` to the verified public `1.1.1`.
+- Added the July 21 Mac 1.1.1 release to Updates with the public release notes.
+- Kept the July 14 Mac 1.1 entry as explicitly historical rather than presenting it as the current version.
+- Left Threshold Lab pages, copy, assets, submission materials, and store state unchanged.
 
 ## Verification
 
-- `html-validate` passes for `index.html`, `self-help-improvement.html`, and `updates.html`; all 20 HTML files and 45 JSON-LD blocks parse; 929 `href`/`src` references resolve; the sitemap and all JavaScript parse; and `git diff --check` passes.
-- Desktop and 390-pixel mobile browser checks show the new Threshold Lab card, button, and Updates entry without horizontal overflow or browser warnings. Netlify preview `6a64dea533af34b30871c05a` returns HTTP 200 and is byte-for-byte identical to the edited homepage, self-help/improvement page, Updates page, and sitemap.
-- GitHub pull request 54 was squash-merged as customer-facing revision `9aa47e0ed992f1a14535211ae26581a684d8edc8`. Netlify production deploy `6a64df65f419970008f8a910` is ready, and cache-busted production readback is byte-for-byte identical to the committed homepage, self-help/improvement page, Updates page, and sitemap.
-- The live self-help/improvement page exposes one visible `Visit thresholdlab.app` link with safe new-tab attributes; the 390-pixel production browser check has no horizontal overflow or console warnings.
-- `html-validate` passes for the three edited HTML pages; the sitemap parses; all site JavaScript passes syntax checks; and `git diff --check` passes.
-- Parsed all 22 production HTML files and 46 JSON-LD blocks and checked 953 `href`/`src` references with no missing local target.
-- Fresh 1440-pixel and 390-pixel full-page renders of the self-help/improvement page, a 390-pixel homepage render, and a 1440-pixel Updates render show the new status without horizontal overflow, clipped text, broken media, or overlap.
-- Netlify draft `6a62a5051459948034cdd70c` serves the homepage, self-help/improvement page, Updates, stylesheet, and sitemap byte-for-byte identically to the edited source.
-- GitHub pull request 51 was squash-merged as customer-facing revision `4482a97437330e538cd864d0cbb1bac3dd9f054e`. Netlify production deploy `6a62a5d9e07f5f8c011a35d9` is ready, and cache-busted production readback is byte-for-byte identical to the committed homepage, self-help/improvement page, Updates, stylesheet, and sitemap.
-- Verified the About page contains the current GPT-5.6 Sol/Codex, sole coding and product-development agent, personal AI assistant, and Hermes/home-automation statements exactly once; the prior claim that Hermes was better suited to much of the company’s work is absent, while the March 11 and Walter/OpenClaw founding anchors remain.
-- Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references including 772 local references with no unresolved target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `about.html`, and ran `git diff --check`; all passed.
-- Netlify deploy preview `6a5bff976ef85f0008287bf3` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/about` and the public project-status record were byte-for-byte identical to the verified branch files, and the current-role and founding-anchor assertions passed.
-- GitHub pull request 49 was squash-merged as customer-facing revision `d7ae31be7f940282d1d95c64ccfaf05a021f5bde`. Netlify production deploy `6a5bffb83063800007e10c89` reported ready, and cache-busted production readback returned HTTP 200 with byte-exact content for `/about` and the project-status record; the new GPT-5.6 Sol/Codex and Hermes/home-automation statements were present and the superseded Hermes role claim was absent.
-- Rendered the simplified utilities page at 1600 px and confirmed that the removed panel leaves no empty column, broken media, overlap, or clipped copy. Verified six product cards with Simple Voice Reader first and ClipScript Desktop second.
-- Parsed all 22 production-site HTML files and 46 JSON-LD blocks, checked 968 `href` and `src` references with no unresolved local target, parsed the sitemap and web manifest, checked all three JavaScript files, performed byte-exact local HTTP readback for `utilities.html` and `styles.css`, and ran `git diff --check`; all passed.
-- Netlify deploy preview `6a5bc2aa245637000858087e` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, `/utilities` and `styles.css` were byte-for-byte identical to the verified branch files, and the requested copy/removal assertions passed.
-- GitHub pull request 47 was squash-merged as customer-facing revision `928f77667573e99b11a7f8d94d30a562552b24d5`. Netlify production deploy `6a5bc2f6a6d39a0008bb7063` reported ready, and cache-busted production readback returned HTTP 200 with byte-exact content for `/utilities` and `styles.css`; the removed panel and footer phrase were absent, the new sentence was present, and Simple Voice Reader remained ahead of ClipScript Desktop.
-- Confirmed that the landing artwork is byte-for-byte identical to the user-supplied PNG, is 1730 x 909 with no alpha, and renders cleanly in the centered doorway layout at 1600 px.
-- Verified that the artwork path exposes `/utilities` and `/self-help-improvement` as separate accessible links and that small-screen fallback choices state both destinations in live text.
-- Netlify deploy preview `6a5bba194f12910008ce15dd` passed its deploy, header-rule, and redirect-rule checks. After normalizing Netlify's preview-only marker, the homepage, both path pages, stylesheet, and artwork were byte-for-byte identical to the verified branch files.
-- GitHub pull request 45 was squash-merged as revision `4cd28e28b8561b7a8e2d10c80d9a53eca181aa24`. Netlify production deploy `6a5bbb04a36b6f0008ef98e9` reported ready, and cache-busted production readback returned HTTP 200 with byte-exact content for the homepage, `/utilities`, `/self-help-improvement`, `homepage.css`, and the approved doorway artwork.
-- Parsed all 22 production-site HTML files and 46 JSON-LD blocks, resolved 955 local `href` and `src` references, parsed the sitemap, and verified the two path routes.
-- Verified exactly six utility cards with Simple Voice Reader first, no Unspoken Room, Threshold Lab, or Genome Explorer names on `/utilities`, all three names on `/self-help-improvement`, removal of the rejected positioning phrases, and Simple Voice Reader first in every shared utility dropdown and product footer.
-- Rendered the selected landing page, utility homepage, and self-help/improvement page at 1600 px. The path hierarchy, utility lead, and development-page facts were visually readable without broken media or overlap.
-- Verified the new social card at 1200 x 630 with no alpha, checked JavaScript syntax, and ran `git diff --check`; all passed.
-- Confirmed that the repository contains no ChatGPT Sites hosting configuration or `chatgpt.site` reference.
-- Checked all three prototypes for required company/app names, the two-path hierarchy, Simple Voice Reader platform coverage, portable local asset references, absence of the rejected phrases, responsive rules down to 320px, valid relative assets, and clean rendered 1600×1000 previews.
-- Parsed all 20 HTML files and 44 JSON-LD blocks, checked 915 local `href` and `src` references, verified the four founding-story factual anchors and removal of the stale note, and ran `git diff --check`; all passed.
-- Tested the founding story locally and on Netlify preview `6a584d537526f82642e80ab1` at desktop and phone widths. The card remained readable and free of horizontal overflow or browser warning/error.
-- Netlify production deploy `6a584e1412403b000823ecd4` reported ready for customer-facing revision `f6c2e8785121deb2ce449fc7639924fa1c46c038`.
-- Cache-busted production readback returned HTTP 200 with the exact March 11 date, OpenClaw/Walter origin, Hermes transition, and no stale founding note. Live `about.html` was byte-for-byte identical to the verified repository file.
-- App Store Connect readback confirmed both macOS 1.1 build 10 and iOS/iPadOS 1.1 build 7 as Ready for Sale and downloadable. The combined iOS review submission is complete, both review items are approved, and the hosted Kokoro asset version is complete.
-- Apple's public lookup returned one `Simple Voice Reader` result at version 1.1, price `Free`, with a July 16 release date and release notes covering the optional 20-voice Kokoro pack.
-- Re-ran the release-copy validator on July 17: all 20 HTML files, 44 JSON-LD blocks, 738 local references, 20 sitemap URLs, metadata, store-link inventory, and stale-review-language assertions passed; JavaScript syntax, XML parsing, and `git diff --check` also passed.
-- Rendered the updated product page in isolated headless Chromium at 1440x1000 and 390x844. The desktop and phone layouts had no horizontal overflow, clipped content, overlap, or visible broken media, and the iPhone/iPad Kokoro requirements remained readable.
-- Netlify deploy preview `6a5a785035ed10000886b044` for GitHub pull request 43 returned HTTP 200 on the homepage, About, Updates, product, support, privacy, storefront configuration, and sitemap routes. After removing Netlify's preview-only instrumentation, every response was byte-for-byte identical to the verified repository file.
-- GitHub pull request 43 was squash-merged as customer-facing revision `cfb4a0c53f94766dc2ab1fcc07ccc11eb085866b`. Cache-busted production readback returned HTTP 200 on the same eight routes, every response was byte-for-byte identical to that revision, and no stale iPhone/iPad review language remained.
-- Tested the product page and support/privacy pages at desktop and phone widths. There was no horizontal overflow, broken media, overlap, or browser console warning/error.
-- Netlify preview `6a56cf424db301cb324144cb` returned HTTP 200 for the product, support, privacy, site-wide supporting pages, and both new screenshot assets. Preview copy assertions passed.
-- Cache-busted production readback returned HTTP 200 for the same routes and assets, and exact copy assertions passed. The live desktop and phone layouts had no overflow, broken media, or browser console warning/error.
-- Porkbun Domain Management listed `genomeexplorer.app` as a new domain in the account with expiration date 2027-07-16.
-- App Store Connect showed `Genome Explorer` as macOS 1.0 Prepare for Submission. App Information confirmed Apple ID `6791394608`, bundle ID `com.walterclawsoftware.genomeexplorer`, SKU `GENOMEEXPLORER-MACOS-2026`, and primary language English (U.S.).
-- Microsoft Partner Center showed `Genome Explorer` as an In draft MSIX or PWA app. Manage app names reported `Reserved for this app`, and Product Identity confirmed Store ID `9N6CJ95SQR49`, identity name `WalterClawSoftwareLLC.GenomeExplorer`, and PFN `WalterClawSoftwareLLC.GenomeExplorer_jvgzfyt5v7qd8`.
+- Apple's public Mac storefront page reports Simple Voice Reader `1.1.1`, dated 2026-07-21, with release notes covering adaptive buffering, synthesized-word highlighting, spoken-word auto-scroll, and playback-error cleanup.
+- App Store Connect had already confirmed macOS build `11` as released and downloadable.
+- All 25 HTML files and 46 JSON-LD blocks parse, 937 `href`/`src` references resolve with no missing local target, the sitemap and all JavaScript parse, and `git diff --check` passes.
+- `html-validate` reports the same five pre-existing product-page findings as `origin/main` and no new finding from this correction.
 
 ## External State
 
-- Threshold Lab production deploy `6a64dc8c19585807ae312be2` is live at `https://thresholdlab.app/` with Porkbun DNS, HTTPS for the apex and `www`, and an automatic `www` redirect to the apex domain.
-- The approved two-path homepage is live through the existing GitHub/Netlify workflow. No ChatGPT Sites project, ChatGPT Sites host, or store state was created or changed for this work.
-- Submission-status draft `6a62a5051459948034cdd70c` is verified at `https://6a62a5051459948034cdd70c--walter-claw-software.netlify.app`.
-- App Store Connect now contains the private draft Genome Explorer macOS record with Apple ID `6791394608`.
-- Microsoft Partner Center now contains the private draft Genome Explorer MSIX or PWA product with Store ID `9N6CJ95SQR49`.
-- Porkbun now contains `genomeexplorer.app`, registered through 2027-07-16.
-- The self-help/improvement page links to `https://unspokenroom.app/`; its verified draft identifies version 1.0 as Waiting for Review and clearly says no public download is available.
-- The About page now publishes the company founding and naming history supplied by founder Jeffrey Waters together with the current GPT-5.6 Sol/Codex development and personal-assistant role and Hermes’s narrower home-automation role.
-- GitHub `main` published customer-facing revision `9aa47e0ed992f1a14535211ae26581a684d8edc8` through pull request 54.
-- Netlify production deploy `6a64df65f419970008f8a910` published and cache-busted readback verified that revision at `https://walterclawsoftware.com`.
+- GitHub `main` is the canonical website source, and Netlify publishes production from that branch.
+- Simple Voice Reader's Apple and Microsoft download links are present on the product page.
+- No App Store Connect, Microsoft Partner Center, DNS, pricing, availability, or Threshold Lab state is changed by this website correction.
 
 ## Known Risks
 
-- The Threshold Lab product website is public, but the app remains in development. Keep the company site and `thresholdlab.app` aligned, and do not add store-download, approval, or release-date language until verified.
-- The doorway artwork contains embedded display copy. Semantic hidden copy, accessible path links, and live-text mobile choices preserve usability, but any future wording change must keep the artwork and those live-text surfaces aligned.
-- The founding narrative and current agent-role statement are founder-supplied. Preserve March 11, 2026, the Walter/OpenClaw name origin, the current GPT-5.6 Sol/Codex role, and Hermes’s narrower operational role unless Jeffrey Waters explicitly revises them.
-- Unspoken Room is publicly identified as submitted and Waiting for Review, but it is not approved or publicly available. Keep `unspokenroom.app` and the Walter Claw homepage aligned, and do not use available-now language until the public release state is verified.
-- Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost.
-- Genome Explorer's implemented app source is intentionally kept outside Git in its approved local-only privacy workspace; the reserved Apple and Microsoft identities are not yet wired into a customer build.
-- Store and domain availability do not establish trademark rights; complete a separate brand review before public launch.
-- The public iOS/iPadOS 1.1 listing and hosted-asset state are verified, but a clean public-install pack-download and playback test remains a separate device-level checkpoint.
-- Store state and product capabilities can drift from static website copy; verify live records before future availability changes.
+- Apple's general lookup endpoint represents the iPhone/iPad listing for this universal app. Mac release truth must be read from the Mac storefront view or App Store Connect.
+- Store state can drift from static website copy. Reconcile the public store, authenticated store record, GitHub source, deployed page, and project handoff after releases.
+- A clean public-install mobile Kokoro pack download and playback test remains a separate device-level checkpoint.
 
 ## Next Recommended Action
 
-- Keep `walterclawsoftware.com`, `thresholdlab.app`, and `unspokenroom.app` synchronized with their real store and development state. Separately, mirror the Threshold Lab website source to its canonical private GitHub repository when GitHub write authentication is restored.
+- Run the lightweight release-truth reconciliation after each store release and on the recurring schedule, then correct any conclusively verified drift promptly.
