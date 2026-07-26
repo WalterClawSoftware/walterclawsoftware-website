@@ -63,7 +63,7 @@ window.WCSStorefront = {
         storeLinkUrl: "https://apps.apple.com/us/app/simple-voice-reader/id6787165967?mt=12",
         liveLabel: "Get Simple Voice Reader for Mac",
         pendingLabel: "Available now",
-        helperText: "Mac 1.1 and Windows include local Kokoro voices. iPhone and iPad version 1.1 includes Apple voices plus an optional Apple-hosted Kokoro pack on compatible devices."
+        helperText: "Mac 1.1.1 and Windows include local Kokoro voices. iPhone and iPad version 1.1 includes Apple voices plus an optional Apple-hosted Kokoro pack on compatible devices."
     },
     "simple-voice-reader-windows": {
         storeLinkUrl: "https://apps.microsoft.com/detail/9NJ66Q625LL6",
