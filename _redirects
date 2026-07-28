@@ -25,8 +25,8 @@
 /bannersafe-youtube /bannersafe 301
 /transcriptrescue /transcript-rescue 301
 /repropack /repro-pack 301
-/simple-voice-reader/support /simple-voice-reader/support/index.html 200
-/simple-voice-reader/privacy /simple-voice-reader/privacy/index.html 200
+/simple-voice-reader/support/index.html /simple-voice-reader/support/ 301!
+/simple-voice-reader/privacy/index.html /simple-voice-reader/privacy/ 301!
 /utilities /utilities.html 200
 /self-help-improvement /self-help-improvement.html 200
 /about /about.html 200

@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-27
+Last updated: 2026-07-28
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and the public websites override this handoff when they differ.
 
@@ -18,6 +18,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Aligned the Simple Voice Reader support and privacy URL families with Netlify's directory routing: trailing-slash canonicals, Open Graph URLs, structured data, sitemap entries, and internal links now agree, while the no-slash and `/index.html` variants permanently redirect to the canonical pages.
 - Replaced the technical Unspoken Room feature inventory on the company site with a short description covering its purpose, current Mac availability, upcoming Windows version, and on-device privacy.
 - Added `two-path-doorways-landing-paid-apps.png` as a derived landing asset with the new paid-app hierarchy and wired it into the home page.
 - Retained the original `two-path-doorways-landing.png` unchanged as the source artwork and immediate rollback asset.
@@ -33,6 +34,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- All 46 JSON-LD blocks parse, all 773 local `href`/`src` references resolve, the sitemap parses with 22 unique canonical URLs, and `git diff --check` passes. Targeted HTML validation has the same five pre-existing `simple-voice-reader.html` findings as `origin/main`, with no new finding.
+- Netlify draft deploy `6a68bb0873dde3e2a465bd60` verified one-hop `301` responses from both no-slash and `/index.html` variants to the trailing-slash URLs, `200` responses with matching self-canonicals at both destinations, and byte parity for the support page, privacy page, and sitemap. Production verification remains pending until the GitHub change is deployed.
 - `self-help-improvement.html` passes targeted HTML and JSON-LD validation; the full-site HTML audit retains the same 37 pre-existing findings and no new finding.
 - Preview and production checks at `1440x900` and `390x844` show the simplified copy, both destination buttons, and no horizontal overflow. The production page SHA-256 matches the committed file exactly.
 - The derived and original landing assets are both opaque `1730x909` PNG files. Pixel differences are confined to a `439x249` right-panel heading region; the original file retains SHA-256 `380a30f41a8e6c1bb50dd2bd1702d330d28fa7d54794016d367b09133cdb5e3e`.
@@ -62,6 +65,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Known Risks
 
+- Search Console can retain historical redirect and alternate-page samples until Google recrawls them; use the property-owning Google account to confirm the new sample URLs and counts after deployment.
 - Apple's general lookup endpoint represents the iPhone/iPad listing for this universal app. Mac release truth must be read from the Mac storefront view or App Store Connect.
 - Store state can drift from static website copy. Reconcile the public store, authenticated store record, GitHub source, deployed page, and project handoff after releases.
 - The phrase `Windows on the way` should be updated when the Windows submission or release state materially changes.
@@ -71,6 +75,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
+- After the canonical-route correction reaches production, verify the four Simple Voice Reader support/privacy URL variants and recheck the Search Console examples after Google recrawls the site.
 - Keep the paid-app page synchronized with App Store Connect when Threshold Lab's review state changes; do not alter the landing page without explicit direction.
 - Keep the brief Unspoken Room company copy synchronized with Windows submission and release state while leaving detailed feature explanations to `unspokenroom.app`.
 - Run the lightweight release-truth reconciliation after each store release and on the recurring schedule, then correct any conclusively verified drift promptly.
