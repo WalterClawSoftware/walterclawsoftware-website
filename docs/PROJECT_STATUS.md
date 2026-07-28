@@ -76,6 +76,13 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Netlify remains Git-connected to
   `WalterClawSoftware/walterclawsoftware-website` `main`, and
   `prevent_non_git_prod_deploys` is enabled.
+- GitHub branch protection requires the up-to-date `site-quality` check on
+  `main`, applies to administrators, requires resolved review conversations,
+  and blocks force-pushes and deletion.
+- GitHub `main` contains site-quality merge
+  `4204c8c02c214972b0b544ef7763403ccf4504d5`; Netlify production deploy
+  `6a68e6f8e096dd00082d8c87` is `ready`. Live homepage and safety-stylesheet
+  bytes match Git exactly.
 - GitHub `main` contains SEO merge `ebed0fd4c31cf937ea0e85dd74ae7716a707fbd9`; Netlify production deploy `6a68c9dbf15ee20008809fed` is `ready` at that revision with verified route, crawlability, asset-cache, and byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
