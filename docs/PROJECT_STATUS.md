@@ -18,6 +18,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Added the shared responsive-image invariant, explicit crop approval contract,
+  static gate, real-Chrome desktop/phone geometry audit, and GitHub
+  `site-quality` workflow across all 25 HTML routes.
+- Added a Netlify build gate at the repository root and enabled Git-only
+  production so direct production deploys cannot bypass source validation.
 - Completed a 22-page technical SEO and performance pass: current home-page search/social copy now reflects Unspoken Room availability and Threshold Lab review status, all `.html` duplicates permanently redirect to extensionless canonicals, the Simple Voice Reader privacy/support schemas are complete, and long search titles/descriptions are concise and distinct.
 - Preserved the approved `1730x909` landing artwork as the source/rollback PNG and added visually verified `1730x909` and `800x421` responsive WebP derivatives. The homepage now selects the derived artwork without changing its dimensions, bounds, wording, or visual identity.
 - Aligned the Simple Voice Reader support and privacy URL families with Netlify's directory routing: trailing-slash canonicals, Open Graph URLs, structured data, sitemap entries, and internal links now agree, while the no-slash and `/index.html` variants permanently redirect to the canonical pages.
@@ -36,6 +41,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- The site-quality self-test proves the original stuck width/height regression
+  is rejected. Static and rendered checks pass all 25 routes at desktop and
+  phone widths; the existing Repro Pack `object-fit: contain` image is reported
+  as a non-failing letterbox warning rather than a crop.
 - All 22 pages have one self-canonical, one H1, unique titles and descriptions within search-length bounds, complete Open Graph/Twitter metadata, and valid JSON-LD; 47 JSON-LD blocks parse and all 758 local references resolve.
 - Netlify preview `6a68c6c71a40d710530c4f3b` passed 23/23 forced redirect checks, 22/22 full-page byte/self-canonical checks, and exact deployed-byte comparisons for the changed pages, sitemap, and responsive artwork.
 - Mobile Lighthouse on the homepage improved from performance `74` to `99`, LCP from about `9.4 s` to `1.8 s`, and transferred bytes from about `1.74 MB` to `118 KB`; accessibility and best practices remain `100`. Preview SEO is intentionally limited only by Netlify's preview-wide `noindex`; production baseline SEO is `100`.
@@ -64,6 +73,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
+- Netlify remains Git-connected to
+  `WalterClawSoftware/walterclawsoftware-website` `main`, and
+  `prevent_non_git_prod_deploys` is enabled.
 - GitHub `main` contains SEO merge `ebed0fd4c31cf937ea0e85dd74ae7716a707fbd9`; Netlify production deploy `6a68c9dbf15ee20008809fed` is `ready` at that revision with verified route, crawlability, asset-cache, and byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.

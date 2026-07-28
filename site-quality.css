@@ -1,0 +1,11 @@
+/*
+ * Walter Claw responsive-image safety invariant.
+ *
+ * HTML width and height attributes reserve layout space, but they must never
+ * become a fixed rendered height when the image width responds to its
+ * container. Intentional crops require a reviewed data-visual-crop="approved"
+ * declaration and a matching site-quality.json entry.
+ */
+img[width][height]:not([data-visual-crop="approved"]) {
+  height: auto !important;
+}

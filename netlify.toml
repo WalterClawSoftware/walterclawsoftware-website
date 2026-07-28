@@ -1,0 +1,3 @@
+[build]
+  publish = "."
+  command = "python3 scripts/check_site_geometry.py --static"
