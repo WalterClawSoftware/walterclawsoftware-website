@@ -7,7 +7,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Current Product State
 
 - The repository root is the Netlify publish directory for `https://walterclawsoftware.com`.
-- The home page directs visitors to the six free utility apps or the separate self-help and improvement projects. Its source and styling were intentionally left unchanged by the July 27 paid-app update.
+- The home page directs visitors to six free utility apps or paid apps. Its right panel now uses a `Paid apps` heading matched to the `Free utility apps` scale, followed by `Available now and others in development.`
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
 - Simple Voice Reader for Mac version `1.1.1 (11)` is public. It supports local Kokoro and installed Apple voices, WAV or MP3 export, Smart Chapter Export, adaptive playback buffering, synthesized-word timing, and spoken-word auto-scroll.
 - Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
@@ -18,6 +18,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Added `two-path-doorways-landing-paid-apps.png` as a derived landing asset with the new paid-app hierarchy and wired it into the home page.
+- Retained the original `two-path-doorways-landing.png` unchanged as the source artwork and immediate rollback asset.
+- Updated the landing image alternative text, paid-path accessibility label, mobile paid-app card, and home-page sitemap date to match the new wording.
 - Updated only the paid-app page and its sitemap timestamp for the July 27 store-state change.
 - Marked Unspoken Room available for Mac, added the direct Mac App Store purchase link, and retained the public product-site link.
 - Marked Threshold Lab `Waiting for Review` and explicitly stated that it is not yet approved or downloadable.
@@ -29,6 +32,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- The derived and original landing assets are both opaque `1730x909` PNG files. Pixel differences are confined to a `439x249` right-panel heading region; the original file retains SHA-256 `380a30f41a8e6c1bb50dd2bd1702d330d28fa7d54794016d367b09133cdb5e3e`.
+- `index.html` passes `html-validate`; the sitemap and JSON-LD parse; local references resolve; and `git diff --check` passes.
+- The full-site HTML audit retains the same 37 pre-existing findings as the pre-change baseline, with no new finding.
+- Preview and production browser checks at `1440x900` and `390x844` show the intended hierarchy and mobile companion card with no horizontal overflow.
+- Cache-busted production SHA-256 readbacks match the committed home page, derived artwork, original rollback artwork, and sitemap exactly.
 - App Store Connect showed Unspoken Room macOS `1.0.0` as `Ready for Distribution` and Threshold Lab macOS `1.0` as `Waiting for Review`; the public Unspoken Room Mac App Store listing is reachable at Apple ID `6788225275`.
 - `self-help-improvement.html` passes `html-validate`; its JSON-LD parses, the sitemap parses, and `git diff --check` passes.
 - The full-site HTML audit has the same 37 pre-existing findings before and after this update, with no new finding introduced.
@@ -42,7 +50,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- GitHub `main` contains customer-facing revision `c2fe41a`; Netlify production deploy `6a67f070ca3a8a062aa67c09` is `ready`.
+- GitHub `main` contains paid-app page revision `c2fe41a` and landing hierarchy revision `db919bc`; Netlify production is `ready` with verified byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
 - The most recent authenticated store records identify Apple ID `6791394608` and Microsoft Store ID `9N6CJ95SQR49` for Genome Explorer. These identifiers are continuity evidence, not approval or public-availability evidence.
