@@ -39,6 +39,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - All 22 pages have one self-canonical, one H1, unique titles and descriptions within search-length bounds, complete Open Graph/Twitter metadata, and valid JSON-LD; 47 JSON-LD blocks parse and all 758 local references resolve.
 - Netlify preview `6a68c6c71a40d710530c4f3b` passed 23/23 forced redirect checks, 22/22 full-page byte/self-canonical checks, and exact deployed-byte comparisons for the changed pages, sitemap, and responsive artwork.
 - Mobile Lighthouse on the homepage improved from performance `74` to `99`, LCP from about `9.4 s` to `1.8 s`, and transferred bytes from about `1.74 MB` to `118 KB`; accessibility and best practices remain `100`. Preview SEO is intentionally limited only by Netlify's preview-wide `noindex`; production baseline SEO is `100`.
+- Production deploy `6a68c9dbf15ee20008809fed` at merge `ebed0fd4c31cf937ea0e85dd74ae7716a707fbd9` is `ready`. Canonical, cache-busted canonical, Netlify main-alias, and immutable-deploy readbacks matched source; all 23 forced redirects passed and all 22 sitemap pages returned `200` with matching self-canonicals. Production Lighthouse scored `99/100/100/100`, with LCP about `1.6 s` and about `115 KB` transferred.
 - Desktop `1440x900` and phone `390x844` preview checks preserve the approved landing composition with no missing imagery or unintended visual change.
 - All 46 JSON-LD blocks parse, all 773 local `href`/`src` references resolve, the sitemap parses with 22 unique canonical URLs, and `git diff --check` passes. Targeted HTML validation has the same five pre-existing `simple-voice-reader.html` findings as `origin/main`, with no new finding.
 - Netlify draft deploy `6a68bb0873dde3e2a465bd60` verified one-hop `301` responses from both no-slash and `/index.html` variants to the trailing-slash URLs, `200` responses with matching self-canonicals at both destinations, and byte parity for the support page, privacy page, and sitemap.
@@ -63,8 +64,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- SEO preview deploy `6a68c6c71a40d710530c4f3b` is ready; production remains unchanged until the reviewed source revision is merged.
-- GitHub `main` contains paid-app page revision `c2fe41a`, landing hierarchy revision `db919bc`, plain-language Unspoken Room revision `9132e44`, and canonical-route revision `d93112a`; Netlify production deploy `6a68bbcf13f5090008b419e5` is `ready` with verified route and byte parity.
+- GitHub `main` contains SEO merge `ebed0fd4c31cf937ea0e85dd74ae7716a707fbd9`; Netlify production deploy `6a68c9dbf15ee20008809fed` is `ready` at that revision with verified route, crawlability, asset-cache, and byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
 - The most recent authenticated store records identify Apple ID `6791394608` and Microsoft Store ID `9N6CJ95SQR49` for Genome Explorer. These identifiers are continuity evidence, not approval or public-availability evidence.
@@ -83,7 +83,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- Merge the verified SEO revision, confirm the Git-connected production deploy matches the merged commit, then allow Google to recrawl the canonical URLs before evaluating Search Console changes.
+- Allow Google to recrawl the canonical URLs, then inspect Search Console with the property-owning account; do not infer ranking changes from lab scores alone.
 - Recheck the Search Console examples after Google recrawls the corrected Simple Voice Reader support and privacy URL families.
 - Keep the paid-app page synchronized with App Store Connect when Threshold Lab's review state changes; do not alter the landing page without explicit direction.
 - Keep the brief Unspoken Room company copy synchronized with Windows submission and release state while leaving detailed feature explanations to `unspokenroom.app`.
