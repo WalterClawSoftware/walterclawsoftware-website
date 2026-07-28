@@ -3,6 +3,13 @@
 - This is a public trust surface and a static Netlify deployment from the repository root.
 - Keep claims honest and verifiable; do not invent testimonials, customer logos, usage counts, or proof.
 - Preview and smoke-check customer-visible changes before production. Because the repository root is published, continuity documentation must remain safe for public exposure.
+- Preserve the responsive-image invariant in `/site-quality.css`. Run
+  `python3 scripts/check_site_geometry.py --self-test`, `--static`, and
+  `--render` for every visual or deployment change.
+- Intentional crops require `data-visual-crop="approved"`, a specific reason,
+  and a matching reviewed `site-quality.json` entry.
+- Keep Netlify production Git-only; never bypass the repository build gate with
+  a direct production deploy.
 
 ## Cross-Agent Continuity
 

@@ -1,0 +1,51 @@
+name: Site Quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  site-quality:
+    name: site-quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Prove the original regression is detected
+        run: python3 scripts/check_site_geometry.py --self-test
+
+      - name: Check deployment invariant
+        run: python3 scripts/check_site_geometry.py --static
+
+      - name: Check desktop and phone rendering
+        run: >
+          python3 scripts/check_site_geometry.py
+          --render
+          --json-report site-quality-report.json
+
+      - name: Preserve the geometry report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-quality-report
+          path: site-quality-report.json
+          if-no-files-found: ignore
+          retention-days: 14

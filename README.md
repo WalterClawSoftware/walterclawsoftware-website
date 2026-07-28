@@ -38,6 +38,9 @@ The website is a public trust surface as well as a marketing site. Keep changes 
 From the repository root:
 
 ```bash
+python3 scripts/check_site_geometry.py --self-test
+python3 scripts/check_site_geometry.py --static
+python3 scripts/check_site_geometry.py --render
 python3 -m http.server 8080
 ```
 
@@ -51,5 +54,7 @@ This repository is configured for a simple static Netlify deployment.
 
 - Netlify project: `walter-claw-software`
 - Publish directory: repository root
-- Build command: none
+- Build command: `python3 scripts/check_site_geometry.py --static`
 - Redirect rules: `_redirects` at repo root
+- Production deploys are Git-only. Merge a passing change to `main`; do not
+  bypass the build gate with a direct CLI, API, MCP, or agent deploy.
