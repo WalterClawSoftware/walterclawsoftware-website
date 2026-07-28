@@ -35,7 +35,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Verification
 
 - All 46 JSON-LD blocks parse, all 773 local `href`/`src` references resolve, the sitemap parses with 22 unique canonical URLs, and `git diff --check` passes. Targeted HTML validation has the same five pre-existing `simple-voice-reader.html` findings as `origin/main`, with no new finding.
-- Netlify draft deploy `6a68bb0873dde3e2a465bd60` verified one-hop `301` responses from both no-slash and `/index.html` variants to the trailing-slash URLs, `200` responses with matching self-canonicals at both destinations, and byte parity for the support page, privacy page, and sitemap. Production verification remains pending until the GitHub change is deployed.
+- Netlify draft deploy `6a68bb0873dde3e2a465bd60` verified one-hop `301` responses from both no-slash and `/index.html` variants to the trailing-slash URLs, `200` responses with matching self-canonicals at both destinations, and byte parity for the support page, privacy page, and sitemap.
+- Production deploy `6a68bbcf13f5090008b419e5` at merge `d93112a` passed 18/18 route checks across the canonical domain, Netlify main alias, and immutable deploy URL; 12/12 normal, cache-busted, alias, and deploy-permalink byte comparisons matched source; and all 22 sitemap URLs returned `200` with matching self-canonicals.
 - `self-help-improvement.html` passes targeted HTML and JSON-LD validation; the full-site HTML audit retains the same 37 pre-existing findings and no new finding.
 - Preview and production checks at `1440x900` and `390x844` show the simplified copy, both destination buttons, and no horizontal overflow. The production page SHA-256 matches the committed file exactly.
 - The derived and original landing assets are both opaque `1730x909` PNG files. Pixel differences are confined to a `439x249` right-panel heading region; the original file retains SHA-256 `380a30f41a8e6c1bb50dd2bd1702d330d28fa7d54794016d367b09133cdb5e3e`.
@@ -56,7 +57,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- GitHub `main` contains paid-app page revision `c2fe41a`, landing hierarchy revision `db919bc`, and plain-language Unspoken Room revision `9132e44`; Netlify production is `ready` with verified byte parity.
+- GitHub `main` contains paid-app page revision `c2fe41a`, landing hierarchy revision `db919bc`, plain-language Unspoken Room revision `9132e44`, and canonical-route revision `d93112a`; Netlify production deploy `6a68bbcf13f5090008b419e5` is `ready` with verified route and byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
 - The most recent authenticated store records identify Apple ID `6791394608` and Microsoft Store ID `9N6CJ95SQR49` for Genome Explorer. These identifiers are continuity evidence, not approval or public-availability evidence.
@@ -75,7 +76,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Next Recommended Action
 
-- After the canonical-route correction reaches production, verify the four Simple Voice Reader support/privacy URL variants and recheck the Search Console examples after Google recrawls the site.
+- Recheck the Search Console examples after Google recrawls the corrected Simple Voice Reader support and privacy URL families.
 - Keep the paid-app page synchronized with App Store Connect when Threshold Lab's review state changes; do not alter the landing page without explicit direction.
 - Keep the brief Unspoken Room company copy synchronized with Windows submission and release state while leaving detailed feature explanations to `unspokenroom.app`.
 - Run the lightweight release-truth reconciliation after each store release and on the recurring schedule, then correct any conclusively verified drift promptly.
