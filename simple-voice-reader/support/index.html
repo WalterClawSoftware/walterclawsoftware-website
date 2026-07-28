@@ -17,6 +17,9 @@
     <meta property="og:description" content="Support information for Simple Voice Reader on iPhone, iPad, Mac, and Windows.">
     <meta property="og:url" content="https://walterclawsoftware.com/simple-voice-reader/support/">
     <meta property="og:image" content="https://walterclawsoftware.com/assets/social/company-card-two-paths.png">
+    <meta property="og:image:alt" content="Walter Claw Software LLC product and company preview card.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simple Voice Reader Support">
     <meta name="twitter:description" content="Support information for Simple Voice Reader on iPhone, iPad, Mac, and Windows.">
@@ -25,21 +28,43 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "Simple Voice Reader",
-            "applicationCategory": "ProductivityApplication",
-            "operatingSystem": "iOS, iPadOS, macOS, Windows",
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-            },
-            "supportingData": {
-                "@type": "ContactPoint",
-                "contactType": "customer support",
-                "email": "support@walterclawsoftware.com",
-                "url": "https://walterclawsoftware.com/simple-voice-reader/support/"
-            }
+            "@graph": [
+                {
+                    "@type": "ContactPage",
+                    "@id": "https://walterclawsoftware.com/simple-voice-reader/support/#page",
+                    "url": "https://walterclawsoftware.com/simple-voice-reader/support/",
+                    "name": "Simple Voice Reader Support",
+                    "about": {
+                        "@id": "https://walterclawsoftware.com/simple-voice-reader#app"
+                    },
+                    "dateModified": "2026-07-28"
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://walterclawsoftware.com/simple-voice-reader#app",
+                    "name": "Simple Voice Reader",
+                    "url": "https://walterclawsoftware.com/simple-voice-reader",
+                    "applicationCategory": "ProductivityApplication",
+                    "operatingSystem": "iOS, iPadOS, macOS, Windows",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "0",
+                        "priceCurrency": "USD"
+                    }
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://walterclawsoftware.com/#organization",
+                    "name": "Walter Claw Software LLC",
+                    "url": "https://walterclawsoftware.com/",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "contactType": "customer support",
+                        "email": "support@walterclawsoftware.com",
+                        "url": "https://walterclawsoftware.com/simple-voice-reader/support/"
+                    }
+                }
+            ]
         }
     </script>
 </head>
