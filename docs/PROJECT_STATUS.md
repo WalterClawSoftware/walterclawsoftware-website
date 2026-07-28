@@ -12,12 +12,13 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Simple Voice Reader for Mac version `1.1.1 (11)` is public. It supports local Kokoro and installed Apple voices, WAV or MP3 export, Smart Chapter Export, adaptive playback buffering, synthesized-word timing, and spoken-word auto-scroll.
 - Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
 - Simple Voice Reader for Windows is public through Microsoft Store product `9NJ66Q625LL6`.
-- Unspoken Room version `1.0 (47)` is available on the Mac App Store for a $29.99 one-time U.S. purchase. The paid-app page links directly to Apple ID `6788225275`.
+- Unspoken Room version `1.0 (47)` is available on the Mac App Store for a $29.99 one-time U.S. purchase. The paid-app page uses plain-language company copy, notes that Windows is on the way, and leaves feature detail to `unspokenroom.app`.
 - Threshold Lab version `1.0 (6)` is `Waiting for Review` in App Store Connect. It is not yet approved or publicly downloadable; its product website remains available at `https://thresholdlab.app/`.
 - Genome Explorer remains in development and is not publicly downloadable. The most recent authenticated store readbacks recorded private draft Apple and Microsoft product identities, while `genomeexplorer.app` remains registered.
 
 ## Completed Work
 
+- Replaced the technical Unspoken Room feature inventory on the company site with a short description covering its purpose, current Mac availability, upcoming Windows version, and on-device privacy.
 - Added `two-path-doorways-landing-paid-apps.png` as a derived landing asset with the new paid-app hierarchy and wired it into the home page.
 - Retained the original `two-path-doorways-landing.png` unchanged as the source artwork and immediate rollback asset.
 - Updated the landing image alternative text, paid-path accessibility label, mobile paid-app card, and home-page sitemap date to match the new wording.
@@ -32,6 +33,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- `self-help-improvement.html` passes targeted HTML and JSON-LD validation; the full-site HTML audit retains the same 37 pre-existing findings and no new finding.
+- Preview and production checks at `1440x900` and `390x844` show the simplified copy, both destination buttons, and no horizontal overflow. The production page SHA-256 matches the committed file exactly.
 - The derived and original landing assets are both opaque `1730x909` PNG files. Pixel differences are confined to a `439x249` right-panel heading region; the original file retains SHA-256 `380a30f41a8e6c1bb50dd2bd1702d330d28fa7d54794016d367b09133cdb5e3e`.
 - `index.html` passes `html-validate`; the sitemap and JSON-LD parse; local references resolve; and `git diff --check` passes.
 - The full-site HTML audit retains the same 37 pre-existing findings as the pre-change baseline, with no new finding.
@@ -50,7 +53,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
-- GitHub `main` contains paid-app page revision `c2fe41a` and landing hierarchy revision `db919bc`; Netlify production is `ready` with verified byte parity.
+- GitHub `main` contains paid-app page revision `c2fe41a`, landing hierarchy revision `db919bc`, and plain-language Unspoken Room revision `9132e44`; Netlify production is `ready` with verified byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
 - The most recent authenticated store records identify Apple ID `6791394608` and Microsoft Store ID `9N6CJ95SQR49` for Genome Explorer. These identifiers are continuity evidence, not approval or public-availability evidence.
@@ -61,6 +64,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - Apple's general lookup endpoint represents the iPhone/iPad listing for this universal app. Mac release truth must be read from the Mac storefront view or App Store Connect.
 - Store state can drift from static website copy. Reconcile the public store, authenticated store record, GitHub source, deployed page, and project handoff after releases.
+- The phrase `Windows on the way` should be updated when the Windows submission or release state materially changes.
 - Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost; reverify the live deadline before acting.
 - The reserved Apple and Microsoft identities are not yet wired into a production-signed, installed, customer-tested Genome Explorer build.
 - A clean public-install mobile Kokoro pack download and playback test remains a separate device-level checkpoint.
@@ -68,5 +72,6 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 ## Next Recommended Action
 
 - Keep the paid-app page synchronized with App Store Connect when Threshold Lab's review state changes; do not alter the landing page without explicit direction.
+- Keep the brief Unspoken Room company copy synchronized with Windows submission and release state while leaving detailed feature explanations to `unspokenroom.app`.
 - Run the lightweight release-truth reconciliation after each store release and on the recurring schedule, then correct any conclusively verified drift promptly.
 - Keep the Genome Explorer reservations and domain in the recurring reconciliation until a verified customer build is ready for the relevant submission gates.
