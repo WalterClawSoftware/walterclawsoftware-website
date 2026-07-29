@@ -18,6 +18,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Restored component-owned sizing for the Simple Voice Reader fixed 16:10
+  screenshot stages. The safety layer now keeps those three complete captures
+  at the stage height with `object-fit: contain` while preserving the general
+  responsive-height invariant everywhere else.
 - Added the shared responsive-image invariant, explicit crop approval contract,
   static gate, real-Chrome desktop/phone geometry audit, and GitHub
   `site-quality` workflow across all 25 HTML routes.
@@ -41,6 +45,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- The fixed-aspect regression fixture uses the real `site-quality.css` and
+  requires its test image to fill a `640x400` contain stage. Self-test, static,
+  and rendered checks pass all 25 routes; the Simple Voice Reader stages render
+  at about `411.33x256.08` on desktop and `352x219` on phone, with expected
+  letterbox-only warnings for the portrait and Windows captures.
 - The site-quality self-test proves the original stuck width/height regression
   is rejected. Static and rendered checks pass all 25 routes at desktop and
   phone widths; the existing Repro Pack `object-fit: contain` image is reported
