@@ -979,11 +979,42 @@ def run_self_test(root: Path) -> list[str]:
 <style>img {{ display:block; width:50%; height:auto; object-fit:cover; }}</style>
 <img src="{image}" width="800" height="600" alt="fixed fixture">
 """
+        fixed_aspect = f"""<!doctype html><meta charset="utf-8">
+<style>
+body {{ margin:0; }}
+.screenshot-platform-stage {{
+  display:block;
+  position:relative;
+  width:640px;
+  aspect-ratio:16 / 10;
+  overflow:hidden;
+}}
+.screenshot-platform-stage img {{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}}
+</style>
+<link rel="stylesheet" href="/site-quality.css">
+<a class="screenshot-platform-stage">
+  <img src="{image}" width="800" height="600" alt="fixed aspect fixture">
+</a>
+"""
         (fixture / "broken.html").write_text(broken, encoding="utf-8")
         (fixture / "fixed.html").write_text(fixed, encoding="utf-8")
+        (fixture / "fixed-aspect.html").write_text(
+            fixed_aspect, encoding="utf-8"
+        )
+        (fixture / GUARD_NAME).write_text(
+            (root / GUARD_NAME).read_text(encoding="utf-8"),
+            encoding="utf-8",
+        )
         routes = [
             {"file": "broken.html", "url": "/broken.html"},
             {"file": "fixed.html", "url": "/fixed.html"},
+            {"file": "fixed-aspect.html", "url": "/fixed-aspect.html"},
         ]
         viewport = {"name": "self-test", "width": 800, "height": 600}
         results = browser_results(chrome, fixture, routes, viewport)
@@ -994,6 +1025,7 @@ def run_self_test(root: Path) -> list[str]:
         fixed_types = {
             item["type"] for item in by_file["fixed.html"]["failures"]
         }
+        fixed_aspect_image = by_file["fixed-aspect.html"]["images"][0]
         if "attribute-height-stuck" not in broken_types:
             failures.append(
                 "self-test: original width/height regression was not detected"
@@ -1006,6 +1038,14 @@ def run_self_test(root: Path) -> list[str]:
             failures.append(
                 "self-test: height:auto fixture should pass, got "
                 + ", ".join(sorted(fixed_types))
+            )
+        if (
+            abs(fixed_aspect_image["renderedWidth"] - 640) > 1.5
+            or abs(fixed_aspect_image["renderedHeight"] - 400) > 1.5
+        ):
+            failures.append(
+                "self-test: fixed-aspect contain image did not fill its "
+                "640x400 stage"
             )
     return failures
 

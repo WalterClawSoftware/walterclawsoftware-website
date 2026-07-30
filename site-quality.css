@@ -9,3 +9,11 @@
 img[width][height]:not([data-visual-crop="approved"]) {
   height: auto !important;
 }
+
+/*
+ * Fixed 16:10 screenshot stages intentionally letterbox complete app captures.
+ * Their component-owned height must win over the general responsive rule.
+ */
+.screenshot-platform-stage > img[width][height] {
+  height: 100% !important;
+}
