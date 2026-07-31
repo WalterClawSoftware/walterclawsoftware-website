@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-28
+Last updated: 2026-07-31
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and the public websites override this handoff when they differ.
 
@@ -13,11 +13,18 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
 - Simple Voice Reader for Windows is public through Microsoft Store product `9NJ66Q625LL6`.
 - Unspoken Room version `1.0 (47)` is available on the Mac App Store for a $29.99 one-time U.S. purchase. The paid-app page uses plain-language company copy, notes that Windows is on the way, and leaves feature detail to `unspokenroom.app`.
-- Threshold Lab version `1.0 (6)` is `Waiting for Review` in App Store Connect. It is not yet approved or publicly downloadable; its product website remains available at `https://thresholdlab.app/`.
+- Threshold Lab version `1.0 (8)` is available on the Mac App Store at Apple ID
+  `6790457966` for a $49.99 one-time U.S. purchase. The public listing requires
+  an Apple-silicon Mac running macOS 12 or later, and the product website remains
+  available at `https://thresholdlab.app/`.
 - Genome Explorer remains in development and is not publicly downloadable. The most recent authenticated store readbacks recorded private draft Apple and Microsoft product identities, while `genomeexplorer.app` remains registered.
 
 ## Completed Work
 
+- Updated the company homepage structured data, paid-app page, Updates timeline,
+  and sitemap for Threshold Lab's verified public release. The paid-app page now
+  shows two available Mac apps, links directly to Apple's listing, preserves the
+  Threshold Lab product-site link, and keeps Genome Explorer in development.
 - Restored component-owned sizing for the Simple Voice Reader fixed 16:10
   screenshot stages. The safety layer now keeps those three complete captures
   at the stage height with `object-fit: contain` while preserving the general
@@ -45,6 +52,14 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- Apple's public U.S. Mac storefront returned HTTP 200 for Threshold Lab Apple
+  ID `6790457966` and identified Walter Claw Software LLC, version 1.0, the
+  $49.99 price, Apple-silicon Mac availability, and macOS 12-or-later support.
+- `python3 scripts/check_site_geometry.py --self-test`, `--static`, and
+  `--render` pass all 25 public routes. Focused local Chrome reviews at
+  `1440x900` and `390x844` show the updated paid-app page and release entry with
+  no missing imagery, clipped copy, or horizontal overflow; `git diff --check`
+  also passes.
 - The fixed-aspect regression fixture uses the real `site-quality.css` and
   requires its test image to fill a `640x400` contain stage. Self-test, static,
   and rendered checks pass all 25 routes; the Simple Voice Reader stages render
@@ -69,7 +84,7 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - The full-site HTML audit retains the same 37 pre-existing findings as the pre-change baseline, with no new finding.
 - Preview and production browser checks at `1440x900` and `390x844` show the intended hierarchy and mobile companion card with no horizontal overflow.
 - Cache-busted production SHA-256 readbacks match the committed home page, derived artwork, original rollback artwork, and sitemap exactly.
-- App Store Connect showed Unspoken Room macOS `1.0.0` as `Ready for Distribution` and Threshold Lab macOS `1.0` as `Waiting for Review`; the public Unspoken Room Mac App Store listing is reachable at Apple ID `6788225275`.
+- A prior store readback showed Unspoken Room macOS `1.0.0` as `Ready for Distribution` and Threshold Lab macOS `1.0` as `Waiting for Review`; the Threshold Lab state is superseded by the July 31 public storefront verification above.
 - `self-help-improvement.html` passes `html-validate`; its JSON-LD parses, the sitemap parses, and `git diff --check` passes.
 - The full-site HTML audit has the same 37 pre-existing findings before and after this update, with no new finding introduced.
 - Desktop `1440x900` and mobile `390x844` browser checks show the three correct project states, the Mac App Store button, and no horizontal overflow.
@@ -94,6 +109,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
   bytes match Git exactly.
 - GitHub `main` contains SEO merge `ebed0fd4c31cf937ea0e85dd74ae7716a707fbd9`; Netlify production deploy `6a68c9dbf15ee20008809fed` is `ready` at that revision with verified route, crawlability, asset-cache, and byte parity.
 - The live paid-app page is `https://walterclawsoftware.com/self-help-improvement`.
+- Threshold Lab's public Mac App Store listing is
+  `https://apps.apple.com/us/app/threshold-lab/id6790457966?mt=12`; no App Store
+  Connect setting was changed by this website update.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
 - The most recent authenticated store records identify Apple ID `6791394608` and Microsoft Store ID `9N6CJ95SQR49` for Genome Explorer. These identifiers are continuity evidence, not approval or public-availability evidence.
 - `genomeexplorer.app` is registered through 2027-07-16; no public product site is currently served from the domain.
@@ -113,7 +131,8 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - Allow Google to recrawl the canonical URLs, then inspect Search Console with the property-owning account; do not infer ranking changes from lab scores alone.
 - Recheck the Search Console examples after Google recrawls the corrected Simple Voice Reader support and privacy URL families.
-- Keep the paid-app page synchronized with App Store Connect when Threshold Lab's review state changes; do not alter the landing page without explicit direction.
+- Keep the paid-app page synchronized if Threshold Lab's public listing, price,
+  system requirements, or Windows availability changes.
 - Keep the brief Unspoken Room company copy synchronized with Windows submission and release state while leaving detailed feature explanations to `unspokenroom.app`.
 - Run the lightweight release-truth reconciliation after each store release and on the recurring schedule, then correct any conclusively verified drift promptly.
 - Keep the Genome Explorer reservations and domain in the recurring reconciliation until a verified customer build is ready for the relevant submission gates.
