@@ -60,6 +60,14 @@ This file is public-safe because Netlify publishes the repository root. Live Git
   `1440x900` and `390x844` show the updated paid-app page and release entry with
   no missing imagery, clipped copy, or horizontal overflow; `git diff --check`
   also passes.
+- Release merge `86272f02f4a9b23731298daf6b612177c63249d3` passed the
+  required GitHub `Site Quality` check and produced Git-connected Netlify
+  production deploy `6a6ccfc1862ce60008b75b19`, which is `ready`. All 25
+  cache-busted canonical HTML routes and 86 deployed styles, scripts, images,
+  manifests, sitemap, and robots files match the merged source byte-for-byte.
+  Focused live Chrome checks of Home, Paid Apps, and Updates pass at `1440x900`
+  and `390x844` with loaded imagery and no crop, distortion, clipping, or
+  horizontal overflow.
 - The fixed-aspect regression fixture uses the real `site-quality.css` and
   requires its test image to fill a `640x400` contain stage. Self-test, static,
   and rendered checks pass all 25 routes; the Simple Voice Reader stages render
@@ -103,6 +111,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - GitHub branch protection requires the up-to-date `site-quality` check on
   `main`, applies to administrators, requires resolved review conversations,
   and blocks force-pushes and deletion.
+- GitHub `main` contains Threshold Lab release merge
+  `86272f02f4a9b23731298daf6b612177c63249d3`; Netlify production deploy
+  `6a6ccfc1862ce60008b75b19` is `ready` from that exact revision, and its public
+  HTML and web assets match Git.
 - GitHub `main` contains site-quality merge
   `4204c8c02c214972b0b544ef7763403ccf4504d5`; Netlify production deploy
   `6a68e6f8e096dd00082d8c87` is `ready`. Live homepage and safety-stylesheet
