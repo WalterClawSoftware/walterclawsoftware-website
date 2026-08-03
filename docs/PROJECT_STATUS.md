@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-07-31
+Last updated: 2026-08-03
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and the public websites override this handoff when they differ.
 
@@ -17,14 +17,16 @@ This file is public-safe because Netlify publishes the repository root. Live Git
   `6790457966` for a $49.99 one-time U.S. purchase. The public listing requires
   an Apple-silicon Mac running macOS 12 or later, and the product website remains
   available at `https://thresholdlab.app/`.
-- Genome Explorer remains in development and is not publicly downloadable. The most recent authenticated store readbacks recorded private draft Apple and Microsoft product identities, while `genomeexplorer.app` remains registered.
 
 ## Completed Work
 
+- Removed the retired public-distribution project from current pages, metadata,
+  structured data, design prototypes, and public continuity notes. The private
+  source repository and separately registered domain were not changed.
 - Updated the company homepage structured data, paid-app page, Updates timeline,
   and sitemap for Threshold Lab's verified public release. The paid-app page now
-  shows two available Mac apps, links directly to Apple's listing, preserves the
-  Threshold Lab product-site link, and keeps Genome Explorer in development.
+  shows two available Mac apps, links directly to Apple's listing, and preserves
+  the Threshold Lab product-site link.
 - Restored component-owned sizing for the Simple Voice Reader fixed 16:10
   screenshot stages. The safety layer now keeps those three complete captures
   at the stage height with `object-fit: contain` while preserving the general
@@ -48,10 +50,18 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Corrected every current Simple Voice Reader Mac version reference from `1.1` to the verified public `1.1.1`.
 - Added the July 21 Mac 1.1.1 release to Updates with the public release notes.
 - Kept the July 14 Mac 1.1 entry as explicitly historical rather than presenting it as the current version.
-- Restored the active Genome Explorer reservation, domain, submission-window, and customer-build risks that must survive concise handoff updates.
 
 ## Verification
 
+- A repository-wide case-insensitive scan has zero current-file matches for the
+  retired project name, its compact identifier form, former Apple/Microsoft
+  product IDs, or its domain. The embedded text in current and rollback landing
+  artwork and the paid-app social card was also checked with local OCR.
+- `python3 scripts/check_site_geometry.py --self-test`, `--static`, and
+  `--render` pass all 25 public routes. The two changed JSON-LD blocks parse,
+  `node --check storefront.js` and `git diff --check` pass, and focused local
+  Chrome checks at `1440x900` and `390x844` show the two-app page with no
+  missing content, clipping, or horizontal overflow.
 - Apple's public U.S. Mac storefront returned HTTP 200 for Threshold Lab Apple
   ID `6790457966` and identified Walter Claw Software LLC, version 1.0, the
   $49.99 price, Apple-silicon Mac availability, and macOS 12-or-later support.
@@ -100,8 +110,6 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Apple's public Mac storefront page reports Simple Voice Reader `1.1.1`, dated 2026-07-21, with release notes covering adaptive buffering, synthesized-word highlighting, spoken-word auto-scroll, and playback-error cleanup.
 - App Store Connect had already confirmed macOS build `11` as released and downloadable.
 - All 45 JSON-LD blocks across the 20 top-level HTML files parse, 738 top-level local `href`/`src` references resolve, and the JavaScript parses.
-- The separately maintained Genome Explorer handoff still records the reserved Apple and Microsoft identities and confirms that the customer build is not yet a public-distribution candidate.
-- Google Registry RDAP confirms `genomeexplorer.app` was registered on 2026-07-16 through Porkbun and expires on 2027-07-16.
 
 ## External State
 
@@ -125,9 +133,12 @@ This file is public-safe because Netlify publishes the repository root. Live Git
   `https://apps.apple.com/us/app/threshold-lab/id6790457966?mt=12`; no App Store
   Connect setting was changed by this website update.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
-- The most recent authenticated store records identify Apple ID `6791394608` and Microsoft Store ID `9N6CJ95SQR49` for Genome Explorer. These identifiers are continuity evidence, not approval or public-availability evidence.
-- `genomeexplorer.app` is registered through 2027-07-16; no public product site is currently served from the domain.
-- No App Store Connect, Microsoft Partner Center, DNS, pricing, or availability setting was changed by this website correction.
+- On 2026-08-03, the corresponding unsubmitted Apple draft was moved to
+  Apple's Removed Apps state and disappeared from the active Apps list. The
+  corresponding in-draft Microsoft product was deleted and disappeared from a
+  freshly reloaded Partner Center product list.
+- No other App Store Connect, Microsoft Partner Center, DNS, pricing, or
+  availability setting was changed.
 
 ## Known Risks
 
@@ -135,8 +146,6 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Apple's general lookup endpoint represents the iPhone/iPad listing for this universal app. Mac release truth must be read from the Mac storefront view or App Store Connect.
 - Store state can drift from static website copy. Reconcile the public store, authenticated store record, GitHub source, deployed page, and project handoff after releases.
 - The phrase `Windows on the way` should be updated when the Windows submission or release state materially changes.
-- Microsoft states that the Genome Explorer name reservation must be followed by a Store submission within three months or the reservation can be lost; reverify the live deadline before acting.
-- The reserved Apple and Microsoft identities are not yet wired into a production-signed, installed, customer-tested Genome Explorer build.
 - A clean public-install mobile Kokoro pack download and playback test remains a separate device-level checkpoint.
 
 ## Next Recommended Action
@@ -147,4 +156,3 @@ This file is public-safe because Netlify publishes the repository root. Live Git
   system requirements, or Windows availability changes.
 - Keep the brief Unspoken Room company copy synchronized with Windows submission and release state while leaving detailed feature explanations to `unspokenroom.app`.
 - Run the lightweight release-truth reconciliation after each store release and on the recurring schedule, then correct any conclusively verified drift promptly.
-- Keep the Genome Explorer reservations and domain in the recurring reconciliation until a verified customer build is ready for the relevant submission gates.

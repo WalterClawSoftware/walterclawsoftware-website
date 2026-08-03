@@ -5,7 +5,7 @@ These three standalone prototypes explore the same approved information architec
 - two clearly separated paths: free utility apps, or paid apps in development for self-help, improvement, and understanding;
 - Simple Voice Reader leads the six free utilities and includes its iPhone, iPad, Mac, and Windows coverage;
 - the remaining free utilities are ClipScript Desktop, Transcript Rescue, Repro Pack, BannerSafe, and App Icon Creator Desktop;
-- the paid-app path names Unspoken Room as the next planned release, followed by Threshold Lab and Genome Explorer;
+- the paid-app path names Unspoken Room and Threshold Lab;
 - no release dates or unverified product features are claimed.
 
 ## Options
