@@ -13,13 +13,19 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
 - Simple Voice Reader for Windows is public through Microsoft Store product `9NJ66Q625LL6`.
 - Unspoken Room version `1.0 (47)` is available on the Mac App Store for a $29.99 one-time U.S. purchase. The paid-app page uses plain-language company copy, notes that Windows is on the way, and leaves feature detail to `unspokenroom.app`.
-- Threshold Lab version `1.0 (8)` is available on the Mac App Store at Apple ID
-  `6790457966` for a $49.99 one-time U.S. purchase. The public listing requires
-  an Apple-silicon Mac running macOS 12 or later, and the product website remains
-  available at `https://thresholdlab.app/`.
+- Threshold Lab version `1.0` is available for Mac and Windows. The Mac App
+  Store listing at Apple ID `6790457966` is a $49.99 one-time U.S. purchase for
+  Apple-silicon Macs running macOS 12 or later. Microsoft Store product
+  `9P1ZG8P38LWQ` is public for Windows 11 on x64 and ARM64. The product website
+  remains available at `https://thresholdlab.app/`.
 
 ## Completed Work
 
+- Updated the homepage metadata and structured data, paid-app page, About page,
+  Updates timeline, and sitemap for Threshold Lab's verified Microsoft Store
+  release. The paid-app page now links directly to both official storefronts
+  and states the supported Mac and Windows platforms without changing the
+  established visual design.
 - Removed the retired public-distribution project from current pages, metadata,
   structured data, design prototypes, and public continuity notes. The private
   source repository and separately registered domain were not changed.
@@ -53,6 +59,14 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- Microsoft Store's public catalog resolved Store ID `9P1ZG8P38LWQ` as
+  `Threshold Lab`, published by Walter Claw Software LLC, with the expected
+  description, privacy URL, Windows Store installer type, and product ID.
+  `python3 scripts/check_site_geometry.py --self-test`, `--static`, and
+  `--render` pass all 25 public routes. Focused desktop and phone Chrome reviews
+  show the Mac, Windows, and product-site actions without clipping or horizontal
+  overflow; the changed JSON-LD, canonicals, H1s, sitemap, JavaScript syntax,
+  and `git diff --check` also pass.
 - A repository-wide case-insensitive scan has zero current-file matches for the
   retired project name, its compact identifier form, former Apple/Microsoft
   product IDs, or its domain. The embedded text in current and rollback landing
@@ -132,6 +146,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Threshold Lab's public Mac App Store listing is
   `https://apps.apple.com/us/app/threshold-lab/id6790457966?mt=12`; no App Store
   Connect setting was changed by this website update.
+- Threshold Lab's public Microsoft Store listing is
+  `https://apps.microsoft.com/detail/9P1ZG8P38LWQ`; no Partner Center setting was
+  changed by this website update.
 - Simple Voice Reader's Apple and Microsoft download links are present on the product page.
 - On 2026-08-03, the corresponding unsubmitted Apple draft was moved to
   Apple's Removed Apps state and disappeared from the active Apps list. The
