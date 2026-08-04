@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-08-03
+Last updated: 2026-08-04
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and the public websites override this handoff when they differ.
 
@@ -12,7 +12,11 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Simple Voice Reader for Mac version `1.1.1 (11)` is public. It supports local Kokoro and installed Apple voices, WAV or MP3 export, Smart Chapter Export, adaptive playback buffering, synthesized-word timing, and spoken-word auto-scroll.
 - Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
 - Simple Voice Reader for Windows is public through Microsoft Store product `9NJ66Q625LL6`.
-- Unspoken Room version `1.0 (47)` is available on the Mac App Store for a $29.99 one-time U.S. purchase. The paid-app page uses plain-language company copy, notes that Windows is on the way, and leaves feature detail to `unspokenroom.app`.
+- Unspoken Room version `1.0 (47)` is available on the Mac App Store for a
+  $29.99 one-time U.S. purchase. Its Windows edition is public through Microsoft
+  Store product `9NCKL7C5X2X6` at the same U.S. price for Windows 11 PCs with
+  x64 or ARM64 processors. The company page links both official storefronts and
+  leaves detailed feature information to `unspokenroom.app`.
 - Threshold Lab version `1.0` is available for Mac and Windows. The Mac App
   Store listing at Apple ID `6790457966` is a $49.99 one-time U.S. purchase for
   Apple-silicon Macs running macOS 12 or later. Microsoft Store product
@@ -21,6 +25,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
+- Updated the homepage metadata and structured data, paid-app page, About page,
+  Updates timeline, README, and sitemap for Unspoken Room's verified Microsoft
+  Store release. The paid-app page now links both official storefronts and no
+  longer presents the Windows edition as upcoming.
 - Updated the homepage metadata and structured data, paid-app page, About page,
   Updates timeline, and sitemap for Threshold Lab's verified Microsoft Store
   release. The paid-app page now links directly to both official storefronts
@@ -59,6 +67,13 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
+- Microsoft Store's public U.S. catalog returned HTTP 200 for product
+  `9NCKL7C5X2X6` and identified Unspoken Room, Walter Claw Software LLC, a
+  $29.99 price, a purchasable Windows Store installer, Windows 11, and x64 or
+  ARM64 processor support. The Mac App Store and `unspokenroom.app` links also
+  return HTTP 200. The geometry self-test, static invariant, and rendered audit
+  pass all 25 routes; focused JSON-LD parsing, sitemap XML validation,
+  JavaScript syntax validation, and `git diff --check` also pass.
 - Microsoft Store's public catalog resolved Store ID `9P1ZG8P38LWQ` as
   `Threshold Lab`, published by Walter Claw Software LLC, with the expected
   description, privacy URL, Windows Store installer type, and product ID.
@@ -127,6 +142,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## External State
 
+- Unspoken Room's public Microsoft Store listing is
+  `https://apps.microsoft.com/detail/9NCKL7C5X2X6`; no Partner Center setting was
+  changed by this website update.
 - Netlify remains Git-connected to
   `WalterClawSoftware/walterclawsoftware-website` `main`, and
   `prevent_non_git_prod_deploys` is enabled.
@@ -162,7 +180,6 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 - Search Console can retain historical redirect and alternate-page samples until Google recrawls them; use the property-owning Google account to confirm the new sample URLs and counts after deployment.
 - Apple's general lookup endpoint represents the iPhone/iPad listing for this universal app. Mac release truth must be read from the Mac storefront view or App Store Connect.
 - Store state can drift from static website copy. Reconcile the public store, authenticated store record, GitHub source, deployed page, and project handoff after releases.
-- The phrase `Windows on the way` should be updated when the Windows submission or release state materially changes.
 - A clean public-install mobile Kokoro pack download and playback test remains a separate device-level checkpoint.
 
 ## Next Recommended Action
