@@ -8,10 +8,10 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 - The repository root is the Netlify publish directory for `https://walterclawsoftware.com`.
 - The home page directs visitors to six free utility apps or paid apps. Its right panel now uses a `Paid apps` heading matched to the `Free utility apps` scale, followed by `Available now and others in development.`
-- The paid-app page hero keeps the path-setting introduction while omitting the
-  redundant two-button action row and three availability pills; the existing
-  navigation, app cards, and free-utilities callout retain those destinations
-  and current product states.
+- The paid-app page now uses a single-column introductory hero followed by the
+  two product cards. The redundant hero actions, availability pills, side
+  summary card, and lower free-utilities callout are omitted; global navigation
+  and the footer retain the free-utilities path.
 - Simple Voice Reader is free on iPhone, iPad, Mac, and Windows.
 - Simple Voice Reader for Mac version `1.1.1 (11)` is public. It supports local Kokoro and installed Apple voices, WAV or MP3 export, Smart Chapter Export, adaptive playback buffering, synthesized-word timing, and spoken-word auto-scroll.
 - Simple Voice Reader for iPhone and iPad version `1.1 (7)` is public. Apple voices remain immediately available; compatible devices can optionally download the Apple-hosted Kokoro pack. Mobile audio export is not offered.
@@ -29,9 +29,9 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Completed Work
 
-- Removed the repeated `Meet the two apps` / `See the free utilities` actions
-  and the three duplicate availability pills from the paid-app page hero,
-  without changing the product cards, store links, or surrounding copy.
+- Removed the screenshot-specified hero action row, availability pills,
+  `This path` side card, and lower free-utilities callout from the paid-app
+  page. The two product cards and all store/product-site links are unchanged.
 - Updated the homepage metadata and structured data, paid-app page, About page,
   Updates timeline, README, and sitemap for Unspoken Room's verified Microsoft
   Store release. The paid-app page now links both official storefronts and no
@@ -74,13 +74,13 @@ This file is public-safe because Netlify publishes the repository root. Live Git
 
 ## Verification
 
-- The five screenshot-specified hero strings are absent from
-  `self-help-improvement.html`; its HTML and JSON-LD parse, the sitemap XML and
-  storefront JavaScript validate, and `git diff --check` passes. The geometry
-  self-test, static invariant, and real-Chrome rendered audit pass all 25
-  routes. Focused `1440x900` and `390x844` renders show the simplified hero
-  without clipping or horizontal overflow while preserving both app cards and
-  their store destinations.
+- The screenshot-specified hero controls, side card, and lower callout are
+  absent from `self-help-improvement.html`; its HTML and JSON-LD parse, the
+  sitemap XML and storefront JavaScript validate, and `git diff --check`
+  passes. The geometry self-test, static invariant, and real-Chrome rendered
+  audit pass all 25 routes. Focused `1440x900` and `390x844` renders show the
+  single-column hero and both app cards without clipping or horizontal
+  overflow, while preserving every store and product-site destination.
 - Microsoft Store's public U.S. catalog returned HTTP 200 for product
   `9NCKL7C5X2X6` and identified Unspoken Room, Walter Claw Software LLC, a
   $29.99 price, a purchasable Windows Store installer, Windows 11, and x64 or
