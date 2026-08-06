@@ -1,8 +1,24 @@
 # Project Status
 
-Last updated: 2026-08-04
+Last updated: 2026-08-06
 
 This file is public-safe because Netlify publishes the repository root. Live Git, GitHub, App Store Connect, Microsoft Store, Netlify, and the public websites override this handoff when they differ.
+
+## Unified Homepage
+
+- The root two-path chooser is replaced by one unified homepage: Unspoken Room
+  and Threshold Lab appear first beneath the combined
+  self-help and useful-software message, followed by the existing utility apps
+  beneath the exact heading `Free utility apps.` Individual names, purposes,
+  assets, platforms, and destinations are preserved without utility-count copy.
+- The release changes `index.html`, `homepage.css`, `README.md`, and
+  `sitemap.xml`; this status entry records the same homepage scope.
+- Verification passed `check_site_geometry.py --self-test`, `--static`, and
+  `--render` across all 25 HTML routes, plus focused JSON-LD/content assertions,
+  sitemap and JavaScript parsing, `git diff --check`, and desktop/phone Chrome
+  render review with no missing imagery, clipping, distortion, or overflow.
+- Next action: keep the paid-app and utility details synchronized with their
+  individual product pages and verified storefront state.
 
 ## Current Product State
 
