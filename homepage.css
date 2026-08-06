@@ -1,295 +1,103 @@
-.doorway-home {
-    --doorway-bg: #020b16;
-    --doorway-text: #f5f8fb;
-    --doorway-muted: #a9bac8;
-    --doorway-line: rgba(174, 211, 232, 0.18);
-    --doorway-cyan-soft: #b4f4ff;
-    --doorway-coral-soft: #ffc0b6;
-    min-width: 320px;
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+.unified-home {
     background:
-        radial-gradient(circle at 18% 45%, rgba(30, 151, 205, 0.09), transparent 34rem),
-        radial-gradient(circle at 82% 45%, rgba(255, 116, 91, 0.08), transparent 34rem),
-        var(--doorway-bg);
-    color: var(--doorway-text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        radial-gradient(circle at 78% 17%, rgba(255, 88, 68, 0.1), transparent 30rem),
+        radial-gradient(circle at 18% 58%, rgba(106, 217, 255, 0.08), transparent 34rem),
+        var(--bg);
 }
 
-.visually-hidden {
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    white-space: nowrap;
+.unified-home-hero {
+    padding-bottom: 34px;
 }
 
-.doorway-main {
-    min-height: 0;
-    flex: 1;
+.unified-home-hero .hero-copy {
+    max-width: 1080px;
+}
+
+.unified-home-hero .hero-copy h1 {
     display: grid;
-    place-items: center;
-    padding: clamp(8px, 1.4vw, 24px);
-}
-
-.doorway-frame {
-    width: min(100%, 1730px);
-    width: min(100%, 1730px, calc((100svh - 90px) * 1.9032));
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(181, 220, 241, 0.13);
-    border-radius: clamp(8px, 1vw, 18px);
-    background: #020a13;
-    box-shadow:
-        0 34px 90px rgba(0, 0, 0, 0.4),
-        0 0 70px rgba(54, 173, 220, 0.04);
-    isolation: isolate;
-}
-
-.doorway-art {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.doorway-choice {
-    position: absolute;
-    top: 21%;
-    bottom: 1.5%;
-    z-index: 2;
-    overflow: hidden;
-    border: 2px solid transparent;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.doorway-choice::before {
-    position: absolute;
-    inset: 0;
-    content: "";
-    opacity: 0;
-    transition: opacity 180ms ease;
-}
-
-.doorway-choice-utilities {
-    left: 0.8%;
-    width: 48.7%;
-}
-
-.doorway-choice-utilities::before {
-    background: linear-gradient(180deg, transparent 42%, rgba(36, 203, 235, 0.13));
-}
-
-.doorway-choice-development {
-    right: 0.8%;
-    width: 48.7%;
-}
-
-.doorway-choice-development::before {
-    background: linear-gradient(180deg, transparent 42%, rgba(255, 113, 91, 0.13));
-}
-
-.doorway-choice:hover::before,
-.doorway-choice:focus-visible::before {
-    opacity: 1;
-}
-
-.doorway-choice-utilities:hover,
-.doorway-choice-utilities:focus-visible {
-    border-color: rgba(77, 220, 246, 0.72);
-    box-shadow: inset 0 0 60px rgba(77, 220, 246, 0.09);
-}
-
-.doorway-choice-development:hover,
-.doorway-choice-development:focus-visible {
-    border-color: rgba(255, 128, 111, 0.72);
-    box-shadow: inset 0 0 60px rgba(255, 128, 111, 0.08);
-}
-
-.doorway-choice:focus-visible {
-    outline: 3px solid white;
-    outline-offset: -9px;
-}
-
-.doorway-enter-label {
-    position: absolute;
-    left: 50%;
-    bottom: 3.5%;
-    z-index: 2;
-    display: inline-flex;
-    align-items: center;
     gap: 10px;
-    padding: 10px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 999px;
-    background: rgba(1, 8, 15, 0.86);
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.36);
-    color: white;
-    font-size: clamp(0.72rem, 1vw, 0.94rem);
-    font-weight: 650;
-    letter-spacing: 0.01em;
-    opacity: 0;
-    transform: translate(-50%, 8px);
-    transition: opacity 180ms ease, transform 180ms ease;
-    white-space: nowrap;
+    max-width: 18ch;
 }
 
-.doorway-choice-utilities .doorway-enter-label {
-    color: var(--doorway-cyan-soft);
+.home-title-supporting {
+    color: var(--glow);
+    font-size: 0.62em;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
 }
 
-.doorway-choice-development .doorway-enter-label {
-    color: var(--doorway-coral-soft);
+.home-paid-grid {
+    margin-top: 30px;
 }
 
-.doorway-choice:hover .doorway-enter-label,
-.doorway-choice:focus-visible .doorway-enter-label {
-    opacity: 1;
-    transform: translate(-50%, 0);
+.home-paid-card {
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top right, rgba(255, 88, 68, 0.14), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(106, 217, 255, 0.08), transparent 38%),
+        var(--surface);
 }
 
-.doorway-mobile-choices {
-    width: min(100%, 720px);
-    display: none;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    margin-top: 14px;
+.home-paid-card h2 {
+    margin: 8px 0 0;
+    color: #f7fbff;
+    font-family: var(--display-font);
+    font-size: clamp(1.65rem, 3vw, 2.15rem);
+    letter-spacing: -0.03em;
 }
 
-.doorway-mobile-choice {
-    min-width: 0;
-    display: grid;
-    gap: 5px;
-    padding: 16px;
-    border: 1px solid var(--doorway-line);
-    border-radius: 16px;
-    background: rgba(7, 23, 37, 0.9);
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+.home-paid-card p {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.7;
 }
 
-.doorway-mobile-choice strong {
-    font-size: 1rem;
+.home-paid-card > p + p {
+    margin-top: 12px;
 }
 
-.doorway-mobile-choice span {
-    color: var(--doorway-muted);
-    font-size: 0.8rem;
-    line-height: 1.45;
+.home-free-section {
+    padding-top: 56px;
+    border-top: 1px solid rgba(106, 217, 255, 0.14);
 }
 
-.doorway-mobile-utilities {
-    border-color: rgba(77, 220, 246, 0.4);
+.home-free-heading {
+    margin-bottom: 26px;
 }
 
-.doorway-mobile-utilities strong {
-    color: var(--doorway-cyan-soft);
+.home-free-heading h2 {
+    margin: 0;
+    color: #f7fbff;
+    font-family: var(--display-font);
+    font-size: clamp(2.15rem, 4.3vw, 3.25rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
 }
 
-.doorway-mobile-development {
-    border-color: rgba(255, 128, 111, 0.4);
+.home-footer-grid {
+    grid-template-columns: minmax(260px, 1.2fr) repeat(2, minmax(170px, 0.7fr));
 }
 
-.doorway-mobile-development strong {
-    color: var(--doorway-coral-soft);
-}
-
-.doorway-mobile-choice:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 3px;
-}
-
-.doorway-footer {
-    min-height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 22px;
-    padding: 12px clamp(18px, 3vw, 46px);
-    border-top: 1px solid var(--doorway-line);
-    background: rgba(1, 7, 13, 0.9);
-    color: var(--doorway-muted);
-    font-size: 0.78rem;
-}
-
-.doorway-footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 18px;
-}
-
-.doorway-footer a {
-    color: #c7d5df;
-    font-weight: 600;
-}
-
-.doorway-footer a:hover {
-    color: white;
-}
-
-.doorway-footer a:focus-visible {
-    outline: 2px solid white;
-    outline-offset: 4px;
-}
-
-@media (max-width: 760px) {
-    .doorway-main {
-        align-content: center;
-        padding: 12px;
-    }
-
-    .doorway-frame {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .doorway-choice {
-        top: 18%;
-        bottom: 0;
-        border-radius: 8px;
-    }
-
-    .doorway-enter-label {
-        display: none;
-    }
-
-    .doorway-mobile-choices {
-        display: grid;
+@media (max-width: 960px) {
+    .home-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 520px) {
-    .doorway-mobile-choices {
+@media (max-width: 720px) {
+    .unified-home-hero .hero-copy h1 {
+        max-width: 100%;
+    }
+
+    .home-paid-grid {
+        margin-top: 24px;
+    }
+
+    .home-free-section {
+        padding-top: 38px;
+    }
+
+    .home-footer-grid {
         grid-template-columns: 1fr;
-    }
-
-    .doorway-footer {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .doorway-footer nav {
-        justify-content: flex-start;
-    }
-}
-
-@media (hover: none) {
-    .doorway-choice:hover::before {
-        opacity: 0;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .doorway-choice,
-    .doorway-choice::before,
-    .doorway-enter-label {
-        transition-duration: 0.01ms !important;
     }
 }
