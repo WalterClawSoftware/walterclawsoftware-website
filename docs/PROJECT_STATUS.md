@@ -10,6 +10,8 @@ Live Git, Netlify, and the public site override this handoff when they differ.
 - The homepage leads with Threshold Lab, followed by six free utility apps.
 - Threshold Lab is the only product shown on the self-help, improvement, and
   understanding route.
+- Both Threshold Lab cards describe its optional AI as a structured session-plan
+  generator rather than a human conversation or companion chat.
 - The company About and Updates pages describe only products that remain in the
   current public catalog.
 - The retired product's sales copy, store links, support/privacy links,
@@ -27,6 +29,9 @@ Live Git, Netlify, and the public site override this handoff when they differ.
 
 ## Verification
 
+- The two bounded Threshold Lab copy changes pass the geometry regression
+  self-test, static invariant, real-Chrome desktop/phone rendered geometry,
+  focused HTML validation, and `git diff --check`.
 - `git diff --check`, the geometry regression self-test, the static invariant,
   and real-Chrome desktop/phone rendered geometry pass all 22 HTML pages. The
   rendered gate retains five known letterbox warnings in untouched Repro Pack
