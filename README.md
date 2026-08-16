@@ -10,7 +10,7 @@ Public static website for **Walter Claw Software LLC**.
 
 - `index.html` — unified company landing page with paid apps first, followed by free utility apps
 - `utilities.html` — six free utility apps, led by Simple Voice Reader
-- `self-help-improvement.html` — paid apps and projects, including current Unspoken Room storefront links
+- `self-help-improvement.html` — Threshold Lab and the paid-app direction
 - `about.html` — company/product context
 - `clipscript.html` — ClipScript product page
 - `transcript-rescue.html` — Transcript Rescue product page
